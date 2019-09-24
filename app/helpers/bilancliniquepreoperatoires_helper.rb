@@ -1,0 +1,2 @@
+module BilancliniquepreoperatoiresHelper
+end
