@@ -1,4 +1,12 @@
-<h1>Pathologies#show</h1>
-<p>Find me in app/views/pathologies/show.html.erb</p>
-
-<h1><%= @pathologie.nom %></h1>
+<% case @pathologie.nom %>
+  <% when 'Glaucome' %>
+    <%= render "glaucomepatho" %>
+  <% when 'Diabète' %>
+    <%= render "diabete" %>
+  <% when 'DMLA' %>
+    <%= render "dmla" %>
+  <% when 'Décolement de la rétine' %>
+    <%= render "decollement" %>
+  <% when 'Autres pathologies rétiniennes' %>
+    <%= render "autres" %>
+<% end %>
