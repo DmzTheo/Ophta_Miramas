@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
-  root to: 'page#home'
+  root to: 'pages#home'
   get 'pages/lunettes'
   get 'pages/centre'
 
   resources :pathologies, only: [:show, :index]
 
   resources :chirurgies, only: [:show, :index] do
-    resources :bilancliniquepreoperatoires , only: [:show]
+    resources :bilancliniquepreoperatoires, only: [:show]
     resources :preparerlinterventions, only: [:show]
     resources :consignepostoperatoires, only: [:show]
   end
