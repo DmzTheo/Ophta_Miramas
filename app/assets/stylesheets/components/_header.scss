@@ -1,0 +1,49 @@
+#banner {
+    width: 100%;
+    height: auto;
+}
+
+.chest_body {
+    background-color: white;
+    padding: 20px;
+    width: 90%;
+    margin: 20px auto 0 auto;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 0 15px rgba(211, 211, 211, 0.541)
+}
+
+.bienvenue{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    line-height: 0px;
+    flex-direction: column;
+
+}
+
+.bienvenue h2 {
+    color: #4B4B4B;
+    font-family: 'Roboto';
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+.bienvenue h3 {
+    color: #4B4B4B;
+    font-family: 'Roboto';
+    font-weight: 300;
+    margin-top: 10px;
+    font-size: 18px;
+
+}
+
+.bienvenue h4 {
+    color: #474747;
+    font-family: 'Playfair';
+    font-size: 33px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}

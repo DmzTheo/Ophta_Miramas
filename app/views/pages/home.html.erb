@@ -1,10 +1,76 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<!------------------------------------- logo -------------------------------------------->
+<div class='logo'>
+  <%= link_to root_path do %>
+    <%= image_tag(asset_path('logo_ok'), alt: "", id: "img_logo") %>
+  <% end %>
+</div>
+<!------------------------------------- logo -------------------------------------------->
 
-<%= link_to "lunettes", pages_lunettes_path %>
 
-<%= link_to "centre", pages_centre_path %>
+<!------------------------------------ navbar ------------------------------------------->
+<div class='nav_back'>
+  <div class='navbar_all'>
+    <%= link_to((root_path), class: 'a_img') do %>
+      <%= image_tag(asset_path('view'), alt: "", class: "img_navbar") %>
+    <% end %>
+    <div class="navbar">
+      <%= link_to "LE CENTRE", pages_centre_path %>
+      <%= link_to "L'EQUIPE", pages_centre_path %>
+      <%= link_to "LUNETTES", pages_lunettes_path %>
+      <%= link_to "PATHOLOGIES", pathologies_path %>
+      <%= link_to "CHIRURGIES", chirurgies_path %>
+      <a style='color:gray'>PRENDRE RENDEZ-VOUS</a>
+    </div>
+  </div>
+</div>
+<!------------------------------------ navbar ------------------------------------------->
 
-<%= link_to "pathologies", pathologies_path %>
 
-<%= link_to "chirurgies", chirurgies_path %>
+<!------------------------------------ banner ------------------------------------------->
+<%= image_tag(asset_path('baner'), alt: "", id:'banner') %>
+<!------------------------------------ banner ------------------------------------------->
+
+
+<!---------------------------------- bienvenue ------------------------------------------>
+<div class='chest_body'>
+  <div class='bienvenue'>
+    <h2 class='bienvenue_titre'>BIENVENUE</h2>
+    <h3 class='bienvenue_text'>dans notre cabinet d'ophtalmologie</h3>
+    <h4 class='bienvenue_ophta'>OPHTA MIRAMAS</h4>
+  </div>
+<!---------------------------------- bienvenue ------------------------------------------>
+
+
+<!---------------------------------- présentation ------------------------------------------>
+  <div class='presentation_home'>
+    <div class='presentation_home_1'>
+      <%= image_tag(asset_path('nurse-bust'), alt: "", style: "width: 80px") %>
+      <p>Une équipe qualifiée et dynamique à votre écoute</p>
+    </div>
+    <div class='presentation_home_2'>
+      <%= image_tag(asset_path('hospital-microscope'), alt: "", style: "width: 80px") %>
+      <p>Du matériel à la pointe de la technologie</p>
+    </div>
+    <div class='presentation_home_3'>
+      <%= image_tag(asset_path('growth'), alt: "", style: "width: 80px") %>
+      <p>Une prise en charge personnalisée et un accompagnement continu</p>
+    </div>
+    <div class='presentation_home_4'>
+      <%= image_tag(asset_path('calendar-2'), alt: "", style: "width: 80px") %>
+      <p>Une prise de rendez-vous en ligne</p>
+    </div>
+  </div>
+<!---------------------------------- présentation ------------------------------------------>
+
+
+<!---------------------------------- bouton rendez-vous ------------------------------------------>
+  <a class="btn_rdv">PRENDRE UN RENDEZ-VOUS</a>
+</div>
+<!---------------------------------- bouton rendez-vous ------------------------------------------>
+
+
+<!---------------------------------- bottom bar ------------------------------------------>
+<div class='bottom_bar'>
+  <%= image_tag(asset_path('logo_ok'), alt: "", style: "width: 60px") %>
+</div>
+<!---------------------------------- bottom bar ------------------------------------------>

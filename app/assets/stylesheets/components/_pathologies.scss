@@ -1,0 +1,138 @@
+.chest_patho {
+    background-color: white;
+    width: 90%;
+    display: block;
+    display: flex;
+    margin: 20px auto 0 auto;
+    border-radius: 15px 15px 0 0;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 15px rgb(201, 201, 201);
+    bottom: 0;
+
+}
+
+.chest_each_patho {
+    background-color: white;
+    width: 90%;
+    display: block;
+    display: flex;
+    margin: 20px auto 0 auto;
+    border-radius: 15px 15px 0 0;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 15px rgb(201, 201, 201);
+    bottom: 0;
+}
+
+.titre_pathologies {
+    width: 90%;
+    display: flex;
+    display: block;
+    margin: 30px 30px ;
+    color: white;
+    text-shadow: 0 0 10px rgba(189, 188, 188, 0.918);
+}
+
+.vide{
+    height: 40px;
+}
+.chest_patho a {
+    text-decoration: none;
+}
+
+.chest_patho h2 {
+    text-decoration: none;
+    font-family: 'playfair';
+    color: black;
+    margin: 20px 20px;
+    letter-spacing: 2px;
+}
+
+.chest_patho p {
+    text-decoration: none;
+    font-family: 'roboto';
+    width: 60%;
+    margin: 20px 20px;
+    font-weight: 300;
+    color: #474747;
+
+}
+
+.chest_each_patho p {
+    text-decoration: none;
+    font-family: 'roboto';
+    width: 75%;
+    margin: 2px 48px;
+    font-weight: 300;
+    color: #474747;
+    line-height: 150%;
+
+}
+
+.chest_each_patho h2 {
+    text-decoration: none;
+    font-family: 'playfair';
+    color: black;
+    margin: 2px 48px;
+    letter-spacing: 2px;
+}
+
+.chest_patho h4 {
+    color: #1E737D;
+    border: none;
+    font-family: 'roboto';
+    font-weight: 700;
+    font-size: 80%;
+    padding: 1px;
+   text-align: right;
+   margin: 10px 20px;
+}
+
+
+.link_glaucome {
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(211, 211, 211, 0.349);
+    align-content: center;
+    display: block;
+    margin: 20px auto;
+    padding-top: 10px;
+    padding-left: 20px;
+   }
+
+.link_diabete {
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(211, 211, 211, 0.349);
+  align-content: center;
+  display: block;
+  margin: 20px auto;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.link_dmla {
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(211, 211, 211, 0.349);
+    align-content: center;
+    display: block;
+    margin: 20px auto;
+    padding-top: 10px;
+    padding-left: 20px;
+   }
+
+   .link_decollement_retine {
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(211, 211, 211, 0.349);
+    align-content: center;
+    display: block;
+    margin: 20px auto;
+    padding-top: 10px;
+    padding-left: 20px;
+
+   }

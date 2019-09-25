@@ -1,0 +1,18 @@
+.bottom_elements {
+    display: block;
+    display: flex;
+    width: 80%;
+    text-align: center;
+    align-content: center;
+    flex-flow: row wrap;
+    margin: 30px auto;
+    left: 0;
+    right: 0;
+}
+
+.bottom_elements p {
+    width: 200px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}

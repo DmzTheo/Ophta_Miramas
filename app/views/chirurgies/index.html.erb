@@ -1,8 +1,130 @@
-<h1>Chirurgies#index</h1>
-<p>Find me in app/views/chirurgies/index.html.erb</p>
+<!------------------------------------- logo -------------------------------------------->
+<div class='logo'>
+  <%= link_to root_path do %>
+  <%= image_tag(asset_path('logo_ok'), alt: "", id: "img_logo") %>
+  <% end %>
+</div>
+<!------------------------------------- logo -------------------------------------------->
 
-<ul>
-<% @chirurgies.each do |chirurgie| %>
-  <%= link_to chirurgie.nom, chirurgy_path(chirurgie) %> <br>
-<% end %>
-</ul>
+
+<!------------------------------------ navbar ------------------------------------------->
+<div class='nav_back'>
+  <div class='navbar_all'>
+    <%= link_to((root_path), class: 'a_img') do %>
+    <%= image_tag(asset_path('view'), alt: "", class: "img_navbar") %>
+    <% end %>
+    <div class="navbar">
+      <%= link_to "LE CENTRE", pages_centre_path %>
+      <%= link_to "L'EQUIPE", pages_centre_path %>
+      <%= link_to "LUNETTES", pages_lunettes_path %>
+      <%= link_to "PATHOLOGIES", pathologies_path %>
+      <%= link_to "CHIRURGIES", chirurgies_path %>
+      <a style='color:gray'>PRENDRE RENDEZ-VOUS</a>
+    </div>
+  </div>
+</div>
+<!------------------------------------ navbar ------------------------------------------->
+
+
+<!------------------------------------ titre ------------------------------------------->
+<h2 class="titre_pathologies" style="margin-left: 7%;">CHIRURGIES</h2>
+<!------------------------------------ titre ------------------------------------------->
+
+
+<div class='chest_patho'>
+  <div class="vide"></div>
+<!------------------------ carte Chirurgie des paupières ------------------------------->
+  <% @chirurgies.each do |chirurgie| %>
+    <% if chirurgie.nom == 'Chirurgie des paupières' %>
+      <%= link_to(pathology_path(chirurgie)) do %>
+        <div class='link_glaucome'>
+            <h2>CHIRURGIES DE LA PAUPIÈRE</h2>
+            <p>Rides, poches, regard triste, sévère ou fatigué ? Améliorer votre image et votre bien être, avec un résultat naturel ?
+            <br>Les injections de toxine botulique (botox) ou d'acide hyaluronique sont des solutions efficaces et simples</p>
+            <h4>En savoir plus</h4>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+<!------------------------ carte Chirurgie des paupières ------------------------------->
+
+
+<!---------------------------- carte Chirurgie laser ----------------------------------->
+  <% @chirurgies.each do |chirurgie| %>
+    <% if chirurgie.nom == 'Chirurgie Laser' %>
+      <%= link_to(pathology_path(chirurgie)) do %>
+        <div class='link_diabete'>
+          <h2>CHIRURGIES LASER</h2>
+          <p>Vous souhaitez ne plus porter de lunettes ou de lentilles.
+            <br>Vous êtes myope, hypermétrope, astigmate ou même presbyte.
+            <br>Vous pouvez certainement bénéficier d'un traitement.
+          </p>
+          <h4>En savoir plus</h4>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+<!---------------------------- carte Chirurgie laser ----------------------------------->
+
+
+<!---------------------------------- carte IVT ----------------------------------------->
+  <% @chirurgies.each do |chirurgie| %>
+    <% if chirurgie.nom == 'IVT' %>
+      <%= link_to(pathology_path(chirurgie)) do %>
+        <div class='link_dmla'>
+          <h2>Injection Intra Vitréenne</h2>
+          <p>Vous avez une DMLA, une atteinte rétinienne secondaire à votre diabète ou à un problème vasculaire.
+            <br>Ces pathologies peuvent bénéficier d'injections.
+            <br>Vous souhaitez connaître les modalités de prise en charge (avant, pendant et après l'intervention).
+          </p>
+          <h4>En savoir plus</h4>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+<!---------------------------------- carte IVT ----------------------------------------->
+
+
+<!-------------------------------- carte Glaucome --------------------------------------->
+  <% @chirurgies.each do |chirurgie| %>
+    <% if chirurgie.nom == 'Glaucome' %>
+      <%= link_to(pathology_path(chirurgie)) do %>
+        <div class='link_decollement_retine'>
+          <h2>CHIRURGIES GLAUCOME</h2>
+          <p>...</p>
+          <h4>En savoir plus</h4>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+<!-------------------------------- carte Glaucome --------------------------------------->
+
+
+<!-------------------------------- carte Cataracte --------------------------------------->
+  <% @chirurgies.each do |chirurgie| %>
+    <% if chirurgie.nom == 'Cataracte' %>
+      <%= link_to(pathology_path(chirurgie)) do %>
+        <div class='link_decollement_retine'>
+          <h2>CHIRURGIES CATARACTE</h2>
+          <p>Votre vision se trouble, vous êtes éblouis la nuit et vous êtes âgé de plus de 60 ans.
+            <br>Peut-être êtes-vous atteint d'une cataracte ?
+          <br>Vous souhaitez connaître les modalités de prise en charge (avant, pendant et après l'intervention).</p>
+          <h4>En savoir plus</h4>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+<!-------------------------------- carte Cataracte --------------------------------------->
+
+
+<!------------------------------- button rendez-vous -------------------------------------->
+    <a class="btn_rdv">PRENDRE UN RENDEZ-VOUS</a>
+  </div>
+<!------------------------------- button rendez-vous -------------------------------------->
+
+
+<!----------------------------------- bottom bar ------------------------------------------>
+<div class='bottom_bar'>
+  <%= image_tag(asset_path('logo_ok'), alt: "", style: "width: 60px") %>
+</div>
+<!----------------------------------- bottom bar ------------------------------------------>
