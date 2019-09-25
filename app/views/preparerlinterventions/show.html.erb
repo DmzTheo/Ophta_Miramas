@@ -1,2 +1,12 @@
-<h1>Preparerlinterventions#show</h1>
-<p>Find me in app/views/preparerlinterventions/show.html.erb</p>
+<% case @preparer.chirurgie.nom %>
+  <% when 'Cataracte' %>
+    <%= render "cataracte" %>
+  <% when 'Glaucome' %>
+    <%= render "glaucomechir" %>
+  <% when 'IVT' %>
+    <%= render "ivt" %>
+  <% when 'Chirurgie Laser' %>
+    <%= render "laser" %>
+  <% when 'Chirurgie des paupières' %>
+    <%= render "paupieres" %>
+<% end %>

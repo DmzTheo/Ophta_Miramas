@@ -1,2 +1,12 @@
-<h1>Consignepostoperatoires#show</h1>
-<p>Find me in app/views/consignepostoperatoires/show.html.erb</p>
+<% case @consigne.chirurgie.nom %>
+  <% when 'Cataracte' %>
+    <%= render "cataracte" %>
+  <% when 'Glaucome' %>
+    <%= render "glaucomechir" %>
+  <% when 'IVT' %>
+    <%= render "ivt" %>
+  <% when 'Chirurgie Laser' %>
+    <%= render "laser" %>
+  <% when 'Chirurgie des paupières' %>
+    <%= render "paupieres" %>
+<% end %>
