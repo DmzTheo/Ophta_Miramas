@@ -7,4 +7,7 @@ class PagesController < ApplicationController
 
   def centre
   end
+
+  def equipe
+  end
 end

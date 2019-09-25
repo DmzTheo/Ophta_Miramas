@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get 'pages/lunettes'
   get 'pages/centre'
+  get 'pages/equipe'
 
   resources :pathologies, only: [:show, :index]
 
