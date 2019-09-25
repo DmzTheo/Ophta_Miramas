@@ -1,8 +1,123 @@
-<h1>Pathologies#index</h1>
-<p>Find me in app/views/pathologies/index.html.erb</p>
+<!------------------------------------- logo -------------------------------------------->
+<div class='logo'>
+  <%= link_to root_path do %>
+  <%= image_tag(asset_path('logo_ok'), alt: "", id: "img_logo") %>
+  <% end %>
+</div>
+<!------------------------------------- logo -------------------------------------------->
 
-<ul>
-<% @pathologies.each do |pathologie| %>
-  <%= link_to pathologie.nom, pathology_path(pathologie) %> <br>
-<% end %>
-</ul>
+
+<!------------------------------------ navbar ------------------------------------------->
+<div class='nav_back'>
+  <div class='navbar_all'>
+    <%= link_to((root_path), class: 'a_img') do %>
+      <%= image_tag(asset_path('view'), alt: "", class: "img_navbar") %>
+    <% end %>
+    <div class="navbar">
+      <%= link_to "LE CENTRE", pages_centre_path %>
+      <%= link_to "L'EQUIPE", pages_centre_path %>
+      <%= link_to "LUNETTES", pages_lunettes_path %>
+      <%= link_to "PATHOLOGIES", pathologies_path %>
+      <%= link_to "CHIRURGIES", chirurgies_path %>
+      <a style='color:gray'>PRENDRE RENDEZ-VOUS</a>
+    </div>
+  </div>
+</div>
+<!------------------------------------ navbar ------------------------------------------->
+
+
+<!------------------------------------ titre ------------------------------------------->
+<h2 class="titre_pathologies" style="margin-left: 7%;">PATHOLOGIES</h2>
+<!------------------------------------ titre ------------------------------------------->
+
+
+<div class='chest_patho'>
+  <div class="vide"></div>
+<!------------------------------------ carte glaucome ------------------------------------------->
+  <% @pathologies.each do |maladie| %>
+    <% if maladie.nom == 'Glaucome' %>
+      <%= link_to(pathology_path(maladie)) do %>
+        <div class='link_glaucome'>
+          <h2>GLAUCOME</h2>
+          <p>"Compère". Tuméfaction non infectieuse des paupières supérieures ou inférieures, rouges et inflammées.</p>
+          <h4>En savoir plus</h4>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+<!------------------------------------ carte glaucome ------------------------------------------->
+
+
+<!------------------------------------ carte diabète ------------------------------------------->
+  <% @pathologies.each do |maladie| %>
+    <% if maladie.nom == 'Diabète' %>
+      <%= link_to(pathology_path(maladie)) do %>
+        <div class='link_diabete'>
+          <h2>DIABÈTE</h2>
+          <p>Oeil rouge, sans douleur, ni baisse de vue.</p>
+          <h4>En savoir plus</h4>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+<!------------------------------------ carte diabète ------------------------------------------->
+
+
+<!------------------------------------ carte DMLA ------------------------------------------->
+  <% @pathologies.each do |maladie| %>
+    <% if maladie.nom == 'DMLA' %>
+      <%= link_to(pathology_path(maladie)) do %>
+        <div class='link_dmla'>
+          <h2>DMLA</h2>
+          <p>La dégénérescence de la macula liée à l'âge est une pathologie qui touche les patients de plus 55 ans. Elle entraîne une baisse de vue centrale avec des taches noires et des déformations.</p>
+          <h4>En savoir plus</h4>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+<!------------------------------------ carte DMLA ------------------------------------------->
+
+
+<!-------------------------- carte Décollement de la rétine --------------------------------->
+  <% @pathologies.each do |maladie| %>
+    <% if maladie.nom == 'Décolement de la rétine' %>
+      <%= link_to(pathology_path(maladie)) do %>
+        <div class='link_decollement_retine'>
+          <h2>DÉCOLLEMENT DE LA RETINE</h2>
+          <p>Baisse de vue brutale, non résolutive avec amputation d'une partie du champ visuel.
+          Souvent précédé "d'éclairs lumineux" ou de "mouches en abondance".</p>
+          <h4>En savoir plus</h4>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+<!-------------------------- carte Décollement de la rétine --------------------------------->
+
+
+<!------------------------------- carte autres maladies -------------------------------------->
+  <% @pathologies.each do |maladie| %>
+    <% if maladie.nom == 'Autres pathologies rétiniennes' %>
+      <%= link_to(pathology_path(maladie)) do %>
+        <div class='link_decollement_retine'>
+          <h2>AUTRES MALADIES RETINIENES</h2>
+          <p>Oeil rouge, sans douleur, ni baisse de vue.</p>
+          <h4>En savoir plus</h4>
+        </div>
+      <% end %>
+    <% else %>
+    <% end %>
+  <% end %>
+<!------------------------------- carte autres maladies -------------------------------------->
+
+
+<!------------------------------------ button rendez-vous ------------------------------------------->
+    <a class="btn_rdv">PRENDRE UN RENDEZ-VOUS</a>
+  </div>
+<!------------------------------------ button rendez-vous ------------------------------------------->
+
+
+<!------------------------------------ bottom bar ------------------------------------------->
+<div class='bottom_bar'>
+  <%= image_tag(asset_path('logo_ok'), alt: "", style: "width: 60px") %>
+</div>
+<!------------------------------------ bottom bar ------------------------------------------->

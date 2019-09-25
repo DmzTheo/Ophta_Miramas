@@ -1,0 +1,26 @@
+.presentation_home {
+    display: block;
+    display: flex;
+    align-content: center;
+    width: 80%;
+    text-align: center;
+    margin: 35px auto;
+    flex-flow: row wrap;
+}
+
+.presentation_home p {
+    flex-flow: row nowrap;
+    width: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'roboto';
+    font-weight: 300;
+    color: #474747;
+}
+
+.presentation_home_1, .presentation_home_2, .presentation_home_3, .presentation_home_4 {
+
+    align-content: center;
+    text-align: center;
+    margin: 0px auto;
+}
