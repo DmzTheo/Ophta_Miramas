@@ -1,5 +1,85 @@
-<h1>Chirurgie Laser</h1>
+<!------------------------------------- logo -------------------------------------------->
+<div class='logo'>
+  <%= link_to root_path do %>
+  <%= image_tag(asset_path('logo_ok'), alt: "", id: "img_logo") %>
+  <% end %>
+</div>
+<!------------------------------------- logo -------------------------------------------->
 
-<%= link_to 'bilan clinique pré-opératoire', chirurgy_bilancliniquepreoperatoire_path(@chirurgie) %> <br>
-<%= link_to "pérarer l'intervention", chirurgy_preparerlintervention_path(@chirurgie) %> <br>
-<%= link_to 'consignes post-opératoires', chirurgy_consignepostoperatoire_path(@chirurgie) %>
+
+<!------------------------------------ navbar ------------------------------------------->
+<div class='nav_back'>
+  <div class='navbar_all'>
+    <%= link_to((root_path), class: 'a_img') do %>
+      <%= image_tag(asset_path('view'), alt: "", class: "img_navbar") %>
+    <% end %>
+    <div class="navbar">
+      <%= link_to "LE CENTRE", pages_centre_path %>
+      <%= link_to "L'EQUIPE", pages_centre_path %>
+      <%= link_to "LUNETTES", pages_lunettes_path %>
+      <%= link_to "PATHOLOGIES", pathologies_path %>
+      <%= link_to "CHIRURGIES", chirurgies_path %>
+      <a style='color:gray'>PRENDRE RENDEZ-VOUS</a>
+    </div>
+  </div>
+</div>
+<!------------------------------------ navbar ------------------------------------------->
+
+
+<!------------------------------------ titre ------------------------------------------->
+<h2 class="titre_pathologies" style="margin-left: 7%;">INJECTION INTRA-VITRENNE</h2>
+<!------------------------------------ titre ------------------------------------------->
+
+
+    <div class='chest_each_patho'>
+      <div class="vide"></div>
+      <p>Cette chirurgie permet de corriger tous les défauts visuels (myopie, astigmatisme, hypermétropie et même presbytie).</p>
+
+      <p><br></p>
+
+      <p>Oubliez vos lunettes, et vos lentilles ! Obtenez une vision de loin et une vision de près satisfaisantes !</p>
+
+      <p><br></p>
+
+      <p>La chirurgie moderne est maintenant accessible à tous, avec une récupération très rapide.</p>
+
+      <p><br></p>
+
+      <p>Vous allez vous faire opérer ? Ci-dessous, vous trouverez les éléments pour vous guider à chaque étape de votre chirurgie.</p>
+
+      <p><br><br></p>
+
+<!-------------------------------------- liens détails --------------------------------------------->
+    <div class='bottom_elements'>
+      <%= link_to (chirurgy_bilancliniquepreoperatoire_path(@chirurgie)), class: "bottom_description" do %>
+        <h2>Bilan clinique pré opératoire</h2>
+        <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
+        <h4>En savoir plus</h4>
+      <% end %>
+      <div class="ligne"></div>
+      <%= link_to (chirurgy_preparerlintervention_path(@chirurgie)), class: "bottom_description" do %>
+        <h2>Preparer l'intervention</h2>
+        <p>Les éléments essentiels à préparer avant l'intervention</p>
+        <h4>En savoir plus</h4>
+      <% end %>
+      <div class="ligne"></div>
+      <%= link_to (chirurgy_consignepostoperatoire_path(@chirurgie)), class: "bottom_description" do %>
+        <h2>Consignes post-opératoires</h2>
+        <p>Après la chirurgie, que faire ?</p>
+        <h4>En savoir plus</h4>
+      <% end %>
+    </div>
+<!-------------------------------------- liens détails --------------------------------------------->
+
+
+<!------------------------------------ button rendez-vous ------------------------------------------->
+    <a class="btn_rdv">PRENDRE UN RENDEZ-VOUS</a>
+  </div>
+<!------------------------------------ button rendez-vous ------------------------------------------->
+
+
+<!------------------------------------ bottom bar ------------------------------------------->
+<div class='bottom_bar'>
+  <%= image_tag(asset_path('logo_ok'), alt: "", style: "width: 60px") %>
+</div>
+<!------------------------------------ bottom bar ------------------------------------------->
