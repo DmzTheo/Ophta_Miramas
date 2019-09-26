@@ -1,1 +1,92 @@
-<h1>DMLA</h1>
+<!------------------------------------- logo -------------------------------------------->
+<div class='logo'>
+  <%= link_to root_path do %>
+  <%= image_tag(asset_path('logo_ok'), alt: "", id: "img_logo") %>
+  <% end %>
+</div>
+<!------------------------------------- logo -------------------------------------------->
+
+
+<!------------------------------------ navbar ------------------------------------------->
+<div class='nav_back'>
+  <div class='navbar_all'>
+    <%= link_to((root_path), class: 'a_img') do %>
+      <%= image_tag(asset_path('view'), alt: "", class: "img_navbar") %>
+    <% end %>
+    <div class="navbar">
+      <%= link_to "LE CENTRE", pages_centre_path %>
+      <%= link_to "L'EQUIPE", pages_centre_path %>
+      <%= link_to "LUNETTES", pages_lunettes_path %>
+      <%= link_to "PATHOLOGIES", pathologies_path %>
+      <%= link_to "CHIRURGIES", chirurgies_path %>
+      <a style='color:gray'>PRENDRE RENDEZ-VOUS</a>
+    </div>
+  </div>
+</div>
+<!------------------------------------ navbar ------------------------------------------->
+
+
+<!------------------------------------ titre ------------------------------------------->
+<h2 class="titre_pathologies" style="margin-left: 7%;">D M L A</h2>
+<!------------------------------------ titre ------------------------------------------->
+
+
+    <div class='chest_each_patho'>
+      <div class="vide"></div>
+      <p>La dégénérescence de la macula liée à l'âge est une pathologie qui touche les patients de plus 55 ans. Elle entraîne une baisse de vue centrale avec des taches noires et des déformations.</p>
+
+      <p><br><br></p>
+
+      <strong> <h2>Définition</h2></strong>
+      <p><br>La dégénérescence maculaire liée est l’age ou DMLA correspond au vieillissement accéléré de la zone centrale de la rétine appelée macula, survenant en général après l'âge de 50 ans.
+        <br><br>Il existe 2 types de DMLA :
+        <br>La DMLA atrophique dite sèche : il existe une disparition progressive des cellules de la rétine qui s'amincit
+      <br>La DMLA exsudative dite humide : le vieillissement de la rétine s'accompagne de l'apparition de vaisseaux anormaux (néovaisseaux) qui laisse fuir le sang dans la rétine.</p>
+
+      <p><br><br></p>
+
+        <strong> <h2>Symptômes</h2></strong>
+      <p><br>Apparition plus ou moins rapide d'une tache noire fixe au centre de la vision,
+        <br>Déformation visuelle des lignes (vagues),
+        <br>Baisse de la vision de loin et de près,
+      <br>Un seul ou les 2 yeux peuvent être touchés.</p>
+
+      <p><br><br></p>
+
+      <strong><h2>La présentation clinique</h2></strong>
+      <p><br>Il existe une baisse de vue et le fond d’œil permet de trouver les éléments caractéristiques de la DMLA : drüsens, atrophie maculaire, hémorragie(s), membrane néovasculaire.
+      L'OCT (sorte de scanner pour la rétine) permet de visualiser de manière très précise le liquide dans la rétine et parfois les membranes néovasculaires.</p>
+
+      <p><br><br></p>
+
+      <strong><h2>Les traitements</h2></strong>
+      <p><br>Le traitement repose sur la prévention. Tout ce qui est bon pour votre corps le sera pour la rétine: alimentation saine, équilibrée, riche en vitamine et oligoéléments, éviter la sédentarité, ne pas fumer. En cas de carence, des comprimés peuvent apporter les éléments manquants.
+        <br>En cas de forme atrophique, une surveillance régulière sera proposée car il existe une évolution possible à tout moment vers la forme exsudative. L'autosurveillance est également primordiale (surveillance plurihébdomadaire de chaque oeil grâce à la grille d'AMSLER (retrouvez cette grille sur notre page des téléchargements, imprimez-la et mettez la sur votre frigo pour y penser régulièrement!)
+        <br>En cas de forme exsudative, les IVTs sont le traitement de choix en traitant les néovaisseaux rétiniens. Ce traitement est d'autant plus efficace qu'il est administré tôt dans la maladie et dans les éventuelles rechutes. Une surveillance très régulière vous sera proposée car il s'agit d'une maladie chronique pour laquelle il n'existe pas de traitement permettant la guérison définitive.
+      <br>Dans les formes évoluées (des formes atrophiques et exsudatives), une rééducation de la vision dite "basse vision" permet d'utiliser la rétine périphérique pour continuer les activités de près tel que la lecture, les mots croisés ...</p>
+
+      <p><br><br></p>
+
+      <strong><h2>Les conséquences</h2></strong>
+      <p><br>La baisse de vue centrale est plus ou moins rapide et est ralentie par le traitement.
+        En aucun cas, on ne devient totalement aveugle de la DMLA.
+      Un patient même atteinte d'une forme bilatérale conservera son champ visuel périphérique et pourra ainsi se déplacer et se repérer dans son environnement aisément.</p>
+
+      <p><br><br></p>
+
+      <strong><h2>Quand dois-je consulter ?</h2></strong>
+      <p><br>Si vous êtes âgés de plus de 50 ans, et en cas d’apparition de symptômes évoquant l'apparition d'une forme exsudative, une consultation rapide est nécessaire pour poser le diagnostic et prévoir un traitement adapté : demander un rendez-vous en semi-urgence.
+      </p>
+
+
+<!------------------------------------ button rendez-vous ------------------------------------------->
+    <a class="btn_rdv">PRENDRE UN RENDEZ-VOUS</a>
+  </div>
+<!------------------------------------ button rendez-vous ------------------------------------------->
+
+
+<!------------------------------------ bottom bar ------------------------------------------->
+<div class='bottom_bar'>
+  <%= image_tag(asset_path('logo_ok'), alt: "", style: "width: 60px") %>
+</div>
+<!------------------------------------ bottom bar ------------------------------------------->
