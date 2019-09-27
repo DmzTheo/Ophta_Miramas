@@ -27,7 +27,7 @@
 
 
 <!------------------------------------ titre ------------------------------------------->
-<h2 class="titre_pathologies" style="margin-left: 7%;">INJECTION INTRA-VITRENNE</h2>
+<h2 class="titre_pathologies" style="margin-left: 7%;">CHIRURGIE LASER</h2>
 <!------------------------------------ titre ------------------------------------------->
 
 
@@ -70,6 +70,14 @@
       <% end %>
     </div>
 <!-------------------------------------- liens détails --------------------------------------------->
+
+
+<!-------------------------------------- étape suivante --------------------------------------------->
+    <%= link_to (chirurgy_bilancliniquepreoperatoire_path(@chirurgie)), class: 'etape' do %>
+      <%= image_tag(asset_path('fleche'), alt: "", class: "fleche") %>
+      <p>Etape suivante : Bilan clinique pré-opératoire</p>
+    <% end %>
+<!-------------------------------------- étape suivante --------------------------------------------->
 
 
 <!------------------------------------ button rendez-vous ------------------------------------------->
