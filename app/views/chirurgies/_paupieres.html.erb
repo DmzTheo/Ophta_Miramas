@@ -18,7 +18,7 @@
       <%= link_to "L'EQUIPE", pages_centre_path %>
       <%= link_to "LUNETTES", pages_lunettes_path %>
       <%= link_to "PATHOLOGIES", pathologies_path %>
-      <%= link_to "CHIRURGIES", chirurgies_path %>
+      <%= link_to "CHIRURGIES", chirurgies_path, {style: 'border-bottom: 0.5px solid #363636;'} %>
       <a style='color:gray'>PRENDRE RENDEZ-VOUS</a>
     </div>
   </div>
@@ -71,7 +71,7 @@
 <!-------------------------------------- étape suivante --------------------------------------------->
     <%= link_to (chirurgy_bilancliniquepreoperatoire_path(@chirurgie)), class: 'etape' do %>
       <%= image_tag(asset_path('fleche'), alt: "", class: "fleche") %>
-      <p>Etape suivante : Bilan clinique pré-opératoire</p>
+      <p>Etape suivante : Première consultation</p>
     <% end %>
 <!-------------------------------------- étape suivante --------------------------------------------->
 

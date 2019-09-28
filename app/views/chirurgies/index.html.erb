@@ -18,7 +18,7 @@
       <%= link_to "L'EQUIPE", pages_centre_path %>
       <%= link_to "LUNETTES", pages_lunettes_path %>
       <%= link_to "PATHOLOGIES", pathologies_path %>
-      <%= link_to "CHIRURGIES", chirurgies_path %>
+      <%= link_to "CHIRURGIES", chirurgies_path, {style: 'border-bottom: 0.5px solid #363636;'} %>
       <a style='color:gray'>PRENDRE RENDEZ-VOUS</a>
     </div>
   </div>
@@ -54,7 +54,7 @@
     <% if chirurgie.nom == 'Chirurgie Laser' %>
       <%= link_to(chirurgy_path(chirurgie)) do %>
         <div class='link_diabete'>
-          <h2>CHIRURGIES LASER</h2>
+          <h2>Myopie / Presbitie</h2>
           <p>Vous souhaitez ne plus porter de lunettes ou de lentilles.
             <br>Vous êtes myope, hypermétrope, astigmate ou même presbyte.
             <br>Vous pouvez certainement bénéficier d'un traitement.

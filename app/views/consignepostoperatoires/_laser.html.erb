@@ -1,2 +1,198 @@
-<h1>Consignes post-operatoire</h1>
-<h2>Chirurgie laser</h2>
+<!------------------------------------- logo -------------------------------------------->
+<div class='logo'>
+  <%= link_to root_path do %>
+  <%= image_tag(asset_path('logo_ok'), alt: "", id: "img_logo") %>
+  <% end %>
+</div>
+<!------------------------------------- logo -------------------------------------------->
+
+
+<!------------------------------------ navbar ------------------------------------------->
+<div class='nav_back'>
+  <div class='navbar_all'>
+    <%= link_to((root_path), class: 'a_img') do %>
+      <%= image_tag(asset_path('view'), alt: "", class: "img_navbar") %>
+    <% end %>
+    <div class="navbar">
+      <%= link_to "LE CENTRE", pages_centre_path %>
+      <%= link_to "L'EQUIPE", pages_centre_path %>
+      <%= link_to "LUNETTES", pages_lunettes_path %>
+      <%= link_to "PATHOLOGIES", pathologies_path %>
+      <%= link_to "CHIRURGIES", chirurgies_path, {style: 'border-bottom: 0.5px solid #363636;'} %>
+      <a style='color:gray'>PRENDRE RENDEZ-VOUS</a>
+    </div>
+  </div>
+</div>
+<!------------------------------------ navbar ------------------------------------------->
+
+
+<!------------------------------------ titre ------------------------------------------->
+<h2 class="titre_pathologies" style="margin-left: 7%;">Myopie / Presbitie: vous venez d'être opéré(e): que faire ?</h2>
+<!------------------------------------ titre ------------------------------------------->
+
+
+    <div class='chest_each_patho'>
+      <div class="vide"></div>
+      <h2>Quand puis-je rentrer à mon domicile ?</h2>
+      <p>Comme après toute chirurgie, il est recommandé de venir accompagné(e). La conduite automobile peut devenir très compliquée si vos yeux se réveillent durant le retour.</p>
+
+      <p></p>
+
+      <p>Aussitôt la sortie du bloc opératoire, votre sortie est autorisée.</p>
+      <p></p>
+
+      <p>La présence sur place le jour J (accueil administratif, attente, opération, sortie) n'excédera pas une heure.</p>
+
+      <p><br></p>
+
+      <h2>Quand vais-je revoir ? Vais-je avoir mal ?</h2>
+      <p style="text-decoration: underline;">Dans le cadre du LASIK / LBV :</p>
+      <p>Le premier soir, une à deux heures après la chirurgie, vous allez ressentir une gène de type de grains de sable, poussière...</p>
+
+      <p></p>
+
+      <p>N'oubliez pas d'instiller les traitements prescrits. Vous pouvez abuser des collyres lubrifiants !</p>
+
+      <p></p>
+
+      <p>Cette sensation cessera au cours de la soirée.</p>
+
+      <p></p>
+
+      <p>N'oubliez pas de dormir avec les lunettes fournies les 4 premières nuits.</p>
+
+      <p></p>
+
+      <p>La vision s’améliore très rapidement, et souvent dès le lendemain, vous devenez totalement autonome.</p>
+
+      <p></p>
+
+      <p style="text-decoration: underline;">Dans le cadre du SMILE:</p>
+
+      <p></p>
+
+      <p>Le premier soir, une à deux heures après la chirurgie, vous allez ressentir une gène de type de grains de sable, poussière...</p>
+
+      <p></p>
+
+      <p>Cette sensation cessera au cours de la soirée et dans le pire des cas en 24 heures.</p>
+
+      <p></p>
+
+      <p>La vision s’améliore très rapidement, et souvent dès le lendemain, vous devenez totalement autonome.</p>
+
+      <p></p>
+
+      <p style="text-decoration: underline;">Dans le cadre de la PKR:</p>
+
+      <p></p>
+
+      <p>L'opération a généralement lieu le jeudi après-midi.</p>
+
+      <p></p>
+
+      <p>Les 48 premières heures (vendredi et samedi) sont des jours pénibles où coexisteront les hauts et les bas.</p>
+
+      <p></p>
+
+      <p>Eblouissements, larmoiement, sensation de grains de sable, baisse de la vue ...</p>
+
+      <p></p>
+
+      <p>Il est recommandé de ne prévoir aucune activité extérieure durant cette période.</p>
+
+      <p></p>
+
+      <p>Le dimanche, la situation devrait être bien plus favorable et les douleurs disparues..</p>
+
+      <p></p>
+
+      <p>Le lundi, lors du contrôle post-opératoire au cabinet, nous procédons à l'ablation des lentilles "pansement".</p>
+
+      <p></p>
+
+      <p>La vue est déjà améliorée. Bien mieux qu'avant sans lentilles et lunettes, mais pas encore aussi aussi bien qu'avant avec vos lunettes ou lentilles. Avec l'introduction de nouveaux traitements (anti-inflammatoires), la vue va rapidement s'améliorer et l'éblouissement diminuera.</p>
+
+      <p><br></p>
+
+      <h2>Quand dois-je cmmencer à mettre les gouttes</h2>
+      <p>Vous devez instiller les premières gouttes aussitôt la chirurgie terminée en respectant scrupuleusement la périodicité indiquée par le médecin. Vous pouvez instiller les différents traitements à la suite, en attendant une minute entre chaque traitement.</p>
+
+      <p><br></p>
+
+      <h2>Qui doit m'instiller les gouttes ?</h2>
+      <p>Dans la mesure du possible, c'est vous qui devez les instiller.</p>
+
+      <p></p>
+
+      <p>Ce n'est pas compliqué, en s'aidant d'un miroir.</p>
+
+      <p></p>
+
+      <p>Attention, pensez à toujours vous laver les mains avant d'appliquer le traitement.</p>
+
+      <p></p>
+
+      <p>Il n'y a aucun risque à instiller plusieurs gouttes d'un même traitement, l'essentiel étant de mettre au moins une goutte dans l'oeil. Une unidose comprend assez de gouttes pour faire des "erreurs". Il n'y a donc aucun souci si des gouttes tombent sur votre joue ou au sol.</p>
+
+      <p></p>
+
+      <p>Dans l'impossibilité de réaliser ce traitement vous même, demandez de l'aide à votre famille ou votre entourage (voisins, amis,...).</p>
+
+      <p><br></p>
+
+      <h2>Quand aura lieu le contrôle post-opératoire ?</h2>
+     <p>Le médecin vous remettra un dossier complet post-opératoire personnalisé (compte-rendu opératoire, lettre à l'intention de votre médecin traitant, convocation post-opératoire, rappel de l'ordonnance des traitements post-opératoires).</p>
+
+    <p></p>
+
+    <p>Dans celui-ci figure la date et l'heure de votre rendez-vous prévu. En cas d'impossibilité de vous rendre à ce rendez-vous, merci de contacter le secrétariat via le numéro de téléphone indiqué.</p>
+
+    <p><br></p>
+
+    <p style="text-decoration: underline;">Dans le cadre du LASIK/LBV:</p>
+    <p>contrôle le lendemain matin puis à 5-6 semaines.</p>
+
+    <p></p>
+
+    <p style="text-decoration: underline;">Dans le cadre de la PKR / SMILE:</p>
+    <p>contrôle le lundi suivant puis à 5-6 semaines.</p>
+
+
+
+    <p><br><br></p>
+
+<!-------------------------------------- liens détails --------------------------------------------->
+    <div class='bottom_elements'>
+      <%= link_to (chirurgy_bilancliniquepreoperatoire_path(@consigne.chirurgie)), class: "bottom_description" do %>
+        <h2>Bilan clinique pré-opératoire</h2>
+        <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
+        <h4>En savoir plus</h4>
+      <% end %>
+      <div class="ligne"></div>
+      <%= link_to (chirurgy_preparerlintervention_path(@consigne.chirurgie)), class: "bottom_description" do %>
+        <h2>Preparer l'intervention</h2>
+        <p>Les éléments essentiels à préparer avant l'intervention</p>
+        <h4>En savoir plus</h4>
+      <% end %>
+      <div class="ligne"></div>
+      <%= link_to (chirurgy_consignepostoperatoire_path(@consigne.chirurgie)), class: "bottom_description" do %>
+        <h2>Consignes post-opératoires</h2>
+        <p>Après la chirurgie, que faire ?</p>
+        <h4>En savoir plus</h4>
+      <% end %>
+    </div>
+<!-------------------------------------- liens détails --------------------------------------------->
+
+
+<!------------------------------------ button rendez-vous ------------------------------------------->
+    <a class="btn_rdv">PRENDRE UN RENDEZ-VOUS</a>
+  </div>
+<!------------------------------------ button rendez-vous ------------------------------------------->
+
+
+<!------------------------------------ bottom bar ------------------------------------------->
+<div class='bottom_bar'>
+  <%= image_tag(asset_path('logo_ok'), alt: "", style: "width: 60px") %>
+</div>
+<!------------------------------------ bottom bar ------------------------------------------->

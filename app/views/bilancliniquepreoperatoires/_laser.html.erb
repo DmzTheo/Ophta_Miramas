@@ -1,2 +1,136 @@
-<h1>Bilan clinique pre operatoire</h1>
-<h2>Chirurgie laser</h2>
+<!------------------------------------- logo -------------------------------------------->
+<div class='logo'>
+  <%= link_to root_path do %>
+  <%= image_tag(asset_path('logo_ok'), alt: "", id: "img_logo") %>
+  <% end %>
+</div>
+<!------------------------------------- logo -------------------------------------------->
+
+
+<!------------------------------------ navbar ------------------------------------------->
+<div class='nav_back'>
+  <div class='navbar_all'>
+    <%= link_to((root_path), class: 'a_img') do %>
+      <%= image_tag(asset_path('view'), alt: "", class: "img_navbar") %>
+    <% end %>
+    <div class="navbar">
+      <%= link_to "LE CENTRE", pages_centre_path %>
+      <%= link_to "L'EQUIPE", pages_centre_path %>
+      <%= link_to "LUNETTES", pages_lunettes_path %>
+      <%= link_to "PATHOLOGIES", pathologies_path %>
+      <%= link_to "CHIRURGIES", chirurgies_path, {style: 'border-bottom: 0.5px solid #363636;'} %>
+      <a style='color:gray'>PRENDRE RENDEZ-VOUS</a>
+    </div>
+  </div>
+</div>
+<!------------------------------------ navbar ------------------------------------------->
+
+
+<!------------------------------------ titre ------------------------------------------->
+<h2 class="titre_pathologies" style="margin-left: 7%;">Myopie / Presbitie: Bilan clinique pré-opératoire</h2>
+<!------------------------------------ titre ------------------------------------------->
+
+
+    <div class='chest_each_patho'>
+      <div class="vide"></div>
+
+      <h2>Contenu de la consultation</h2>
+      <p>L'intérêt de la consultation est de définir et de confirmer votre opérabilité.</p>
+
+      <p></p>
+
+      <p>Lors de la consultation pré-opératoire vous rencontrerez successivement :</p>
+
+      <p>  - un orthoptiste,</p>
+      <p>  - et un ophtalmologiste.</p>
+
+      <p></p>
+
+      <p>Cette consultation complète permet de déterminer :</p>
+
+      <p>  - votre acuité visuelle oeil par oeil ainsi que votre oeil dominant,</p>
+
+      <p>  - l'épaisseur de votre cornée (=pachymétrie) : élément essentiel,</p>
+
+      <p>  - votre problème de vue (=amétropie) : myopie, astigmatisme, hypermétropien presbytie ainsi que son degré,</p>
+
+      <p>- si les autres structures oculaires essentielles ne présentent pas d'altérations compromettant la récupération visuelle post-opératoire.</p>
+
+      <p></p>
+
+      <p>Ainsi les examens cliniques et paracliniques permettent de définir la qualité : de la cornée, du cristallin, de la rétine et du nerf optique.</p>
+
+      <p><br></p>
+
+      <h2>Entretien</h2>
+      <p>Lors d'une discussion ouverte, le médecin, de manière très simplifiée:</p>
+
+      <p>- vous présentera une ou plusieurs techniques opératoires, avec leurs avantages et inconvénients, adaptées à votre situation,</p>
+
+      <p>- vous illustrera les techniques par des vidéos et des exemples concrets,</p>
+
+      <p>- vous précisera le "timing" des examens opératoires nécessaires.</p>
+
+      <p><br></p>
+
+      <h2>Programmation de la chirurgie</h2>
+      <p>La décision opératoire revient au patient, après réflexion, suites aux informations délivrées par le médecin.</p>
+
+      <p></p>
+
+      <p>Après décision, le médecin :</p>
+
+      <p>- vous proposera plusieurs dates opératoires convenant à vos disponibilités ou à celles de votre entourage,</p>
+
+      <p>- éditera le dossier pré-opératoire complet,</p>
+
+      <p>- s'assurera encore une fois de la complétude de votre dossier médical.</p>
+
+      <p><br></p>
+
+      <h2 style="font-size: smaller;">Cette chirurgie s'adressant à des personnes jeunes et actives, nous ferrons le maximum pour diminuer le nombre de consultations et pour proposer des dates de rencontre adaptées à vos contraintes familiales et professionnelles.</h2>
+
+      <p><br><br></p>
+
+<!-------------------------------------- liens détails --------------------------------------------->
+    <div class='bottom_elements'>
+      <%= link_to (chirurgy_bilancliniquepreoperatoire_path(@bilan.chirurgie)), class: "bottom_description" do %>
+        <h2>Bilan clinique pré-opératoire</h2>
+        <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
+        <h4>En savoir plus</h4>
+      <% end %>
+      <div class="ligne"></div>
+      <%= link_to (chirurgy_preparerlintervention_path(@bilan.chirurgie)), class: "bottom_description" do %>
+        <h2>Preparer l'intervention</h2>
+        <p>Les éléments essentiels à préparer avant l'intervention</p>
+        <h4>En savoir plus</h4>
+      <% end %>
+      <div class="ligne"></div>
+      <%= link_to (chirurgy_consignepostoperatoire_path(@bilan.chirurgie)), class: "bottom_description" do %>
+        <h2>Consignes post-opératoires</h2>
+        <p>Après la chirurgie, que faire ?</p>
+        <h4>En savoir plus</h4>
+      <% end %>
+    </div>
+<!-------------------------------------- liens détails --------------------------------------------->
+
+
+<!-------------------------------------- étape suivante --------------------------------------------->
+    <%= link_to (chirurgy_preparerlintervention_path(@bilan.chirurgie)), class: 'etape' do %>
+      <%= image_tag(asset_path('fleche'), alt: "", class: "fleche") %>
+      <p>Etape suivante : préparer l'intervention</p>
+    <% end %>
+<!-------------------------------------- étape suivante --------------------------------------------->
+
+
+<!------------------------------------ button rendez-vous ------------------------------------------->
+    <a class="btn_rdv">PRENDRE UN RENDEZ-VOUS</a>
+  </div>
+<!------------------------------------ button rendez-vous ------------------------------------------->
+
+
+<!------------------------------------ bottom bar ------------------------------------------->
+<div class='bottom_bar'>
+  <%= image_tag(asset_path('logo_ok'), alt: "", style: "width: 60px") %>
+</div>
+<!------------------------------------ bottom bar ------------------------------------------->

@@ -1,2 +1,146 @@
-<h1>Bilan clinique pre operatoire</h1>
-<h2>IVT</h2>
+<!------------------------------------- logo -------------------------------------------->
+<div class='logo'>
+  <%= link_to root_path do %>
+  <%= image_tag(asset_path('logo_ok'), alt: "", id: "img_logo") %>
+  <% end %>
+</div>
+<!------------------------------------- logo -------------------------------------------->
+
+
+<!------------------------------------ navbar ------------------------------------------->
+<div class='nav_back'>
+  <div class='navbar_all'>
+    <%= link_to((root_path), class: 'a_img') do %>
+      <%= image_tag(asset_path('view'), alt: "", class: "img_navbar") %>
+    <% end %>
+    <div class="navbar">
+      <%= link_to "LE CENTRE", pages_centre_path %>
+      <%= link_to "L'EQUIPE", pages_centre_path %>
+      <%= link_to "LUNETTES", pages_lunettes_path %>
+      <%= link_to "PATHOLOGIES", pathologies_path %>
+      <%= link_to "CHIRURGIES", chirurgies_path, {style: 'border-bottom: 0.5px solid #363636;'} %>
+      <a style='color:gray'>PRENDRE RENDEZ-VOUS</a>
+    </div>
+  </div>
+</div>
+<!------------------------------------ navbar ------------------------------------------->
+
+
+<!------------------------------------ titre ------------------------------------------->
+<h2 class="titre_pathologies" style="margin-left: 7%;">IVT : Bilan clinique pré-opératoire</h2>
+<!------------------------------------ titre ------------------------------------------->
+
+
+    <div class='chest_each_patho'>
+      <div class="vide"></div>
+      <h2>Les injections intra-vitréennes ?</h2>
+      <p>IVT est l’acronyme de injection intra-vitréenne. L'humeur vitrée est le liquide présent dans la partie postérieure de l’œil dans laquelle le traitement sera directement injecté.</p>
+
+      <p></p>
+
+      <p>L’avantage de l’injection intra-vitréenne est que le produit est déposé directement au niveau du site de la lésion, c’est-à-dire près de la rétine. De plus ce moyen d'administration permet une diffusion minime au niveau de l'organisme.</p>
+
+      <p></p>
+
+      <p>L’avantage également est la rapidité du geste, avec peu de risques et totalement indolore.</p>
+
+      <p></p>
+
+      <p>L'IVT se fait soit au bloc opératoire, soit dans une salle dédiée, avec une anesthésie locale, par collyre, et une injection qui se fait à un endroit très précis que votre médecin connaît bien, au niveau du blanc de l’œil.</p>
+
+      <p></p>
+
+      <p>Cette injection est totalement indolore.</p>
+
+      <p><br></p>
+
+      <h2>Contenu de la consultation</h2>
+      <p>Lors de la consultation pré-opératoire vous rencontrerez successivement :</p>
+
+      <p>- un orthoptiste qui réalisera l'examen spécifique de la rétine : une tomographie en cohérence optique (OCT maculaire),</p>
+      <p>- un ophtalmologiste.</p>
+
+      <p></p>
+
+      <p>Cette consultation complète permet de déterminer :</p>
+
+      <p>  - votre acuité visuelle oeil par oeil,</p>
+
+      <p>  - si la cataracte est bien la cause de votre baisse de vue,</p>
+
+      <p>  - l'origine de votre baisse de vue : DMLA, œdème maculaire lié au diabète ou à un problème vasculaire.</p>
+
+      <p><br></p>
+
+      <h2>Entretien</h2>
+      <p>Si le diagnostic est confirmé, nous vous exposerons au cours d'un entretien et de manière très simplifiée :</p>
+
+      <p>  - l'origine et la conséquence de votre maculopathie,</p>
+
+      <p>  - les possibilités thérapeutiques,</p>
+
+      <p>  - l'intérêt et les risques de l'injection intra-vitréenne.</p>
+
+      <p><br></p>
+
+      <h2>Programmation de l'intervention</h2>
+      <p>La décision opératoire revient au patient, après réflexion, suites aux informations délivrées par le médecin.</p>
+
+      <p></p>
+
+      <p>Au cours de la consultation, nous :</p>
+
+      <p>  - vous proposerons plusieurs dates opératoires selon vos disponibilités ou celles de votre entourage,</p>
+
+      <p>  - éditera le dossier pré-opératoire complet,</p>
+
+      <p>  - vous remettrons l'ordonnance de produit d'exception afin d'obtenir auprès de votre pharmacie le traitement qui sera injecté.</p>
+
+      <p><br></p>
+
+      <h2 style="font-size: smaller;">Nous faisons le maximum pour diminuer vos déplacements et faire TOUS les examens et mesures nécessaires en une seule consultation.</h2>
+
+      <p><br><br></p>
+
+<!-------------------------------------- liens détails --------------------------------------------->
+    <div class='bottom_elements'>
+      <%= link_to (chirurgy_bilancliniquepreoperatoire_path(@bilan.chirurgie)), class: "bottom_description" do %>
+        <h2>Bilan clinique pré-opératoire</h2>
+        <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
+        <h4>En savoir plus</h4>
+      <% end %>
+      <div class="ligne"></div>
+      <%= link_to (chirurgy_preparerlintervention_path(@bilan.chirurgie)), class: "bottom_description" do %>
+        <h2>Preparer l'intervention</h2>
+        <p>Les éléments essentiels à préparer avant l'intervention</p>
+        <h4>En savoir plus</h4>
+      <% end %>
+      <div class="ligne"></div>
+      <%= link_to (chirurgy_consignepostoperatoire_path(@bilan.chirurgie)), class: "bottom_description" do %>
+        <h2>Consignes post-opératoires</h2>
+        <p>Après la chirurgie, que faire ?</p>
+        <h4>En savoir plus</h4>
+      <% end %>
+    </div>
+<!-------------------------------------- liens détails --------------------------------------------->
+
+
+<!-------------------------------------- étape suivante --------------------------------------------->
+    <%= link_to (chirurgy_preparerlintervention_path(@bilan.chirurgie)), class: 'etape' do %>
+      <%= image_tag(asset_path('fleche'), alt: "", class: "fleche") %>
+      <p>Etape suivante : préparer l'intervention</p>
+    <% end %>
+<!-------------------------------------- étape suivante --------------------------------------------->
+
+
+<!------------------------------------ button rendez-vous ------------------------------------------->
+    <a class="btn_rdv">PRENDRE UN RENDEZ-VOUS</a>
+  </div>
+<!------------------------------------ button rendez-vous ------------------------------------------->
+
+
+<!------------------------------------ bottom bar ------------------------------------------->
+<div class='bottom_bar'>
+  <%= image_tag(asset_path('logo_ok'), alt: "", style: "width: 60px") %>
+</div>
+<!------------------------------------ bottom bar ------------------------------------------->
