@@ -24,3 +24,15 @@
     text-align: center;
     margin: 0px auto;
 }
+
+.conteneur_text_image {
+  display: flex;
+  align-items: center;
+}
+
+.image_pathology {
+  width: 380px;
+  height: 246px;
+  margin-right: 32px;
+  border-radius: 15px;
+}
