@@ -1,2 +1,115 @@
-<h1>Préparer l'intervention</h1>
-<h2>Chirurgie laser</h2>
+<!------------------------------------- logo -------------------------------------------->
+<div class='logo'>
+  <%= link_to root_path do %>
+  <%= image_tag(asset_path('logo_ok'), alt: "", id: "img_logo") %>
+  <% end %>
+</div>
+<!------------------------------------- logo -------------------------------------------->
+
+
+<!------------------------------------ navbar ------------------------------------------->
+<div class='nav_back'>
+  <div class='navbar_all'>
+    <%= link_to((root_path), class: 'a_img') do %>
+      <%= image_tag(asset_path('view'), alt: "", class: "img_navbar") %>
+    <% end %>
+    <div class="navbar">
+      <%= link_to "LE CENTRE", pages_centre_path %>
+      <%= link_to "L'EQUIPE", pages_centre_path %>
+      <%= link_to "LUNETTES", pages_lunettes_path %>
+      <%= link_to "PATHOLOGIES", pathologies_path %>
+      <%= link_to "CHIRURGIES", chirurgies_path, {style: 'border-bottom: 0.5px solid #363636;'} %>
+      <a style='color:gray'>PRENDRE RENDEZ-VOUS</a>
+    </div>
+  </div>
+</div>
+<!------------------------------------ navbar ------------------------------------------->
+
+
+<!------------------------------------ titre ------------------------------------------->
+<h2 class="titre_pathologies" style="margin-left: 7%;">Myopie / Presbitie: Préparer l'intervention</h2>
+<!------------------------------------ titre ------------------------------------------->
+
+
+    <div class='chest_each_patho'>
+      <div class="vide"></div>
+      <h2>Allez chercher vos traitements !</h2>
+      <p>Dans votre dossier, vous trouverez une ordonnance spécifiant les collyres à instiller dans les suites opératoires immédiates</p>
+
+      <p></p>
+
+      <p>Pensez à aller à la pharmacie avant l'opération pour gagner en sérénité et ainsi pouvoir rentrer immédiatement à votre domicile après l'intervention.</p>
+
+      <p>Il n'y a aucun traitement à prendre au préalable.</p>
+
+      <p><br></p>
+
+      <h2>Contactez votre assurance complémentaire / mutuelle</h2>
+      <p>Un devis détaillé vous a été fourni en fonction de la technique opératoire choisie / possible.</p>
+
+      <p>Pour éviter toute mauvaise surprise, vérifier vos droits auprès de votre mutuelle.</p>
+
+      <p>A noter que le centre offre le paiement en trois fois (étalé sur 3 mois) sans frais.</p>
+
+      <p><br></p>
+
+      <h2>Enlevez vos lentilles ! Pas de maquillage !</h2>
+      <p>Pour assurer un parfait état de votre cornée et donc permettre un résultat post-opératoire optimal, arrêtez le port de lentilles 72 heures avant l'intervention.</p>
+
+      <p></p>
+
+      <p>Le maquillage est contre-indiqué.</p>
+
+      <p></p>
+
+      <p>Il complique la chirurgie et favorise les infections.</p>
+
+      <p><br></p>
+
+      <h2>Anticipez la route !</h2>
+      <p>Toujours pour gagner en sérénité, veillez à prendre une marge horaire pour votre déplacement le jour J.</p>
+
+      <p><br><br></p>
+
+<!-------------------------------------- liens détails --------------------------------------------->
+    <div class='bottom_elements'>
+      <%= link_to (chirurgy_bilancliniquepreoperatoire_path(@preparer.chirurgie)), class: "bottom_description" do %>
+        <h2>Bilan clinique pré-opératoire</h2>
+        <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
+        <h4>En savoir plus</h4>
+      <% end %>
+      <div class="ligne"></div>
+      <%= link_to (chirurgy_preparerlintervention_path(@preparer.chirurgie)), class: "bottom_description" do %>
+        <h2>Preparer l'intervention</h2>
+        <p>Les éléments essentiels à préparer avant l'intervention</p>
+        <h4>En savoir plus</h4>
+      <% end %>
+      <div class="ligne"></div>
+      <%= link_to (chirurgy_consignepostoperatoire_path(@preparer.chirurgie)), class: "bottom_description" do %>
+        <h2>Consignes post-opératoires</h2>
+        <p>Après la chirurgie, que faire ?</p>
+        <h4>En savoir plus</h4>
+      <% end %>
+    </div>
+<!-------------------------------------- liens détails --------------------------------------------->
+
+
+<!-------------------------------------- étape suivante --------------------------------------------->
+    <%= link_to (chirurgy_consignepostoperatoire_path(@preparer.chirurgie)), class: 'etape' do %>
+      <%= image_tag(asset_path('fleche'), alt: "", class: "fleche") %>
+      <p>Etape suivante : Vous venez d'être opéré(e)</p>
+    <% end %>
+<!-------------------------------------- étape suivante --------------------------------------------->
+
+
+<!------------------------------------ button rendez-vous ------------------------------------------->
+    <a class="btn_rdv">PRENDRE UN RENDEZ-VOUS</a>
+  </div>
+<!------------------------------------ button rendez-vous ------------------------------------------->
+
+
+<!------------------------------------ bottom bar ------------------------------------------->
+<div class='bottom_bar'>
+  <%= image_tag(asset_path('logo_ok'), alt: "", style: "width: 60px") %>
+</div>
+<!------------------------------------ bottom bar ------------------------------------------->
