@@ -16,17 +16,15 @@
 .position_row {
     display: flex;
     flex-direction: row;
-    /* justify-content: center ; */
+    align-items: center;
 
 }
 .text_centre {
     text-decoration: none;
     font-family: 'roboto';
-    width: 60%;
     margin: 30px 50px;
     font-weight: 300;
     color: #474747;
-    float: left;
 }
 
 .map {
@@ -51,7 +49,8 @@
     float: right;
     width: 200px;
     height: 329px;
-    margin: 60px 0 0 80px;
+    margin-right: 60px;
+    margin-left: 30px;
     border: 3px solid white;
     box-shadow: 0 0 20px lightgray;
     border-radius: 8px;
