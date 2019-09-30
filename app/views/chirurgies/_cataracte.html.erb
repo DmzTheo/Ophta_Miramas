@@ -15,7 +15,7 @@
     <% end %>
     <div class="navbar">
       <%= link_to "LE CENTRE", pages_centre_path %>
-      <%= link_to "L'EQUIPE", pages_centre_path %>
+      <%= link_to "L'EQUIPE", pages_equipe_path %>
       <%= link_to "LUNETTES", pages_lunettes_path %>
       <%= link_to "PATHOLOGIES", pathologies_path %>
       <%= link_to "CHIRURGIES", chirurgies_path, {style: 'border-bottom: 0.5px solid #363636;'} %>
@@ -45,7 +45,7 @@
 
             <p>Cliquez ci-dessous, vous trouverez les éléments pour vous guider à chaque étape de votre chirurgie.</p>
           </div>
-          <%= image_tag(asset_path('cataracte'), alt: "", class: "image_pathology") %>
+          <%= image_tag(asset_path('cataracte'), alt: "", class: "image_pathology", style: "width: 300px; height: 200px;") %>
         </div>
 
       <p><br><br></p>
