@@ -1,7 +1,7 @@
 <!------------------------------------- logo -------------------------------------------->
 <div class='logo'>
   <%= link_to root_path do %>
-  <%= image_tag(asset_path('logo_ok'), alt: "", id: "img_logo") %>
+    <%= image_tag('logo_ok.png', alt: "", id: "img_logo") %>
   <% end %>
 </div>
 <!------------------------------------- logo -------------------------------------------->
@@ -11,7 +11,7 @@
 <div class='nav_back'>
   <div class='navbar_all'>
     <%= link_to((root_path), class: 'a_img') do %>
-      <%= image_tag(asset_path('view'), alt: "", class: "img_navbar") %>
+      <%= image_tag('view.png', alt: "", class: "img_navbar") %>
     <% end %>
     <div class="navbar">
       <%= link_to "LE CENTRE", pages_centre_path %>
@@ -45,7 +45,7 @@
               <br>La DMLA atrophique dite sèche : il existe une disparition progressive des cellules de la rétine qui s'amincit
             <br>La DMLA exsudative dite humide : le vieillissement de la rétine s'accompagne de l'apparition de vaisseaux anormaux (néovaisseaux) qui laisse fuir le sang dans la rétine.</p>
           </div>
-          <%= image_tag(asset_path('dmla_image'), alt: "", class: "image_pathology", style: "width: 600px;") %>
+          <%= image_tag('dmla_image.jpeg', alt: "", class: "image_pathology", style: "width: 600px;") %>
         </div>
 
       <p><br><br></p>
@@ -89,6 +89,6 @@
 
 <!------------------------------------ bottom bar ------------------------------------------->
 <div class='bottom_bar'>
-  <%= image_tag(asset_path('logo_ok'), alt: "", style: "width: 60px") %>
+  <%= image_tag('logo_ok.png', alt: "", style: "width: 60px") %>
 </div>
 <!------------------------------------ bottom bar ------------------------------------------->

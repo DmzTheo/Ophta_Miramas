@@ -1,7 +1,7 @@
 <!------------------------------------- logo -------------------------------------------->
 <div class='logo'>
   <%= link_to root_path do %>
-    <%= image_tag(asset_path('logo_ok'), alt: "", id: "img_logo") %>
+    <%= image_tag('logo_ok.png', alt: "", id: "img_logo") %>
   <% end %>
 </div>
 <!------------------------------------- logo -------------------------------------------->
@@ -11,7 +11,7 @@
 <div class='nav_back'>
   <div class='navbar_all'>
     <%= link_to((root_path), class: 'a_img') do %>
-      <%= image_tag(asset_path('view'), alt: "", class: "img_navbar") %>
+      <%= image_tag('view.png', alt: "", class: "img_navbar") %>
     <% end %>
     <div class="navbar">
       <%= link_to "LE CENTRE", pages_centre_path, {style: 'border-bottom: 0.5px solid #363636;'} %>
@@ -50,10 +50,10 @@
 
       <p><br>Au sein du cabinet, un plateau technique à la pointe de la technologie avec OCT, Laser Argon et Yag, Angiographie à la fluoresceine, biomètre optique, champs visuel,  topographe sont présents pour un bilan et une prise en charge adaptées de toutes les pathologies oculaires.</p>
     </div>
-    <%= image_tag(asset_path('lieu_2_po'), class: "img_lieu", alt: "") %>
+    <%= image_tag('lieu_2_po.jpg', class: "img_lieu", alt: "") %>
   </div>
   <%= link_to(("https://www.google.fr/maps/place/54+Avenue+Charles+de+Gaulle,+13140+Miramas/@43.5842536,4.99973,17z/data=!3m1!4b1!4m5!3m4!1s0x12b603bf3a8aa1a7:0x4e4fa9953db8c285!8m2!3d43.5842497!4d5.0019187"), target: "_blank") do %>
-    <%= image_tag(asset_path('map'), class: "map", alt: "") %>
+    <%= image_tag('map.png', class: "map", alt: "") %>
   <% end %>
 <!------------------------------------ description ------------------------------------------->
 
@@ -66,6 +66,6 @@
 
 <!------------------------------------ bottom bar ------------------------------------------->
 <div class='bottom_bar'>
-  <%= image_tag(asset_path('logo_ok'), alt: "", style: "width: 60px") %>
+  <%= image_tag('logo_ok.png', alt: "", style: "width: 60px") %>
 </div>
 <!------------------------------------ bottom bar ------------------------------------------->
