@@ -33,6 +33,43 @@
 
 <div class='chest_patho'>
   <div class="vide"></div>
+
+
+<!-------------------------------- carte Cataracte --------------------------------------->
+  <% @chirurgies.each do |chirurgie| %>
+    <% if chirurgie.nom == 'Cataracte' %>
+      <%= link_to(chirurgy_path(chirurgie)) do %>
+        <div class='link_decollement_retine'>
+          <h2>CHIRURGIES CATARACTE</h2>
+          <p>Votre vision se trouble, vous êtes éblouis la nuit et vous êtes âgé de plus de 60 ans.
+            <br>Peut-être êtes-vous atteint d'une cataracte ?
+          <br>Vous souhaitez connaître les modalités de prise en charge (avant, pendant et après l'intervention).</p>
+          <h4>En savoir plus</h4>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+<!-------------------------------- carte Cataracte --------------------------------------->
+
+
+<!---------------------------- carte Chirurgie laser ----------------------------------->
+  <% @chirurgies.each do |chirurgie| %>
+    <% if chirurgie.nom == 'Chirurgie Laser' %>
+      <%= link_to(chirurgy_path(chirurgie)) do %>
+        <div class='link_diabete'>
+          <h2>CHIRURGIE REFRACTIVE</h2>
+          <p>Vous souhaitez ne plus porter de lunettes ou de lentilles.
+            <br>Vous êtes myope, hypermétrope, astigmate ou même presbyte.
+            <br>Vous pouvez certainement bénéficier d'un traitement.
+          </p>
+          <h4>En savoir plus</h4>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+<!---------------------------- carte Chirurgie laser ----------------------------------->
+
+
 <!------------------------ carte Chirurgie des paupières ------------------------------->
   <% @chirurgies.each do |chirurgie| %>
     <% if chirurgie.nom == 'Chirurgie des paupières' %>
@@ -49,22 +86,19 @@
 <!------------------------ carte Chirurgie des paupières ------------------------------->
 
 
-<!---------------------------- carte Chirurgie laser ----------------------------------->
+<!-------------------------------- carte Glaucome --------------------------------------->
   <% @chirurgies.each do |chirurgie| %>
-    <% if chirurgie.nom == 'Chirurgie Laser' %>
+    <% if chirurgie.nom == 'Glaucome' %>
       <%= link_to(chirurgy_path(chirurgie)) do %>
-        <div class='link_diabete'>
-          <h2>Myopie / Presbitie</h2>
-          <p>Vous souhaitez ne plus porter de lunettes ou de lentilles.
-            <br>Vous êtes myope, hypermétrope, astigmate ou même presbyte.
-            <br>Vous pouvez certainement bénéficier d'un traitement.
-          </p>
+        <div class='link_decollement_retine'>
+          <h2>CHIRURGIES GLAUCOME</h2>
+          <p>...</p>
           <h4>En savoir plus</h4>
         </div>
       <% end %>
     <% end %>
   <% end %>
-<!---------------------------- carte Chirurgie laser ----------------------------------->
+<!-------------------------------- carte Glaucome --------------------------------------->
 
 
 <!---------------------------------- carte IVT ----------------------------------------->
@@ -83,38 +117,6 @@
     <% end %>
   <% end %>
 <!---------------------------------- carte IVT ----------------------------------------->
-
-
-<!-------------------------------- carte Glaucome --------------------------------------->
-  <% @chirurgies.each do |chirurgie| %>
-    <% if chirurgie.nom == 'Glaucome' %>
-      <%= link_to(chirurgy_path(chirurgie)) do %>
-        <div class='link_decollement_retine'>
-          <h2>CHIRURGIES GLAUCOME</h2>
-          <p>...</p>
-          <h4>En savoir plus</h4>
-        </div>
-      <% end %>
-    <% end %>
-  <% end %>
-<!-------------------------------- carte Glaucome --------------------------------------->
-
-
-<!-------------------------------- carte Cataracte --------------------------------------->
-  <% @chirurgies.each do |chirurgie| %>
-    <% if chirurgie.nom == 'Cataracte' %>
-      <%= link_to(chirurgy_path(chirurgie)) do %>
-        <div class='link_decollement_retine'>
-          <h2>CHIRURGIES CATARACTE</h2>
-          <p>Votre vision se trouble, vous êtes éblouis la nuit et vous êtes âgé de plus de 60 ans.
-            <br>Peut-être êtes-vous atteint d'une cataracte ?
-          <br>Vous souhaitez connaître les modalités de prise en charge (avant, pendant et après l'intervention).</p>
-          <h4>En savoir plus</h4>
-        </div>
-      <% end %>
-    <% end %>
-  <% end %>
-<!-------------------------------- carte Cataracte --------------------------------------->
 
 
 <!------------------------------- button rendez-vous -------------------------------------->
