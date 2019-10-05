@@ -16,7 +16,7 @@ end
 
 puts 'Creating chirurgies et chirurgies descriptions...'
 
-chirurgy = ['Cataracte', 'Glaucome', 'IVT', 'Chirurgie Laser', 'Chirurgie des paupières']
+chirurgy = ['Cataracte', 'IVT', 'Chirurgie Laser', 'Chirurgie des paupières']
 
 chirurgy.each do |intervention|
   Chirurgie.create!(
@@ -32,5 +32,9 @@ chirurgy.each do |intervention|
     chirurgie: Chirurgie.find_by(nom: intervention)
   )
 end
+
+Choisissezvotreimplant.create!(
+  chirurgie: Chirurgie.find_by(nom: 'Cataracte')
+)
 
 puts 'finished!'

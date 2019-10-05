@@ -86,21 +86,6 @@
 <!------------------------ carte Chirurgie des paupières ------------------------------->
 
 
-<!-------------------------------- carte Glaucome --------------------------------------->
-  <% @chirurgies.each do |chirurgie| %>
-    <% if chirurgie.nom == 'Glaucome' %>
-      <%= link_to(chirurgy_path(chirurgie)) do %>
-        <div class='link_decollement_retine'>
-          <h2>CHIRURGIES GLAUCOME</h2>
-          <p>...</p>
-          <h4>En savoir plus</h4>
-        </div>
-      <% end %>
-    <% end %>
-  <% end %>
-<!-------------------------------- carte Glaucome --------------------------------------->
-
-
 <!---------------------------------- carte IVT ----------------------------------------->
   <% @chirurgies.each do |chirurgie| %>
     <% if chirurgie.nom == 'IVT' %>

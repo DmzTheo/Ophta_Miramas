@@ -10,4 +10,10 @@ class PagesController < ApplicationController
 
   def equipe
   end
+
+  def rendez_vous
+  end
+
+  def telechargements
+  end
 end

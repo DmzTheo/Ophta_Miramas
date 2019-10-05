@@ -69,7 +69,7 @@
 
       <p></p>
 
-      <p>Des compléments d’honoraires sont demandés par votre chirurgien (hors CMU/ACS/AME) pris en charge dans 95% des cas par votre mutuelle (= assurance complémentaire) car votre chirurgien a signé l’OPTAM (Option de Pratique Tarifaire Maîtrisée), accord permettant une prise en charge optimale de votre mutuelle contre un engagement tarifaire du chirurgien. Un devis détaillé vous sera communiqué lors de votre consultation afin que vous puissiez vérifier vos droits auprès de  votre mutuelle.</p>
+      <p>Un devis détaillé vous sera communiqué lors de votre consultation afin que vous puissiez vérifier vos droits auprès de  votre mutuelle.</p>
 
       <p><br></p>
 
@@ -111,7 +111,7 @@
 
 
 <!-------------------------------------- étape suivante --------------------------------------------->
-    <%= link_to (chirurgy_consignepostoperatoire_path(@preparer.chirurgie)), class: 'etape' do %>
+    <%= link_to ( chirurgy_choisissezvotreimplant_path(@preparer.chirurgie)), class: 'etape' do %>
       <%= image_tag('fleche.png', alt: "", class: "fleche") %>
       <p>Etape suivante : Choisissez votre implant</p>
     <% end %>

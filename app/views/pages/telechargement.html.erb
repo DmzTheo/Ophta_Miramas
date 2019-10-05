@@ -14,8 +14,8 @@
       <%= image_tag('view.png', alt: "", class: "img_navbar") %>
     <% end %>
     <div class="navbar">
-      <%= link_to "LE CENTRE", pages_centre_path%>
-      <%= link_to "L'EQUIPE", pages_equipe_path, {style: 'border-bottom: 0.5px solid #363636;'}  %>
+      <%= link_to "LE CENTRE", pages_centre_path, {style: 'border-bottom: 0.5px solid #363636;'} %>
+      <%= link_to "L'EQUIPE", pages_equipe_path %>
       <%= link_to "LUNETTES", pages_lunettes_path %>
       <%= link_to "AFFECTIONS", pathologies_path %>
       <%= link_to "CHIRURGIES", chirurgies_path %>
@@ -27,33 +27,31 @@
 
 
 <!------------------------------------ titre ------------------------------------------->
-<h2 class="titre_center" style="margin-left: 7%;">L'EQUIPE</h2>
+<h2 class="titre_center" style="margin-left: 7%;">LE CENTRE</h2>
 <!------------------------------------ titre ------------------------------------------->
 
 
 <!------------------------------------ description ------------------------------------------->
-<div class="chest_each_patho">
+<div class="chest_centre">
   <div class="position_row">
     <div class='text_centre'>
-      <h2>Pour vous accueillir:</h2>
-      <h2 style="font-size: smaller;"><br>au secrétariat :</h2>
-      <p>Fabienne Savajol et Christine ....</p>
-      <h2 style="font-size: smaller;"><br><br>Pour la pré-consultation,</h2>
-       <p>Notre orthoptiste : Anne Aurore casini vous fera les mesures préliminaires à l'examen de l'ophtalmologiste.</p>
-      <p><br>Aidée par notre infirmière et aide opératoire Eliane Michal</p>
-      <h2 style="font-size: smaller;"><br>Au premier étage du centre</h2>
-      <p>Agnès Fabrigoule, orthoptiste libérale réalise les visions binoculaires, la rééducation orthoptique et les champs visuels.</p>
+      <p>Le centre d’ophtalmologie est situé au sein du centre médical au 54 Bis Avenue Charles de Gaulle à Miramas</p>
+        <p> Il est ouvert du lundi au jeudi de 8h30 à 19h00 et le vendredi de 8h30 à 12H30.</p>
 
-      <h2><br><br>Les médecins:</h2>
-      <p><br>Docteur Buzzacchera Nadine: Ancien interne des hopitaux de Marseille, chef de clinique à la faculté, spécialisée en chirurgie de la cataracte et du glaucome, chirurgie des paupières et chirurgie réfractive.</p>
-      <p><br>Docteur Hervé-Fey Brigitte: Ancien interne des hopitaux de Marseille, chef de clinique à la faculté, spécialisée en chirurgie de la cataracte et du glaucome</p>
+      <p>le centre est accessible au PMR</p>
 
+      <p><br>Le cabinet est spécialisé en chirurgie oculaire, chirurgie rétractive et chirurgie des paupières.</p>
+        <p> L’ensemble des pathologies oculaires DMLA, Diabète, Glaucome peuvent être prises en charge au cabinet.</p>
 
+      <p><br>Les chirurgie occulaires et paupières sont réalisées à la clinique vignoli à Salon et à l’hopital privé de Provence à Aix-en-provence. <br> La chirurgie refractive, est quand-à elle, réalisée à la clinique Axiome à Aix-en-provence.</p>
 
-
-
+      <p><br>Au sein du cabinet, un plateau technique à la pointe de la technologie capable de détecter toute pathologies est présents pour un bilan et une prise en charge adaptée.</p>
     </div>
+    <%= image_tag('lieu_2_po.jpg', class: "img_lieu", alt: "") %>
   </div>
+  <%= link_to(("https://www.google.fr/maps/place/54+Avenue+Charles+de+Gaulle,+13140+Miramas/@43.5842536,4.99973,17z/data=!3m1!4b1!4m5!3m4!1s0x12b603bf3a8aa1a7:0x4e4fa9953db8c285!8m2!3d43.5842497!4d5.0019187"), target: "_blank") do %>
+    <%= image_tag('map.png', class: "map", alt: "") %>
+  <% end %>
   <p><br><br></p>
 <!------------------------------------ description ------------------------------------------->
 </div>

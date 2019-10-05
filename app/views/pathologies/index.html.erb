@@ -39,7 +39,7 @@
       <%= link_to(pathology_path(maladie)) do %>
         <div class='link_glaucome'>
           <h2>GLAUCOME</h2>
-          <p>"Compère". Tuméfaction non infectieuse des paupières supérieures ou inférieures, rouges et inflammées.</p>
+          <p>Le glaucome est une maladie occulaire qui touche surtout les personnes de plus de 45 ans. Il est dû à une montée de la pression occulaire, entrainant un atteinte du nerf optique et du champs visuel.</p>
           <h4>En savoir plus</h4>
         </div>
       <% end %>
@@ -54,7 +54,7 @@
       <%= link_to(pathology_path(maladie)) do %>
         <div class='link_diabete'>
           <h2>DIABÈTE</h2>
-          <p>Oeil rouge, sans douleur, ni baisse de vue.</p>
+          <p>La rétinopathie diabétique (atteintes des yeux: oeil et rétine) est une grave complication du diabète qui touche 50% des patients diabétiques de type 2. En france, elle est la première cause de cécité avant 65 ans</p>
           <h4>En savoir plus</h4>
         </div>
       <% end %>
@@ -95,18 +95,11 @@
 
 
 <!------------------------------- carte autres maladies -------------------------------------->
-  <% @pathologies.each do |maladie| %>
-    <% if maladie.nom == 'Autres pathologies rétiniennes' %>
-      <%= link_to(pathology_path(maladie)) do %>
+
         <div class='link_decollement_retine'>
           <h2>AUTRES MALADIES RETINIENES</h2>
-          <p>Oeil rouge, sans douleur, ni baisse de vue.</p>
-          <h4>En savoir plus</h4>
+          <p>Uvéite, occlusion artérielle et véneuse rétinienne, membrane épirétinienne et autres sont explorées et traitées au cabinet ou adressées en centre spécialisé de la rétine</p>
         </div>
-      <% end %>
-    <% else %>
-    <% end %>
-  <% end %>
 <p><br><br></p>
 <!------------------------------- carte autres maladies -------------------------------------->
   </div>
