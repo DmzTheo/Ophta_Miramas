@@ -1,51 +1,56 @@
-.chest_patho {
-    background-color: white;
-    width: 90%;
-    display: block;
-    display: flex;
-    margin: 20px auto 0 auto;
-    border-radius: 15px 15px 0 0;
-    display: block;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 0 15px rgb(201, 201, 201);
-    bottom: 0;
-
-}
 
 .chest_each_patho {
     background-color: white;
-    width: 90%;
+    width: 75%;
     display: block;
     display: flex;
     margin: 20px auto 0 auto;
-    border-radius: 15px 15px 0 0;
+    border-radius: 3px 3px 0 0;
     display: block;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 15px rgb(201, 201, 201);
+    box-shadow: 0 0 25px #13497f;
     bottom: 0;
 }
 
 .titre_pathologies {
+    font-family: 'roboto';
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-size: 35px;
     width: 90%;
     display: flex;
     display: block;
-    margin: 30px 30px ;
+    margin: 30px 13%;
     color: white;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 .vide{
-    height: 40px;
+    height: 30px;
+}
+
+.chest_patho {
+    background-color: white;
+    width: 75%;
+    display: block;
+    display: flex;
+    margin: 20px auto 0 auto;
+    border-radius: 3px 3px 0 0;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 25px #13497f;
+    bottom: 0;
+
 }
 .chest_patho a {
     text-decoration: none;
 }
 
+
 .chest_each_patho h2 {
   text-decoration: none;
-  font-family: 'playfair';
+  font-family: 'roboto';
   color: black;
   margin: 20px 20px;
   letter-spacing: 1px;
@@ -54,7 +59,7 @@
 
 .chest_patho h2 {
     text-decoration: none;
-    font-family: 'playfair';
+    font-family: 'roboto';
     color: black;
     margin: 20px 20px;
     letter-spacing: 1px;
@@ -84,65 +89,185 @@
 
 .chest_each_patho h2 {
     text-decoration: none;
-    font-family: 'playfair';
+    font-family: 'roboto';
     color: black;
     margin: 2px 48px;
     letter-spacing: 2px;
 }
 
 .chest_patho h4 {
-    color: #1E737D;
+    color: white;
     border: none;
     font-family: 'roboto';
     font-weight: 700;
-    font-size: 80%;
-    padding: 1px;
-   text-align: right;
-   margin: 10px 20px;
+    font-size: 15px;
+    text-align: right;
+    margin: 10px 20px;
+    border-radius : 3px;
+    background-color: #ce1452;
+    width: 10%;
+    padding: 10px 15px;
+    text-align: center;
+    margin-left: 85%;
+    opacity: 0.7;
+}
+
+.chest_patho h4:hover {
+    transition: 0.6s;
+opacity: 1;
 }
 
 
 .link_glaucome {
-    width: 80%;
-    border-radius: 5px;
-    box-shadow: 0 0 20px rgba(211, 211, 211, 0.349);
+    width: 100%;
     align-content: center;
     display: block;
     margin: 20px auto;
     padding-top: 10px;
+    border-bottom: 1px solid #13497f;
+    padding-bottom: 20px;
+
+   }
+   p, h2 {
     padding-left: 20px;
+
    }
 
 .link_diabete {
-  width: 80%;
-  border-radius: 5px;
-  box-shadow: 0 0 20px rgba(211, 211, 211, 0.349);
+  width: 100%;
   align-content: center;
   display: block;
   margin: 20px auto;
   padding-top: 10px;
-  padding-left: 20px;
+  border-bottom: 1px solid #13497f;
+  padding-bottom: 20px;
+
+
 }
 
 .link_dmla {
-    width: 80%;
-    border-radius: 5px;
-    box-shadow: 0 0 20px rgba(211, 211, 211, 0.349);
+    width: 100%;
     align-content: center;
     display: block;
     margin: 20px auto;
     padding-top: 10px;
-    padding-left: 20px;
-   }
+    border-bottom: 1px solid #13497f;
+    padding-bottom: 15px;
 
-   .link_decollement_retine {
-    width: 80%;
-    border-radius: 5px;
-    box-shadow: 0 0 20px rgba(211, 211, 211, 0.349);
+
+}
+
+.link_decollement_retine {
+    width: 100%;
     align-content: center;
     display: block;
     margin: 20px auto;
     padding-top: 10px;
-    padding-left: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #13497f;
+}
 
+ .link_autres_maladies {
+    width: 100%;
+    align-content: center;
+    display: block;
+    margin: 20px auto;
+    padding-top: 10px;
    }
+
+
+   // ------LUNETTES_____
+
+   .image_lunettes {
+       width: 45%;
+   }
+.textes_lunettes {
+    width: 100%;
+    height: 675px;
+    background-image: url('forlunettes.jpg');
+    background-size: 50%;
+    background-position: 100% 110%;
+}
+
+.conteneur_text_image {
+    display: flex;
+}
+
+.conteneur_text_image p {
+    background: #207fde;
+    color: white;
+    width: 50%;
+    padding: 30px 25px 30px 25px;
+    border-bottom: 1px solid lightblue;
+    margin: 0;
+    font-weight: 400;
+}
+
+.conteneur_text_image h2 {
+    width: 50%;
+    padding: 30px 25px 30px 25px;
+    color: white;
+    background: #207fde;
+    font-size: 30px;
+    margin: 0;
+    border-bottom: 1px solid lightblue;
+}
+
+
+.conteneur_text_pathologies p {
+width: 60%;
+color: white;
+font-weight: 400;
+background-color: #ce1452;
+margin: 0;
+padding:15px;
+border-bottom: 1px solid pink;
+}
+
+.conteneur_text_pathologies h2{
+color: white;
+font-weight: 400;
+background-color: #ce1452;
+margin: 0;
+width: 60%;
+padding: 10px 15px 0 15px;
+
+}
+// -------CHIRURGIES----------
+
+
+.conteneur_text_chirurgies p {
+width: 60%;
+color: white;
+font-weight: 400;
+background-color: #207fde;
+margin: 0;
+padding: 30px 15px 30px 15px;
+border-bottom: 1px solid pink;
+}
+
+.conteneur_text_chirurgies h2{
+color: white;
+font-weight: 400;
+background-color: #207fde;
+margin: 0;
+width: 60%;
+padding: 10px 15px 0 15px;
+
+}
+
+
+
+
+.titre_path {
+    border-radius: 3px 0 0 0;
+}
+
+.image_pathology {
+height: 100%;
+width: 31%;
+float: right;
+border-radius: 0;
+margin-top: 50px;
+}
+

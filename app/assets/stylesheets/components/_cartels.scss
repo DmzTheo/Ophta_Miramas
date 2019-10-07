@@ -214,8 +214,9 @@ margin-left: 139px;
 
 
 .btn_rdv {
+    color: #0f4370;
     display: block;
-    border: 1px solid black;
+    border: 1px solid #0f4370;
     background-color: white;
     padding: 10px;
     width: 22%;
@@ -226,14 +227,15 @@ margin-left: 139px;
     letter-spacing: 0.5px;
     transition: 1s;
     text-align: center;
-    font-size: 70%;
+    font-size: 90%;
     text-decoration: none;
 }
 
 .btn_rdv:hover {
     color: white;
-    background-color: black;
-    transition: 0.3s
+    background-color: #207FDE;
+    transition: 0.3s;
+    border: 1px solid #207FDE;
 }
 
 .cartel_lunette {

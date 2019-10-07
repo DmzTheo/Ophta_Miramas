@@ -19,7 +19,7 @@
       <%= link_to "LUNETTES", pages_lunettes_path %>
       <%= link_to "AFFECTIONS", pathologies_path, {style: 'border-bottom: 0.5px solid #363636;'} %>
       <%= link_to "CHIRURGIES", chirurgies_path %>
-      <a style='color:gray'>PRENDRE RENDEZ-VOUS</a>
+      <a style='color:#207fde'>PRENDRE RENDEZ-VOUS</a>
     </div>
   </div>
 </div>
@@ -27,52 +27,38 @@
 
 
 <!------------------------------------ titre ------------------------------------------->
-<h2 class="titre_pathologies" style="margin-left: 7%;">GLAUCOME</h2>
+<h2 class="titre_pathologies" style="margin-left: 13%;">GLAUCOME</h2>
 <!------------------------------------ titre ------------------------------------------->
 
 
 <div class='chest_each_patho'>
-  <div class="vide"></div>
-    <div class="conteneur_text_image">
+    <div class="conteneur_text_pathologies">
       <div class="textes">
-        <p></p>
-
-        <h2>Définition</h2>
+        <h2 class="titre_path">Définition</h2>
+        <%= image_tag('glaucome.jpg', alt: "", class: "image_pathology") %>
         <p><br>L’augmentation de la pression oculaire retentit sur le fonctionnement du nerf optique, en détruisant progressivement les fibres visuelles, aboutissant à une amputation, elle aussi progressive du champ visuel.</p>
         <p>On distingue principalement le glaucome aigu (ou glaucome par fermeture de l’angle) qui est relativement rare et le glaucome chronique (ou glaucome à angle ouvert), forme la plus fréquente.</p>
 
       </div>
-      <%= image_tag('glaucome.jpg', alt: "", class: "image_pathology", style: "width: 600px;") %>
-    </div>
-
-        <p><br><br></p>
-
         <h2>Symptômes</h2>
         <p><br>Il n’est généralement difficile de s’apercevoir de l’atteinte visuelle liée au glaucome. Pendant très longtemps, la vision devant soi est conservée car les déficits du champ de vision surviennent très lentement, que les deux yeux ne sont pas toujours atteints de la même façon (et donc, un œil peut compenser l’autre).</p>
         <p>Seul, l’ophtalmologiste est capable de dépister les premiers signes de l’atteinte en examinant le nerf optique et en demandant que le champ visuel soit mesuré. Le glaucome est une maladie sournoise, « elle entre sans frapper », selon l’expression souvent consacrée. L’atteinte du nerf optique qu’elle entraîne est irréversible, et il ne faut donc pas attendre pour se faire dépister et traiter.</p>
         <p>Dans le glaucome aigu, les choses sont différentes : la montée de la pression oculaire est très rapide, en quelques heures, et le patient ressent des douleurs de l’œil, une rougeur oculaire, voire même des nausées et des vomissements. La vision est rapidement brouillée, et le patient peut percevoir des halos colorés autour des lumières vives. Le glaucome aigu est une urgence qui nécessite de consulter en urgence, car la vue peut être irrémédiablement compromise.</p>
 
-        <p><br><br></p>
-
         <h2>Les traitements</h2>
         <p><br>De nombreux traitements médicaux existent, sous forme de collyres essentiellement. En cas d’échecs de ceux-ci, il faut avoir recours au laser ou à la chirurgie.</p>
         <p>Dans l’immense majorité des cas, le glaucome est contrôlable, à condition d’être régulièrement suivi par son ophtalmologiste.</p>
-
-        <p><br><br></p>
 
         <h2>Les conséquences</h2>
         <p><br>Le glaucome est la deuxième cause de cécité dans le monde dans les pays les moins développés après la cataracte.</p>
         <p>Le glaucome provoque une diminution irrémédiable du champs visuel.</p>
 
-        <p><br></p>
-
         <h2>Quand dois-je consulter ?</h2>
         <p><br>Une surveillance régulière de la pression occulaire chez son ophtalmologiste est indispensable après 40 ans.</p>
-        <p><br><br></p>
-
+       </div>
     </div>
 
-
+</div>
 <!------------------------------------ bottom bar ------------------------------------------->
 <div class='bottom_bar'>
   <%= image_tag('logo_ok.png', alt: "", style: "width: 60px") %>

@@ -19,7 +19,7 @@
       <%= link_to "LUNETTES", pages_lunettes_path %>
       <%= link_to "AFFECTIONS", pathologies_path, {style: 'border-bottom: 0.5px solid #363636;'} %>
       <%= link_to "CHIRURGIES", chirurgies_path %>
-      <a style='color:gray'>PRENDRE RENDEZ-VOUS</a>
+      <a style='color:#207fde'>PRENDRE RENDEZ-VOUS</a>
     </div>
   </div>
 </div>
@@ -27,52 +27,38 @@
 
 
 <!------------------------------------ titre ------------------------------------------->
-<h2 class="titre_pathologies" style="margin-left: 7%;">DIABETE</h2>
+<h2 class="titre_pathologies" style="margin-left: 13%;">DIABETE</h2>
 <!------------------------------------ titre ------------------------------------------->
 
 
 <div class='chest_each_patho'>
-  <div class="vide"></div>
-    <div class="conteneur_text_image">
+    <div class="conteneur_text_pathologies">
       <div class="textes">
-        <p></p>
-
-        <h2>Définition</h2>
+        <h2 class="titre_path">Définition</h2>
+          <%= image_tag('diabete.jpg', alt: "", class: "image_pathology") %>
         <p><br>La rétinopathie diabétique, caractérisée par des lésions de la rétine de l'œil, est une grave complication du diabète qui touche 50 % des patients diabétiques de type 2.</p>
         <p>Le diabète est ainsi responsable de 12 % de l'ensemble des cas de cécité dans les pays occidentaux !</p>
         <p>Plusieurs facteurs favorisent la survenue d'une rétinopathie diabétique et accélèrent sa progression : l'ancienneté du diabète, le niveau de glycémie, un diabète instable, l'hypertension artérielle, le tabagisme, etc. Cette pathologie peut accélérer la survenue d'autres maladies des yeux comme les glaucomes ou la cataracte, et même conduire à la cécité en l'absence d'un traitement adapté.</p>
 
       </div>
-      <%= image_tag('diabete.jpg', alt: "", class: "image_pathology", style: "width: 1000px;") %>
-    </div>
-
-        <p><br><br></p>
-
         <h2>Symptômes</h2>
         <p><br>Si certains troubles de la vue peuvent indiquer la présence d'une rétinopathie diabétique (lettres déformées à la lecture, difficultés à passer de la lumière à l'obscurité, etc.), la maladie s'installe souvent sans donner de signes d'alerte.</p>
         <p>On peut donc malheureusement être atteint de rétinopathie même avec une bonne vue et en l'absence de symptôme... D'où l'importance d'un contrôle régulier par un spécialiste et d'un dépistage précoce pour les patients atteints de diabète.</p>
         <p>Quand elle est légère, l'hémorragie du corps vitré provoque la vision de quelques taches obscures.</p>
-
-        <p><br><br></p>
-
         <h2>Prévention et traitements</h2>
         <p><br>Il est possible de prévenir la rétinopathie diabétique par un contrôle régulier (au moins une fois par an) chez un ophtalmologue, l'atteinte de l'équilibre glycémique, une tension artérielle maîtrisée, ainsi qu'une bonne hygiène de vie.</p>
         <p>Lorsque des lésions diabétiques débutantes sont découvertes, elles doivent être stabilisées. Le traitement utilisé est la photocoagulation au laser. Celui-ci a pour but de traiter les zones d'ischémie (pauvres en apport d'oxygène), ce qui amène une régression des vaisseaux anormaux.</p>
         <p>Les injection intra-vitréennes (IVT) sont utilisées pour lutter contre l'oedème maculaire diabétique</p>
 
-        <p><br><br></p>
 
         <h2>Les conséquences</h2>
         <p><br>En france la rétinopathie diabétique est la première cause de cécité avant 65 ans</p>
-
-        <p><br></p>
-
         <h2>Quand dois-je consulter ?</h2>
         <p><br>Une prise en charge pluri-disciplinaire médecin généraliste, diabétologue et ophtalmogiste, avec contrôle régulier du fond d'oeil au minimum 1 fois par an sont indipensable pour la prise en charge de la maladie.</p>
-        <p><br><br></p>
+
 
     </div>
-
+</div>
 
 <!------------------------------------ bottom bar ------------------------------------------->
 <div class='bottom_bar'>
