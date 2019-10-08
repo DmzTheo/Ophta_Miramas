@@ -1,5 +1,6 @@
 body {
-    background: #DEE4E0;
+    // background: linear-gradiant(#207fdd, #0f4370);
+    background: linear-gradient(#207fdd, #207fdd, #0f4370);
     margin: 0;
 }
 /* _____________NAVBAR_____________________________ */
@@ -44,7 +45,7 @@ body {
     background-color: white;
     position: sticky;
     top: 0px;
-    border-radius: 0 0 10px 10px;
+    // border-radius: 0 0 3px 3px;
     border-bottom: 0.5px solid lightgray;
     z-index: 1;
 }
@@ -54,7 +55,7 @@ body {
   font-size: 84%;
   font-weight: bold;
   font-family: 'roboto';
-  color: #363636;
+  color: black;
   border: none;
   background: none;
   margin: 15px auto 13px auto;
@@ -64,9 +65,9 @@ body {
 
 
 .navbar a:hover {
-    transition: 0.5s;
+    transition: 0.3s;
     font-size: 90%;
-    border-bottom: 0.5px solid #363636;
+    border-bottom: 1px solid #1963a8;
     padding-bottom: 5px
 }
 
@@ -106,15 +107,14 @@ body {
     bottom: 0;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 -1px 0 lightgray;
-    display: flex;
-    display: block;
     align-items: center;
+    z-index: 5;
 
 }
 
 .bottom_bar img {
     display: flex;
-    display: block;
     align-items: center;
     margin: 0 auto;
 }
+

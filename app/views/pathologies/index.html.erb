@@ -1,7 +1,7 @@
 <!------------------------------------- logo -------------------------------------------->
 <div class='logo'>
   <%= link_to root_path do %>
-    <%= image_tag('logo_ok.png', alt: "", id: "img_logo") %>
+    <%= image_tag('logobleu.png', alt: "", id: "img_logo") %>
   <% end %>
 </div>
 <!------------------------------------- logo -------------------------------------------->
@@ -19,7 +19,7 @@
       <%= link_to "LUNETTES", pages_lunettes_path %>
       <%= link_to "AFFECTIONS", pathologies_path, {style: 'border-bottom: 0.5px solid #363636;'} %>
       <%= link_to "CHIRURGIES", chirurgies_path %>
-      <a style='color:gray'>PRENDRE RENDEZ-VOUS</a>
+      <a style='color:#207fde'>PRENDRE RENDEZ-VOUS</a>
     </div>
   </div>
 </div>
@@ -27,7 +27,7 @@
 
 
 <!------------------------------------ titre ------------------------------------------->
-<h2 class="titre_pathologies" style="margin-left: 7%;">AFFECTIONS OCCULAIRES</h2>
+<h2 class="titre_pathologies">AFFECTIONS OCCULAIRES</h2>
 <!------------------------------------ titre ------------------------------------------->
 
 
@@ -36,10 +36,11 @@
 <!------------------------------------ carte glaucome ------------------------------------------->
   <% @pathologies.each do |maladie| %>
     <% if maladie.nom == 'Glaucome' %>
-      <%= link_to(pathology_path(maladie)) do %>
+
         <div class='link_glaucome'>
           <h2>GLAUCOME</h2>
           <p>Le glaucome est une maladie occulaire qui touche surtout les personnes de plus de 45 ans. Il est dû à une montée de la pression occulaire, entrainant un atteinte du nerf optique et du champs visuel.</p>
+          <%= link_to(pathology_path(maladie)) do %>
           <h4>En savoir plus</h4>
         </div>
       <% end %>
@@ -51,10 +52,11 @@
 <!------------------------------------ carte diabète ------------------------------------------->
   <% @pathologies.each do |maladie| %>
     <% if maladie.nom == 'Diabète' %>
-      <%= link_to(pathology_path(maladie)) do %>
+
         <div class='link_diabete'>
           <h2>DIABÈTE</h2>
           <p>La rétinopathie diabétique (atteintes des yeux: oeil et rétine) est une grave complication du diabète qui touche 50% des patients diabétiques de type 2. En france, elle est la première cause de cécité avant 65 ans</p>
+          <%= link_to(pathology_path(maladie)) do %>
           <h4>En savoir plus</h4>
         </div>
       <% end %>
@@ -66,10 +68,11 @@
 <!------------------------------------ carte DMLA ------------------------------------------->
   <% @pathologies.each do |maladie| %>
     <% if maladie.nom == 'DMLA' %>
-      <%= link_to(pathology_path(maladie)) do %>
+
         <div class='link_dmla'>
           <h2>DMLA</h2>
           <p>La dégénérescence de la macula liée à l'âge est une pathologie qui touche les patients de plus 55 ans. Elle entraîne une baisse de vue centrale avec des taches noires et des déformations.</p>
+          <%= link_to(pathology_path(maladie)) do %>
           <h4>En savoir plus</h4>
         </div>
       <% end %>
@@ -81,11 +84,11 @@
 <!-------------------------- carte Décollement de la rétine --------------------------------->
   <% @pathologies.each do |maladie| %>
     <% if maladie.nom == 'Décolement de la rétine' %>
-      <%= link_to(pathology_path(maladie)) do %>
         <div class='link_decollement_retine'>
           <h2>DÉCOLLEMENT DE LA RETINE</h2>
           <p>Baisse de vue brutale, non résolutive avec amputation d'une partie du champ visuel.
           Souvent précédé "d'éclairs lumineux" ou de "mouches en abondance".</p>
+          <%= link_to(pathology_path(maladie)) do %>
           <h4>En savoir plus</h4>
         </div>
       <% end %>
@@ -96,17 +99,18 @@
 
 <!------------------------------- carte autres maladies -------------------------------------->
 
-        <div class='link_decollement_retine'>
+        <div class='link_autres_maladies'>
           <h2>AUTRES MALADIES RETINIENES</h2>
           <p>Uvéite, occlusion artérielle et véneuse rétinienne, membrane épirétinienne et autres sont explorées et traitées au cabinet ou adressées en centre spécialisé de la rétine</p>
+
+          <h4>En savoir plus</h4>
         </div>
-<p><br><br></p>
 <!------------------------------- carte autres maladies -------------------------------------->
   </div>
 
 
 <!------------------------------------ bottom bar ------------------------------------------->
 <div class='bottom_bar'>
-  <%= image_tag('logo_ok.png', alt: "", style: "width: 60px") %>
+  <%= image_tag('logobleu.png', alt: "", style: "width: 60px") %>
 </div>
-<!------------------------------------ bottom bar ------------------------------------------->
+<!----------------------------------- bottom bar ------------------------------------------->

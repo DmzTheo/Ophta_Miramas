@@ -19,7 +19,7 @@
       <%= link_to "LUNETTES", pages_lunettes_path %>
       <%= link_to "AFFECTIONS", pathologies_path %>
       <%= link_to "CHIRURGIES", chirurgies_path, {style: 'border-bottom: 0.5px solid #363636;'} %>
-      <a style='color:gray'>PRENDRE RENDEZ-VOUS</a>
+      <a style='color:#207fde'>PRENDRE RENDEZ-VOUS</a>
     </div>
   </div>
 </div>
@@ -27,7 +27,7 @@
 
 
 <!------------------------------------ titre ------------------------------------------->
-<h2 class="titre_pathologies" style="margin-left: 7%;">CHIRURGIES</h2>
+<h2 class="titre_pathologies">CHIRURGIES</h2>
 <!------------------------------------ titre ------------------------------------------->
 
 
@@ -91,7 +91,7 @@
     <% if chirurgie.nom == 'IVT' %>
       <%= link_to(chirurgy_path(chirurgie)) do %>
         <div class='link_dmla'>
-          <h2>Injection Intra Vitréenne</h2>
+          <h2>INJECTION INTRA VITRÉENNE</h2>
           <p>Vous avez une DMLA, une atteinte rétinienne secondaire à votre diabète ou à un problème vasculaire.
             <br>Ces pathologies peuvent bénéficier d'injections.
             <br>Vous souhaitez connaître les modalités de prise en charge (avant, pendant et après l'intervention).
@@ -101,7 +101,6 @@
       <% end %>
     <% end %>
   <% end %>
-  <p><br><br></p>
 <!---------------------------------- carte IVT ----------------------------------------->
   </div>
 

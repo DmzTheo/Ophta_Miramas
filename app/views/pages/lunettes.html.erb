@@ -19,7 +19,7 @@
       <%= link_to "LUNETTES", pages_lunettes_path, {style: 'border-bottom: 0.5px solid #363636;'} %>
       <%= link_to "AFFECTIONS", pathologies_path %>
       <%= link_to "CHIRURGIES", chirurgies_path %>
-      <a style='color:gray'>PRENDRE RENDEZ-VOUS</a>
+      <a style='color:#207fde'>PRENDRE RENDEZ-VOUS</a>
     </div>
   </div>
 </div>
@@ -27,29 +27,25 @@
 
 
 <!------------------------------------ titre ------------------------------------------->
-<h2 class="titre_pathologies" style="margin-left: 7%;">RENDEZ-VOUS RAPIDE : LUNETTES</h2>
+<h2 class="titre_pathologies">RENDEZ-VOUS RAPIDE : LUNETTES</h2>
 <!------------------------------------ titre ------------------------------------------->
 
 
 <div class='chest_each_patho'>
-  <div class="vide"></div>
     <div class="conteneur_text_image">
-      <div class="textes">
-        <p></p>
+      <div class="textes_lunettes">
+
 
         <h2>Lunettes</h2>
         <p><br>Dans le cas où vous souhaitez prendre rendez-vous pour une vérification de votre vue et une prescription ou un renouvellement de vos lunettes, vous avez la possibilité d'être reçu par un(e) orthoptiste qui réalisera une réfraction, la prise de votre tension occulaire, une pachymétrie coméenne et des rétinograhies du fond d’oeil.</p>
         <p><br>Cette consultation vous sera facturé 28 euros.</p>
         <p><br>L’ophtalmologiste examine ensuite le dossier et, sans pathologies détéctées, fera envoyer l’ordonnance dans les 8 jours suivants.</p>
         <p><br>Dans le cas où une anomalie ou une pathologies est détectée, vous serez reconvoqué au cabinet pour une consultation complémentaire.</p>
-        <br><br></p>
+
 
       </div>
-      <div class="image_et_boutton">
-        <%= image_tag('lunettes_view.png', alt: "", class: "image_pathology") %>
-        <a class="btn_rdv">PRENDRE UN RENDEZ-VOUS</a>
-      </div>
-    </div>
+<!--         <%= image_tag('forlunettes.jpg', alt: "", class: "image_lunettes") %>
+ -->    </div>
 
         <p><br></p>
 
@@ -62,9 +58,11 @@
         <p>- Avoir consulté chez l’ophtalmologiste depuis moins de 5 ans</p>
 
         <p><br><br></p>
-
+<a class="btn_rdv">PRENDRE UN RENDEZ-VOUS</a>
     </div>
+
   </div>
+
 
 
 <!------------------------------------ bottom bar ------------------------------------------->

@@ -6,10 +6,10 @@
 .chest_body {
     background-color: white;
     padding: 20px;
-    width: 90%;
-    margin: 20px auto 0 auto;
-    border-radius: 15px 15px 0 0;
-    box-shadow: 0 0 15px rgba(211, 211, 211, 0.541)
+    width: 75%;
+    margin: 40px auto 0 auto;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 0 25px #0f4370;
 }
 
 .bienvenue{
@@ -24,26 +24,30 @@
 }
 
 .bienvenue h2 {
-    color: #4B4B4B;
+    // color: #4B4B4B;
+    color: black;
     font-family: 'Roboto';
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 4px;
-    font-size: 40px;
+    font-size: 44px;
+    margin-bottom: 30px;
 }
 .bienvenue h3 {
     color: #4B4B4B;
+    color: black;
     font-family: 'Roboto';
     font-weight: 300;
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 22px;
 
 }
 
 .bienvenue h4 {
-    color: #474747;
-    font-family: 'Playfair';
-    font-size: 33px;
-    font-weight: 300;
+    // color: #474747;
+    color: #207fde;
+    font-family: 'Roboto';
+    font-size: 44px;
+    font-weight: 400;
     letter-spacing: 1px;
-    margin-top: 15px;
+    margin-top: 35px;
 }
