@@ -1,17 +1,15 @@
 <!------------------------------------- logo -------------------------------------------->
 <div class='logo'>
   <%= link_to root_path do %>
-    <%= image_tag('logo_ok.png', alt: "", id: "img_logo") %>
+  <%= image_tag('logo_ok.png', alt: "", id: "img_logo") %>
   <% end %>
 </div>
 <!------------------------------------- logo -------------------------------------------->
-
-
 <!------------------------------------ navbar ------------------------------------------->
 <div class='nav_back'>
   <div class='navbar_all'>
     <%= link_to((root_path), class: 'a_img') do %>
-      <%= image_tag('view.png', alt: "", class: "img_navbar") %>
+    <%= image_tag('view.png', alt: "", class: "img_navbar") %>
     <% end %>
     <div class="navbar">
       <%= link_to "LE CENTRE", pages_centre_path%>
@@ -24,42 +22,52 @@
   </div>
 </div>
 <!------------------------------------ navbar ------------------------------------------->
-
-
 <!------------------------------------ titre ------------------------------------------->
-<h2 class="titre_center" style="margin-left: 13%;">L'EQUIPE</h2>
+<h2 class="titre_center" style="margin-left: 24%;">L'EQUIPE</h2>
 <!------------------------------------ titre ------------------------------------------->
-
-
 <!------------------------------------ description ------------------------------------------->
-<div class="chest_each_patho">
-  <div class="position_row">
-    <div class='text_centre'>
-      <h2>Pour vous accueillir:</h2>
-      <h2 style="font-size: smaller;"><br>au secrétariat :</h2>
-      <p>Fabienne Savajol et Christine ....</p>
-      <h2 style="font-size: smaller;"><br><br>Pour la pré-consultation,</h2>
-       <p>Notre orthoptiste : Anne Aurore casini vous fera les mesures préliminaires à l'examen de l'ophtalmologiste.</p>
-      <p><br>Aidée par notre infirmière et aide opératoire Eliane Michal</p>
-      <h2 style="font-size: smaller;"><br>Au premier étage du centre</h2>
-      <p>Agnès Fabrigoule, orthoptiste libérale réalise les visions binoculaires, la rééducation orthoptique et les champs visuels.</p>
+<div class="chest_each_patho" style="width: 50%; padding-bottom: 50px; margin-bottom: 0; align-items: center">
+  <!-- <div class="position_row">
+    <div class='text_centre'> -->
+      <h2 style="margin-top: 20px; font-weight: bold;">Pour vous accueillir:</h2>
+      <h2 style="font-size: 20px;"><br>Au secrétariat</h2>
+      <div class="personnel" style="border-top: 1px solid #c0134e; border-bottom: 1px solid #c0134e; padding: 20px 0">
+        <%= image_tag('inf_1.png', alt: "", class: "img_inf") %>
+        <p style="bottom: 15px"><strong>Fabienne Savajol</strong><br>& <br> <strong>Christine</strong></p>
+      </div>
+      <h2 style="font-size: 20px;"><br><br>Pour la pré-consultation</h2>
+      <div class="personnel" style="border-top: 1px solid #207fde; padding: 20px 0">
+        <%= image_tag('doc_6.png', alt: "", class: "img_anne") %>
+        <p style="bottom: 15px">Notre orthoptiste : <strong>Anne Aurore Casini </strong>vous fera les mesures préliminaires à l'examen de l'ophtalmologiste.</p>
+      </div>
+      <div class="personnel" style="border-bottom: 1px solid #207fde;padding: 0px 0 30px 0">
+        <%= image_tag('doc_3.png', alt: "", class: "img_eliane") %>
+        <p style="bottom: 15px">Aidée par notre infirmière et aide opératoire <strong>Eliane Michal.</p></strong>
+      </div>
+      <h2 style="font-size: 20px; margin-top: 50px" >Au premier étage du centre</h2>
+      <div class="personnel" class="personnel" style="border-top: 1px solid #E8E8B2; border-bottom: 1px solid #E8E8B2; padding: 20px 0">
+        <%= image_tag('doc_2.png', alt: "", class: "img_agnes") %>
 
-      <h2><br><br>Les médecins:</h2>
-      <p><br>Docteur Buzzacchera Nadine: Ancien interne des hopitaux de Marseille, chef de clinique à la faculté, spécialisée en chirurgie de la cataracte et du glaucome, chirurgie des paupières et chirurgie réfractive.</p>
-      <p><br>Docteur Hervé-Fey Brigitte: Ancien interne des hopitaux de Marseille, chef de clinique à la faculté, spécialisée en chirurgie de la cataracte et du glaucome</p>
+      <p style="bottom: 15px"><strong>Agnès Fabrigoule</strong>, orthoptiste libérale réalise les visions binoculaires, la rééducation orthoptique et les champs visuels.</p>
+      </div>
+      <h2 style="margin-top: 45px">Les médecins</h2>
+      <div class="personnel" class="personnel" class="personnel" style="border-top: 1px solid #0f4370; padding: 15px 0">
+        <%= image_tag('doc_5.png', alt: "", class: "img_nadine") %>
 
+      <p style="bottom: 20px"><br><strong>Docteur Buzzacchera Nadine</strong>. Ancien interne des hopitaux de Marseille, chef de clinique à la faculté, spécialisée en chirurgie de la cataracte et du glaucome, chirurgie des paupières et chirurgie réfractive.</p>
+    </div>
+      <div class="personnel" class="personnel" class="personnel" style="border-bottom: 1px solid #0f4370; padding: 15px 0">
+        <%= image_tag('doc_4.png', alt: "", class: "img_brigitte") %>
 
-
-
-
+      <p style="bottom: 10px"><br><strong>Docteur Hervé-Fey Brigitte</strong>. Ancien interne des hopitaux de Marseille, chef de clinique à la faculté, spécialisée en chirurgie de la cataracte et du glaucome.</p>
+    </div>
     </div>
   </div>
   <p><br><br></p>
-<!------------------------------------ description ------------------------------------------->
+  <!------------------------------------ description ------------------------------------------->
 </div>
-
 <!------------------------------------ bottom bar ------------------------------------------->
-<div class='bottom_bar'>
+<div class='bottom_bar' style="margin-top: -30px">
   <%= image_tag('logo_ok.png', alt: "", style: "width: 60px") %>
 </div>
 <!------------------------------------ bottom bar ------------------------------------------->

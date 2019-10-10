@@ -1,6 +1,6 @@
 .bottom_elements {
     display: flex;
-    width: 100%;
+    width: 92%;
     text-align: center;
     align-content: center;
     flex-direction: row;
@@ -8,32 +8,49 @@
     justify-content: center;
     align-items: start;
     align-content: center;
+    margin-top: 20px;
+
+}
+
+
+.bottom_elements p {
+    height: 80px;
 }
 
 .bottom_description h2 {
+  position: relative;
   text-decoration: none;
   font-family: 'playfair';
   color: black;
   letter-spacing: 1px;
   font-weight: normal;
   font-size: medium;
-  margin: 0 !important;
+  margin: 0 0 0 15px!important;
   width: 100% !important;
+  padding-bottom: 5px;
+  text-align: center;
 }
 
 .bottom_description h4 {
-  color: #1E737D;
+  position: absolute;
+  color: white;
   border: none;
   font-family: 'roboto';
   font-weight: 700;
   font-size: 80%;
   text-align: left;
-  width: 50%;
+  width: 90px;
+  background: #ce1452;
+  padding: 5px 8px;
+  border-radius: 3px;
+  margin-left: 60px;
+  text-align: center;
 }
 
 .bottom_description p {
-  width: 100% !important;
+  width: 200px !important;
   margin: 8px 0 0 0 !important;
+
 }
 
 .bottom_description {
@@ -41,40 +58,42 @@
   text-decoration: none;
 }
 
-.bottom_description:hover {
-  width: 16%;
-  text-decoration: none;
-   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-}
+// .bottom_description:hover {
+//   width: 16%;
+//   text-decoration: none;
+//    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+// }
 
 .ligne {
 height: 100px;
-border: 1px solid #DCDCDC;
+border: 0.5px solid white;
 margin: 0 5% 0 5%;
 align-self: center;
 }
 
 .etape {
   margin-top: 50px;
-  margin-left: 10%;
   display: flex;
   align-items: center;
   flex-direction: row;
   text-decoration: none;
+  background: #f4f4f4;
+  padding: 20px 0;
 }
 
-.etape:hover {
-  margin-top: 50px;
-  margin-left: 10%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  text-decoration: none;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+.etapes h2 {
+  width: 50px;
+  height: 15px;
+  background-image: url(fleche01.png);
+  background-size: cover;
+}
+
+.etapes h2:hover {
+  transition: 0.3s;
+  background-image: url(fleche02.png);
+  background-size: cover;
 }
 
 
-.fleche {
-  width: 70px;
-  height: 22px;
-}
+
+

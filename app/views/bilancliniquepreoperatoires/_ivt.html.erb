@@ -31,36 +31,38 @@
 <!------------------------------------ titre ------------------------------------------->
 
 
-    <div class='chest_each_patho'>
-      <div class="vide"></div>
-      <h2>Les injections intra-vitréennes ?</h2>
-      <p><br>IVT est l’acronyme de injection intra-vitréenne. L' humeur vitrée est le liquide présent dans la partie postérieure de l’œil dans laquelle le traitement sera directement injecté.</p>
+     <div class='chest_each_patho'>
+  <div class="conteneur_text_bilantech">
+    <div class="textes">
 
-      <p><br></p>
+      <h2 style="border-radius: 0 20px 0 0">Les injections intra-vitréennes ?</h2>
+      <p>IVT est l’acronyme de injection intra-vitréenne. L' humeur vitrée est le liquide présent dans la partie postérieure de l’œil dans laquelle le traitement sera directement injecté.</p>
+
+
 
       <p>L’ avantage de l’injection intra-vitréenne est que le produit est déposé directement au niveau du site de la lésion, c’est-à-dire près de la rétine. De plus ce moyen d'administration permet une diffusion minime au niveau de l'organisme.</p>
 
-      <p></p>
+
 
       <p>L’avantage également est la rapidité du geste, avec peu de risques et totalement indolore.</p>
 
-      <p></p>
+
 
       <p>L' IVT se fait dans une salle dédiée avec une anesthésie locale, par collyre, et une injection qui se fait à un endroit très précis que votre médecin connaît bien, au niveau du blanc de l’œil.</p>
 
-      <p></p>
+
 
       <p>Cette injection est totalement indolore.</p>
 
-      <p><br></p>
+
 
       <h2>Contenu de la consultation</h2>
-      <p><br>Lors de la consultation pré-opératoire vous rencontrerez successivement :</p>
+      <p>Lors de la consultation pré-opératoire vous rencontrerez successivement :</p>
 
       <p>- un orthoptiste qui réalisera l'examen spécifique de la rétine : une tomographie en cohérence optique (OCT maculaire),</p>
       <p>- un ophtalmologiste.</p>
 
-      <p></p>
+
 
       <p>Cette consultation complète permet de déterminer :</p>
 
@@ -70,10 +72,10 @@
 
       <p>  - l'origine de votre baisse de vue : DMLA, œdème maculaire lié au diabète ou à un problème vasculaire.</p>
 
-      <p><br></p>
+
 
       <h2>Entretien</h2>
-      <p><br>Si le diagnostic est confirmé, nous vous exposerons au cours d'un entretien et de manière très simplifiée :</p>
+      <p>Si le diagnostic est confirmé, nous vous exposerons au cours d'un entretien et de manière très simplifiée :</p>
 
       <p>  - l'origine et la conséquence de votre maculopathie,</p>
 
@@ -81,12 +83,12 @@
 
       <p>  - l'intérêt et les risques de l'injection intra-vitréenne.</p>
 
-      <p><br></p>
+
 
       <h2>Programmation de l'intervention</h2>
-      <p><br>La décision opératoire revient au patient, après réflexion, suites aux informations délivrées par le médecin.</p>
+      <p>La décision opératoire revient au patient, après réflexion, suites aux informations délivrées par le médecin.</p>
 
-      <p></p>
+
 
       <p>Au cours de la consultation, nous :</p>
 
@@ -94,16 +96,16 @@
 
       <p>  - éditera le dossier pré-opératoire complet,</p>
 
-      <p>  - vous remettrons l'ordonnance de produit d'exception afin d'obtenir auprès de votre pharmacie le traitement qui sera injecté.</p>
+      <p style="border-radius: 0 0 20px 0">  - vous remettrons l'ordonnance de produit d'exception afin d'obtenir auprès de votre pharmacie le traitement qui sera injecté.</p>
 
-      <p><br></p>
 
-      <h2 style="font-size: smaller;">Nous faisons le maximum pour diminuer vos déplacements et faire TOUS les examens et mesures nécessaires en une seule consultation.</h2>
+</div></div>
+      <h2 style="font-size: smaller; margin: 15px">Nous faisons le maximum pour diminuer vos déplacements et faire TOUS les examens et mesures nécessaires en une seule consultation.</h2>
 
-      <p><br><br></p>
+
 
 <!-------------------------------------- liens détails --------------------------------------------->
-    <div class='bottom_elements'>
+    <div class='bottom_elements' style="padding:10px 0px 50px 0px">
       <%= link_to (chirurgy_bilancliniquepreoperatoire_path(@bilan.chirurgie)), class: "bottom_description" do %>
         <h2>Bilan clinique pré-opératoire</h2>
         <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
@@ -126,11 +128,13 @@
 
 
 <!-------------------------------------- étape suivante --------------------------------------------->
+<div class="etapes">
     <%= link_to (chirurgy_preparerlintervention_path(@bilan.chirurgie)), class: 'etape' do %>
-      <%= image_tag('fleche.png', alt: "", class: "fleche") %>
-      <p>Etape suivante : préparer l'intervention</p>
+         <h2> </h2>
+    <p>Etape suivante : Bilan clinique pré-opératoire</p>
     <% end %>
-  <p><br><br></p>
+  </div>
+
 <!-------------------------------------- étape suivante --------------------------------------------->
   </div>
 

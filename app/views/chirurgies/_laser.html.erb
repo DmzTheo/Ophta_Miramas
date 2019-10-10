@@ -32,29 +32,23 @@
 
 
     <div class='chest_each_patho'>
-      <div class="vide"></div>
         <div class="conteneur_text_image">
           <div class="textes">
             <p>Cette chirurgie permet de corriger tous les défauts visuels (myopie, astigmatisme, hypermétropie et même presbytie).</p>
 
-            <p><br></p>
-
             <p>Oubliez vos lunettes, et vos lentilles ! Obtenez une vision de loin et une vision de près satisfaisantes !</p>
-
-            <p><br></p>
 
             <p>La chirurgie moderne est maintenant accessible à tous, avec une récupération très rapide.</p>
 
-            <p><br></p>
 
             <p>Vous allez vous faire opérer ? Ci-dessous, vous trouverez les éléments pour vous guider à chaque étape de votre chirurgie.</p>
           </div>
           <%= image_tag('lunettes.jpg', alt: "", class: "image_pathology", style: "height: 170px;") %>
         </div>
-      <p><br><br></p>
+
 
 <!-------------------------------------- liens détails --------------------------------------------->
-    <div class='bottom_elements'>
+    <div class='bottom_elements' >
       <%= link_to (chirurgy_bilancliniquepreoperatoire_path(@chirurgie)), class: "bottom_description" do %>
         <h2>Bilan clinique pré opératoire</h2>
         <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
@@ -77,11 +71,12 @@
 
 
 <!-------------------------------------- étape suivante --------------------------------------------->
+    <div class="etapes">
     <%= link_to (chirurgy_bilancliniquepreoperatoire_path(@chirurgie)), class: 'etape' do %>
-      <%= image_tag('fleche.png', alt: "", class: "fleche") %>
-      <p>Etape suivante : Bilan clinique pré-opératoire</p>
-    <% end %>
-  <p><br><br></p>
+      <h2> </h2>
+        <p>Etape suivante : Bilan clinique pré-opératoire</p>
+      <% end %>
+    </div>
 <!-------------------------------------- étape suivante --------------------------------------------->
   </div>
 
