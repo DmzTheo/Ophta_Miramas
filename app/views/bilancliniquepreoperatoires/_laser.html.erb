@@ -32,19 +32,17 @@
 
 
     <div class='chest_each_patho'>
-      <div class="vide"></div>
+  <div class="conteneur_text_bilantech">
+    <div class="textes">
 
-      <h2>Contenu de la consultation</h2>
-      <p><br>L'intérêt de la consultation est de définir et de confirmer votre opérabilité.</p>
-
-      <p></p>
+      <h2 style="border-radius: 0 20px 0 0">Contenu de la consultation</h2>
+      <p>L'intérêt de la consultation est de définir et de confirmer votre opérabilité.</p>
 
       <p>Lors de la consultation pré-opératoire vous rencontrerez successivement :</p>
 
       <p>  - un orthoptiste,</p>
       <p>  - et un ophtalmologiste.</p>
 
-      <p></p>
 
       <p>Cette consultation complète permet de déterminer :</p>
 
@@ -56,14 +54,11 @@
 
       <p>- si les autres structures oculaires essentielles ne présentent pas d'altérations compromettant la récupération visuelle post-opératoire.</p>
 
-      <p></p>
-
       <p>Ainsi les examens cliniques et paracliniques permettent de définir la qualité : de la cornée, du cristallin, de la rétine et du nerf optique.</p>
 
-      <p><br></p>
 
       <h2>Entretien</h2>
-      <p><br>Lors d'une discussion ouverte, le médecin, de manière très simplifiée:</p>
+      <p>Lors d'une discussion ouverte, le médecin, de manière très simplifiée:</p>
 
       <p>- vous présentera une ou plusieurs techniques opératoires, avec leurs avantages et inconvénients, adaptées à votre situation,</p>
 
@@ -71,12 +66,11 @@
 
       <p>- vous précisera le "timing" des examens opératoires nécessaires.</p>
 
-      <p><br></p>
+
 
       <h2>Programmation de la chirurgie</h2>
-      <p><br>La décision opératoire revient au patient, après réflexion, suites aux informations délivrées par le médecin.</p>
+      <p>La décision opératoire revient au patient, après réflexion, suites aux informations délivrées par le médecin.</p>
 
-      <p></p>
 
       <p>Après décision, le médecin :</p>
 
@@ -84,13 +78,13 @@
 
       <p>- éditera le dossier pré-opératoire complet,</p>
 
-      <p>- s'assurera encore une fois de la complétude de votre dossier médical.</p>
+      <p style="border-radius: 0 0 20px 0">- s'assurera encore une fois de la complétude de votre dossier médical.</p>
 
-      <p><br></p>
+    </div>
+  </div>
 
-      <h2 style="font-size: smaller;">Cette chirurgie s'adressant à des personnes jeunes et actives, nous ferrons le maximum pour diminuer le nombre de consultations et pour proposer des dates de rencontre adaptées à vos contraintes familiales et professionnelles.</h2>
+      <h2 style="font-size: smaller; margin: 25px auto">Cette chirurgie s'adressant à des personnes jeunes et actives, nous ferrons le maximum pour diminuer le nombre de consultations et pour proposer des dates de rencontre adaptées à vos contraintes familiales et professionnelles.</h2>
 
-      <p><br><br></p>
 
 <!-------------------------------------- liens détails --------------------------------------------->
     <div class='bottom_elements'>
@@ -116,12 +110,12 @@
 
 
 <!-------------------------------------- étape suivante --------------------------------------------->
+<div class="etapes">
     <%= link_to (chirurgy_preparerlintervention_path(@bilan.chirurgie)), class: 'etape' do %>
-      <%= image_tag('fleche.png', alt: "", class: "fleche") %>
-      <p>Etape suivante : préparer l'intervention</p>
+     <h2> </h2>
+    <p>Etape suivante : Bilan clinique pré-opératoire</p>
     <% end %>
-
-  <p><br><br></p>
+  </div>
 <!-------------------------------------- étape suivante --------------------------------------------->
   </div>
 

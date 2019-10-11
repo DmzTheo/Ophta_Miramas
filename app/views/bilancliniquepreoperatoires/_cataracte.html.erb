@@ -32,31 +32,24 @@
 
 
     <div class='chest_each_patho'>
-      <div class="vide"></div>
-      <h2>La cataracte ?</h2>
+  <div class="conteneur_text_bilantech">
+    <div class="textes">
+      <h2 style="border-radius: 0 20px 0 0">La cataracte ?</h2>
       <p><br>La cataracte correspond à l'opacification progressive du cristallin majoritairement liée au vieillissement naturel. Le cristallin est une lentille qui se trouve derrière l'iris.</p>
-
-      <p></p>
 
       <p>Cette opacification perturbe la pénétration de la lumière dans l’œil. Il en résulte une baisse de la netteté, une diminution des contrastes, de la lumière et une moindre perception des détails.</p>
 
-      <p></p>
-
       <p>La cataracte touche 100% des humains, avec un pic de fréquence entre 70 et 80 ans. Il est cependant possible d'avoir la cataracte beaucoup plus jeune.</p>
 
-      <p></p>
 
       <p>La cataracte représente la première cause de cécité curable dans le monde.</p>
 
-      <p><br></p>
 
       <h2>Contenu de la consultation</h2>
       <p><br>Lors de la consultation pré-opératoire vous rencontrerez successivement :</p>
 
       <p>  - un orthoptiste,</p>
       <p>  - et un ophtalmologiste.</p>
-
-      <p></p>
 
       <p>Cette consultation complète permet de déterminer :</p>
 
@@ -66,15 +59,11 @@
 
       <p>  - si les autres structures oculaires essentielles ne présentent pas d'altérations compromettant la récupération visuelle post-opératoire.</p>
 
-      <p></p>
 
       <p>La cataracte touche 100% des humains, avec un pic de fréquence entre 70 et 80 ans. Il est cependant possible d'avoir la cataracte beaucoup plus jeune.</p>
 
-      <p></p>
 
       <p>Ainsi les examens cliniques et paracliniques permettent de définir la qualité : de la cornée, de la rétine et du nerf optique.</p>
-
-      <p><br></p>
 
       <h2>Entretien</h2>
       <p><br>Si le diagnostic est confirmé, nous vous exposerons au cours d'un entretien et de manière très simplifiée :</p>
@@ -85,12 +74,12 @@
 
       <p>  - l'intérêt et les risques de la chirurgie.</p>
 
-      <p><br></p>
+
 
       <h2>Programmation de la chirurgie</h2>
       <p><br>La décision opératoire revient au patient, après réflexion, suites aux informations délivrées par le médecin.</p>
 
-      <p></p>
+
 
       <p>Au cours de la consultation, nous :</p>
 
@@ -98,13 +87,11 @@
 
       <p>  - éditera le dossier pré-opératoire complet,</p>
 
-      <p>  - finaliserons les mesures (réalisation d'une biométrie oculaire) afin de commander l'implant (cristallin artificiel) posé lors de la chirurgie.</p>
+      <p style="border-radius: 0 0 20px 0">  - finaliserons les mesures (réalisation d'une biométrie oculaire) afin de commander l'implant (cristallin artificiel) posé lors de la chirurgie.</p>
 
-      <p><br></p>
-
-      <h2 style="font-size: smaller;">Nous faisons le maximum pour diminuer vos déplacements et faire TOUS les examens et mesures nécessaires en une seule consultation.</h2>
-
-      <p><br><br></p>
+</div>
+</div>
+      <h2 style="font-size: smaller; margin: 25px auto">Nous faisons le maximum pour diminuer vos déplacements et faire TOUS les examens et mesures nécessaires en une seule consultation.</h2>
 
 <!-------------------------------------- liens détails --------------------------------------------->
     <div class='bottom_elements' style ='margin-left: 30px; margin-right: 30px;'>
@@ -126,15 +113,17 @@
         <h4>En savoir plus</h4>
       <% end %>
     </div>
+
 <!-------------------------------------- liens détails --------------------------------------------->
 
 
 <!-------------------------------------- étape suivante --------------------------------------------->
+    <div class="etapes">
     <%= link_to (chirurgy_preparerlintervention_path(@bilan.chirurgie)), class: 'etape' do %>
-      <%= image_tag('fleche.png', alt: "", class: "fleche") %>
-      <p>Etape suivante : préparer l'intervention</p>
+      <h2> </h2>
+    <p>Etape suivante : Bilan clinique pré-opératoire</p>
     <% end %>
-    <p><br><br></p>
+  </div>
 <!-------------------------------------- étape suivante --------------------------------------------->
   </div>
 

@@ -32,45 +32,32 @@
 
 
     <div class='chest_each_patho'>
-      <div class="vide"></div>
-      <h2>Allez chercher vos traitements !</h2>
+  <div class="conteneur_text_bilantech">
+    <div class="textes">
+      <h2 style="border-radius: 0 20px 0 0">Allez chercher vos traitements !</h2>
       <p>Dans votre dossier, vous trouverez une ordonnance spécifiant les collyres à instiller dans les suites opératoires immédiates</p>
-
-      <p></p>
-
       <p>Pensez à aller à la pharmacie avant l'opération pour gagner en sérénité et ainsi pouvoir rentrer immédiatement à votre domicile après l'intervention.</p>
 
       <p>Il n'y a aucun traitement à prendre au préalable.</p>
 
-      <p><br></p>
-
       <h2>Contactez votre assurance complémentaire / mutuelle</h2>
-      <p><br>Un devis détaillé vous a été fourni en fonction de la technique opératoire choisie / possible.</p>
+      <p>Un devis détaillé vous a été fourni en fonction de la technique opératoire choisie / possible.</p>
 
       <p>Pour éviter toute mauvaise surprise, vérifier vos droits auprès de votre mutuelle.</p>
 
       <p>A noter que le centre offre le paiement en trois fois (étalé sur 3 mois) sans frais.</p>
 
-      <p><br></p>
-
       <h2>Enlevez vos lentilles ! Pas de maquillage !</h2>
-      <p><br>Pour assurer un parfait état de votre cornée et donc permettre un résultat post-opératoire optimal, arrêtez le port de lentilles 72 heures avant l'intervention.</p>
-
-      <p></p>
+      <p>Pour assurer un parfait état de votre cornée et donc permettre un résultat post-opératoire optimal, arrêtez le port de lentilles 72 heures avant l'intervention.</p>
 
       <p>Le maquillage est contre-indiqué.</p>
 
-      <p></p>
-
       <p>Il complique la chirurgie et favorise les infections.</p>
 
-      <p><br></p>
-
       <h2>Anticipez la route !</h2>
-      <p><br>Toujours pour gagner en sérénité, veillez à prendre une marge horaire pour votre déplacement le jour J.</p>
+      <p style="border-radius: 0 0 20px 0">Toujours pour gagner en sérénité, veillez à prendre une marge horaire pour votre déplacement le jour J.</p>
 
-      <p><br><br></p>
-
+</div></div>
 <!-------------------------------------- liens détails --------------------------------------------->
     <div class='bottom_elements'>
       <%= link_to (chirurgy_bilancliniquepreoperatoire_path(@preparer.chirurgie)), class: "bottom_description" do %>
@@ -95,11 +82,12 @@
 
 
 <!-------------------------------------- étape suivante --------------------------------------------->
+<div class="etapes">
     <%= link_to (chirurgy_consignepostoperatoire_path(@preparer.chirurgie)), class: 'etape' do %>
-      <%= image_tag('fleche.png', alt: "", class: "fleche") %>
-      <p>Etape suivante : Vous venez d'être opéré(e)</p>
+      <h2> </h2>
+    <p>Etape suivante : Bilan clinique pré-opératoire</p>
     <% end %>
-  <p><br><br></p>
+  </div>
 <!-------------------------------------- étape suivante --------------------------------------------->
   </div>
 
