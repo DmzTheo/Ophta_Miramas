@@ -105,40 +105,52 @@
 
 
 <!-------------------------------------- liens détails --------------------------------------------->
-    <div class='bottom_elements'>
-    <div class="bottom_element_1">
-      <%= link_to (chirurgy_bilancliniquepreoperatoire_path(@chirurgie)), class: "bottom_description" do %>
-      <h2>Bilan clinique pré-opératoire</h2>
-      <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
-      <h4>En savoir plus</h4>
+  <div class='bottom_elements'>
+    <% @bilans.each do |bilan| %>
+      <% if bilan.name == 'IVT' %>
+        <div class="bottom_element_1">
+          <%= link_to (bilancliniquepreoperatoire_path(bilan)), class: "bottom_description" do %>
+            <h2>Bilan clinique pré-opératoire</h2>
+            <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
+            <h4>En savoir plus</h4>
+          <% end %>
+        </div>
       <% end %>
-    </div>
-    <div class="bottom_element_1">
-      <%= link_to (chirurgy_preparerlintervention_path(@chirurgie)), class: "bottom_description" do %>
-      <h2>Preparer l'intervention</h2>
-      <p>Les éléments essentiels à préparer avant l'intervention</p>
-      <h4>En savoir plus</h4>
+    <% end %>
+    <% @prepares.each do |prepare| %>
+      <% if prepare.name == 'IVT' %>
+        <div class="bottom_element_1">
+          <%= link_to (preparerlintervention_path(prepare)), class: "bottom_description" do %>
+            <h2>Preparer l'intervention</h2>
+            <p>Les éléments essentiels à préparer avant l'intervention</p>
+            <h4>En savoir plus</h4>
+          <% end %>
+        </div>
       <% end %>
-    </div>
-    <div class="bottom_element_1">
-      <%= link_to (chirurgy_consignepostoperatoire_path(@chirurgie)), class: "bottom_description" do %>
-      <h2>Consignes post-opératoires</h2>
-      <p>Après la chirurgie, que faire ?</p>
-      <h4>En savoir plus</h4>
+    <% end %>
+    <% @consignes.each do |consigne| %>
+      <% if consigne.name == 'IVT' %>
+        <div class="bottom_element_1">
+          <%= link_to (consignepostoperatoire_path(consigne)), class: "bottom_description" do %>
+            <h2>Consignes post-opératoires</h2>
+            <p>Après la chirurgie, que faire ?</p>
+            <h4>En savoir plus</h4>
+          <% end %>
+        </div>
       <% end %>
-    </div>
-  </div>
-<!-------------------------------------- liens détails --------------------------------------------->
-
-
-<!-------------------------------------- étape suivante --------------------------------------------->
-<div class="etapes">
-    <%= link_to (chirurgy_preparerlintervention_path(@bilan.chirurgie)), class: 'etape' do %>
-         <h2> </h2>
-    <p>Etape suivante : Bilan clinique pré-opératoire</p>
     <% end %>
   </div>
-
+  <!-------------------------------------- liens détails --------------------------------------------->
+  <!-------------------------------------- étape suivante --------------------------------------------->
+  <% @prepares.each do |prepare| %>
+    <% if prepare.name == 'IVT' %>
+      <div class="etapes">
+        <%= link_to (preparerlintervention_path(prepare)), class: 'etape' do %>
+          <p>Etape suivante : Preparer l'intervention</p>
+        <% end %>
+      </div>
+    <% end %>
+  <% end %>
 <!-------------------------------------- étape suivante --------------------------------------------->
   </div>
 

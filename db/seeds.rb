@@ -23,18 +23,18 @@ chirurgy.each do |intervention|
     nom: intervention
   )
   Bilancliniquepreoperatoire.create!(
-    chirurgie: Chirurgie.find_by(nom: intervention)
+    name: intervention
   )
   Consignepostoperatoire.create!(
-    chirurgie: Chirurgie.find_by(nom: intervention)
+    name: intervention
   )
   Preparerlintervention.create!(
-    chirurgie: Chirurgie.find_by(nom: intervention)
+    name: intervention
   )
 end
 
 Choisissezvotreimplant.create!(
-  chirurgie: Chirurgie.find_by(nom: 'Cataracte')
+  name: 'Cataracte'
 )
 
 puts 'finished!'
