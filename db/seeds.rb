@@ -6,7 +6,7 @@ Chirurgie.destroy_all
 
 puts 'Creating pathologies...'
 
-pathology = ['Glaucome', 'Diabète', 'DMLA', 'Décolement de la rétine', 'Autres pathologies rétiniennes']
+pathology = ['Glaucome', 'Diabète', 'DMLA', 'Décolement de la rétine']
 
 pathology.each do |maladie|
   Pathologie.create!(
