@@ -1,0 +1,140 @@
+@media (max-width: 960px) {
+    .chest_centre {
+        width: 75%;
+}
+    .cartel_center2 {
+        height: 600px;
+    }
+    .cartel_center2 p {
+        font-size: 18.5px;
+    }
+
+    .cartel_center1 {
+    padding: 0 10px 0 0;
+    height: 710px;
+    }
+}
+
+@media (max-width: 750px) {
+    .chest_centre, .chest_patho, .chest_each_patho {
+        width: 85%;
+    }
+    .cartel_center2 {
+        height: 400px;
+    }
+    .cartel_center2 p {
+        font-size: 15px;
+    }
+    .text01, .text02, .text03, .text04, .text05 {
+        padding: 13px 10px;
+    }
+    .cartel_center1 {
+    padding: 0 45px 0 0;
+    height: 610px;
+    }
+
+    .cartel_center1 p{
+    font-size: 15px;
+    }
+    * {
+    transition: 0.4s;
+    }
+
+    .navbar {
+        width: 95%;
+    }
+
+    .navbar a {
+        font-size: 70%;
+    }
+
+    .img_navbar {
+        width: 15px;
+        height: 30px;
+    }
+
+    #img_logo {
+    display: block;
+    height: 50px;
+    width: 110px;
+    margin: 0 auto;
+}
+    .titre_center {
+      margin-left: 5%;
+      font-size: 27px;
+    }
+
+    .textes_lunettes p {
+        font-size: 14px;
+    }
+
+    .btn_rdv {
+        width: 75%;
+}
+    .textes_lunettes2 {
+    background-image: url('');
+        }
+    .conteneur_text_image p, .conteneur_text_image h2 {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .titre_pathologies {
+        font-size: 27px;
+    }
+
+    .chest_patho h4 {
+        width: 30%;
+        margin-left: 55%;
+    }
+    .etapes h2{
+        width: 100px;
+        height: 60px;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .image_pathology {
+        height: 0px;
+        width: 0px;
+    }
+
+    .conteneur_text_chirurgies p, .conteneur_text_bilantech p, .conteneur_text_bilantech h2 {
+        width: 93%;
+        margin: 0 auto;
+        border-radius: 0 !important;
+    }
+}
+@media (max-width: 540px) {
+    .chest_centre, .chest_patho, .chest_each_patho {
+        width: 95%;
+    }
+    .cartel_center2 {
+        height: 500px;
+    }
+    .cartel_center2 p {
+        font-size: 15px;
+    }
+    .text01, .text02, .text03, .text04, .text05 {
+        padding: 11px;
+    }
+    .cartel_center1 {
+    padding: 0 45px 0 0;
+    height: 610px;
+    }
+
+    .navbar a {
+        font-size: 50%;
+    }
+
+    .titre_center {
+      margin-left: 3%;
+      font-size: 25px;
+    }
+    .titre_pathologies {
+        font-size: 25px;
+        width: 95%;
+        margin: 30px 0 30px 0px;
+    }
+}
+
