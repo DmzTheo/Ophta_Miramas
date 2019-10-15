@@ -1,4 +1,4 @@
-<% case @preparer.chirurgie.nom %>
+<% case @preparer.name %>
   <% when 'Cataracte' %>
     <%= render "cataracte" %>
   <% when 'Glaucome' %>
@@ -7,6 +7,4 @@
     <%= render "ivt" %>
   <% when 'Chirurgie Laser' %>
     <%= render "laser" %>
-  <% when 'Chirurgie des paupières' %>
-    <%= render "paupieres" %>
 <% end %>

@@ -9,11 +9,10 @@ Rails.application.routes.draw do
 
   resources :pathologies, only: [:show, :index]
 
-  resources :chirurgies, only: [:show, :index] do
-    resources :bilancliniquepreoperatoires, only: [:show]
-    resources :preparerlinterventions, only: [:show]
-    resources :consignepostoperatoires, only: [:show]
-    resources :choisissezvotreimplants, only: [:show]
-  end
+  resources :chirurgies, only: [:show, :index]
+  resources :bilancliniquepreoperatoires, only: [:show]
+  resources :preparerlinterventions, only: [:show]
+  resources :consignepostoperatoires, only: [:show]
+  resources :choisissezvotreimplants, only: [:show]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
