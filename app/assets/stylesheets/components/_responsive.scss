@@ -15,7 +15,8 @@
     }
 }
 
-@media (max-width: 750px) {
+
+@media (max-width: 780px) {
     .chest_centre, .chest_patho, .chest_each_patho {
         width: 85%;
     }
@@ -99,10 +100,18 @@
         width: 0px;
     }
 
-    .conteneur_text_chirurgies p, .conteneur_text_bilantech p, .conteneur_text_bilantech h2 {
+
+    .conteneur_text_chirurgies p, .conteneur_text_bilantech p, .conteneur_text_bilantech h2, .conteneur_text_pathologies p, .conteneur_text_pathologies h2{
         width: 93%;
         margin: 0 auto;
         border-radius: 0 !important;
+    }
+
+    .personnels_cards {
+     height: 1800px;
+     }
+    .personnel h2 {
+        margin-top: 55px;
     }
 }
 @media (max-width: 540px) {

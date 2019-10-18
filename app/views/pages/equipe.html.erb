@@ -23,51 +23,49 @@
 </div>
 <!------------------------------------ navbar ------------------------------------------->
 <!------------------------------------ titre ------------------------------------------->
-<h2 class="titre_center" style="margin-left: 24%;">L'EQUIPE</h2>
+<h2 class="titre_center">L'EQUIPE</h2>
 <!------------------------------------ titre ------------------------------------------->
 <!------------------------------------ description ------------------------------------------->
-<div class="chest_each_patho" style="width: 50%; padding-bottom: 50px; margin-bottom: 0; align-items: center">
-  <!-- <div class="position_row">
-    <div class='text_centre'> -->
-      <h2 style="margin-top: 20px; font-weight: bold;">Pour vous accueillir:</h2>
-      <h2 style="font-size: 20px;"><br>Au secrétariat</h2>
-      <div class="personnel" style="border-top: 1px solid #c0134e; border-bottom: 1px solid #c0134e; padding: 20px 0">
-        <%= image_tag('inf_1.png', alt: "", class: "img_inf") %>
-        <p style="bottom: 15px"><strong>Fabienne Savajol</strong><br>& <br> <strong>Christine</strong></p>
-      </div>
-      <h2 style="font-size: 20px;"><br><br>Pour la pré-consultation</h2>
-      <div class="personnel" style="border-top: 1px solid #207fde; padding: 20px 0">
-        <%= image_tag('doc_6.png', alt: "", class: "img_anne") %>
-        <p style="bottom: 15px">Notre orthoptiste : <strong>Anne Aurore Casini </strong>vous fera les mesures préliminaires à l'examen de l'ophtalmologiste.</p>
-      </div>
-      <div class="personnel" style="border-bottom: 1px solid #207fde;padding: 0px 0 30px 0">
-        <%= image_tag('doc_4.png', alt: "", class: "img_eliane") %>
-        <p style="bottom: 15px">Aidée par notre infirmière et aide opératoire <strong>Eliane Michal.</p></strong>
-      </div>
-      <h2 style="font-size: 20px; margin-top: 50px" >Au premier étage du centre</h2>
-      <div class="personnel" class="personnel" style="border-top: 1px solid #E8E8B2; border-bottom: 1px solid #E8E8B2; padding: 20px 0">
-        <%= image_tag('doc_2.png', alt: "", class: "img_agnes") %>
-
-      <p style="bottom: 15px"><strong>Agnès Fabrigoule</strong>, orthoptiste libérale réalise les visions binoculaires, la rééducation orthoptique et les champs visuels.</p>
-      </div>
-      <h2 style="margin-top: 45px">Les médecins</h2>
-      <div class="personnel" class="personnel" class="personnel" style="border-top: 1px solid #0f4370; padding: 15px 0">
-        <%= image_tag('doc_5.png', alt: "", class: "img_nadine") %>
-
-      <p style="bottom: 20px"><br><strong>Docteur Buzzacchera Nadine</strong>. Ancien interne des hopitaux de Marseille, chef de clinique à la faculté, spécialisée en chirurgie de la cataracte et du glaucome, chirurgie des paupières et chirurgie réfractive.</p>
-    </div>
-      <div class="personnel" class="personnel" class="personnel" style="border-bottom: 1px solid #0f4370; padding: 15px 0">
-        <%= image_tag('doc_3.png', alt: "", class: "img_brigitte") %>
-
-      <p style="bottom: 10px"><br><strong>Docteur Hervé-Fey Brigitte</strong>. Ancien interne des hopitaux de Marseille, chef de clinique à la faculté, spécialisée en chirurgie de la cataracte et du glaucome.</p>
-    </div>
-    </div>
+<div class="chest_each_patho" style="padding-bottom: 50px; margin-bottom: 0;">
+  <h2 style="margin-top: 20px; font-weight: bold;">Pour vous accueillir:</h2>
+  <div class="personnels_cards">
+  <div class="personnel">
+    <h2>Au secrétariat</h2>
+    <%= image_tag('inf_1.png', alt: "", class: "img_inf") %>
+    <p><strong>Fabienne Savajol</strong><br>& <br> <strong>Christine</strong></p>
   </div>
-  <p><br><br></p>
-  <!------------------------------------ description ------------------------------------------->
+  <div class="personnel">
+    <h2>Pour la pré-consultation</h2>
+    <%= image_tag('doc_6.png', alt: "", class: "img_anne") %>
+    <p><strong>Anne Aurore Casini </strong> <br>Notre orthoptiste vous fera les mesures préliminaires à l'examen de l'ophtalmologiste.</p>
+  </div>
+  <div class="personnel">
+    <%= image_tag('doc_4.png', alt: "", class: "img_eliane") %>
+    <p><strong>Eliane Michal</strong> <br>Infirmière qui aide notre orthoptiste et aide opératoire.</p>
+  </div>
+<!-- </div>
+  <div class="personnels_cards"> -->
+  <div class="personnel">
+    <h2>Au premier étage du centre</h2>
+    <%= image_tag('doc_2.png', alt: "", class: "img_agnes") %>
+    <p><strong>Agnès Fabrigoule</strong>. <br>Orthoptiste libérale réalise les visions binoculaires, la rééducation orthoptique et les champs visuels.</p>
+  </div>
+  <div class="personnel">
+    <h2>Les médecins</h2>
+    <%= image_tag('doc_5.png', alt: "", class: "img_nadine") %>
+    <p><strong>Docteur Buzzacchera Nadine</strong>. Ancien interne des hopitaux de Marseille, chef de clinique à la faculté, spécialisée en chirurgie de la cataracte et du glaucome, chirurgie des paupières et chirurgie réfractive.</p>
+  </div>
+  <div class="personnel">
+    <%= image_tag('doc_3.png', alt: "", class: "img_brigitte") %>
+    <p><strong>Docteur Hervé-Fey Brigitte</strong>. Ancien interne des hopitaux de Marseille, chef de clinique à la faculté, spécialisée en chirurgie de la cataracte et du glaucome.</p>
+  </div>
+</div>
+</div>
+</div>
+<!------------------------------------ description ------------------------------------------->
 </div>
 <!------------------------------------ bottom bar ------------------------------------------->
 <div class='bottom_bar' style="margin-top: -30px">
-  <%= image_tag('logo_ok.png', alt: "", style: "width: 60px") %>
+<%= image_tag('logo_ok.png', alt: "", style: "width: 60px") %>
 </div>
 <!------------------------------------ bottom bar ------------------------------------------->
