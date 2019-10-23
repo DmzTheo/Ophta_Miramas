@@ -46,24 +46,20 @@
 
 }
 .cartel_center2 {
-    height: 600px;
-    // padding: 20px 20px 0 20px;
-    width: 50%;
-    color: white;
-    margin-top: -30px;
-    text-align: center;
-
-
+  height: 600px;
+  // padding: 20px 20px 0 20px;
+  width: 50%;
+  color: white;
+  margin-top: -30px;
+  text-align: center;
 }
 
 .cartel_center2 p {
-    background-color: #ce1452;
-    margin: 0 auto;
-    border-bottom: 1px solid #f4588c;
-    font-weight: 400;
-    font-size: 18.5px;
-
-
+  background-color: #ce1452;
+  margin: 0 auto;
+  border-bottom: 1px solid #f4588c;
+  font-weight: 400;
+  font-size: 18.5px;
 }
 
 .text01 {
@@ -102,10 +98,20 @@
 //     // box-shadow: 0 0 10px rgba(211, 211, 211, 0.349);
 // }
 .mapimg {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 0 auto;
+  background-color: white;
+  width: 75%;
+  margin: 0 auto 0 auto;
+  position: relative;
+}
 
+.googlelink {
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .map {

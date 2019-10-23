@@ -1,23 +1,23 @@
 @media (max-width: 960px) {
-    .chest_centre {
+    .chest_centre, .mapimg {
         width: 75%;
 }
     .cartel_center2 {
-        height: 600px;
+      height: 600px;
     }
     .cartel_center2 p {
-        font-size: 18.5px;
+      font-size: 18.5px;
     }
 
     .cartel_center1 {
-    padding: 0 10px 0 0;
-    height: 710px;
+      padding: 0 10px 0 0;
+      height: 710px;
     }
 }
 
 
 @media (max-width: 780px) {
-    .chest_centre, .chest_patho, .chest_each_patho {
+    .chest_centre, .mapimg, .chest_patho, .chest_each_patho {
         width: 85%;
     }
     .cartel_center2 {
@@ -115,7 +115,7 @@
     }
 }
 @media (max-width: 540px) {
-    .chest_centre, .chest_patho, .chest_each_patho {
+    .chest_centre, .mapimg, .chest_patho, .chest_each_patho {
         width: 95%;
     }
     .cartel_center2 {

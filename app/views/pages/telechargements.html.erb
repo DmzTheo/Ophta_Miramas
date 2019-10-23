@@ -1,63 +1,75 @@
 <!------------------------------------- logo -------------------------------------------->
 <div class='logo'>
   <%= link_to root_path do %>
-    <%= image_tag('logo_ok.png', alt: "", id: "img_logo") %>
+  <%= image_tag('logobleu.png', alt: "", id: "img_logo") %>
   <% end %>
 </div>
 <!------------------------------------- logo -------------------------------------------->
-
-
 <!------------------------------------ navbar ------------------------------------------->
 <div class='nav_back'>
   <div class='navbar_all'>
     <%= link_to((root_path), class: 'a_img') do %>
-      <%= image_tag('view.png', alt: "", class: "img_navbar") %>
+    <%= image_tag('view.png', alt: "", class: "img_navbar") %>
     <% end %>
     <div class="navbar">
-      <%= link_to "LE CENTRE", pages_centre_path, {style: 'border-bottom: 0.5px solid #363636;'} %>
+      <%= link_to "LE CENTRE", pages_centre_path %>
       <%= link_to "L'EQUIPE", pages_equipe_path %>
       <%= link_to "LUNETTES", pages_lunettes_path %>
       <%= link_to "AFFECTIONS", pathologies_path %>
-      <%= link_to "CHIRURGIES", chirurgies_path %>
+      <%= link_to "CHIRURGIES", chirurgies_path, {style: 'border-bottom: 0.5px solid #363636;'} %>
       <a style='color:#207fde'>PRENDRE RENDEZ-VOUS</a>
     </div>
   </div>
 </div>
 <!------------------------------------ navbar ------------------------------------------->
-
-
 <!------------------------------------ titre ------------------------------------------->
-<h2 class="titre_center" style="margin-left: 7%;">LE CENTRE</h2>
+<h2 class="titre_center">TÉLÉCHARGEMENTS</h2>
 <!------------------------------------ titre ------------------------------------------->
-
-
 <!------------------------------------ description ------------------------------------------->
-<div class="chest_centre">
-  <div class="position_row">
-    <div class='text_centre'>
-      <p>Le centre d’ophtalmologie est situé au sein du centre médical au 54 Bis Avenue Charles de Gaulle à Miramas</p>
-        <p> Il est ouvert du lundi au jeudi de 8h30 à 19h00 et le vendredi de 8h30 à 12H30.</p>
-
-      <p>le centre est accessible au PMR</p>
-
-      <p><br>Le cabinet est spécialisé en chirurgie oculaire, chirurgie rétractive et chirurgie des paupières.</p>
-        <p> L’ensemble des pathologies oculaires DMLA, Diabète, Glaucome peuvent être prises en charge au cabinet.</p>
-
-      <p><br>Les chirurgie occulaires et paupières sont réalisées à la clinique vignoli à Salon et à l’hopital privé de Provence à Aix-en-provence. <br> La chirurgie refractive, est quand-à elle, réalisée à la clinique Axiome à Aix-en-provence.</p>
-
-      <p><br>Au sein du cabinet, un plateau technique à la pointe de la technologie capable de détecter toute pathologies est présents pour un bilan et une prise en charge adaptée.</p>
+<div class="chest_centre" style="height: 800px;">
+  <div class="position_row" style="height: 800px;">
+    <div class='text_centre' style="height: 800px;">
+      <div class="cartel_center1" style="height: 100%;">
+        <%= image_tag(asset_path("pdf.png")) %>
+        <p style="text-align: center;margin-left: auto;margin-right: auto;width: 80%; padding: 30% 0;">Vous trouverez ici <strong>toutes les informations</strong> sur les interventions chirurgicales à télécharger en PDF</p>
+      </div>
+      <div class="cartel_center2" style="height: 100%:">
+        <p class="text01" style="border-bottom:0px; padding-bottom:0px;">Cataracte</p>
+        <div class="text02">
+          <%= link_to(("https://docs.wixstatic.com/ugd/62de3d_07547f46eae549008299ee2ddc46784c.pdf"), class: 'pdflink') do %>
+            <%#= image_tag(asset_path("pdf.png"), style:"background-color:white;border-radius:5px;") %>
+          <% end %>
+          <br>SFO / Feuille d'information sur la chirurgie <br><br>
+          <%= link_to("https://docs.wixstatic.com/ugd/62de3d_07547f46eae549008299ee2ddc46784c.pdf") do %>
+            <%#= image_tag(asset_path("pdf.png"), style:"background-color:white;border-radius:5px;") %>
+          <% end %>
+          <br>SFO / Feuille d'information cataracte secondaire-YAG <br><br>
+          <%= link_to("https://docs.wixstatic.com/ugd/62de3d_07547f46eae549008299ee2ddc46784c.pdf") do %>
+            <%#= image_tag(asset_path("pdf.png"), style:"background-color:white;border-radius:5px;") %>
+          <% end %>
+          <br>SFO / Feuille d'information implants premiums</div>
+        <p></p>
+        <p class="text01" style="border-bottom:0px; padding-bottom:0px;">Chirurgie réfractive au laser</p>
+        <div class="text02">
+          <%= link_to("https://docs.wixstatic.com/ugd/62de3d_07547f46eae549008299ee2ddc46784c.pdf") do %>
+            <%#= image_tag(asset_path("pdf.png"), style:"background-color:white;border-radius:5px;") %>
+          <% end %>
+          <br>Feuille d'information sur la chirurgie / SFO</div>
+        <p></p>
+        <p class="text01" style="border-bottom:0px; padding-bottom:0px;">Injection intra-vitréennes</p>
+        <div class="text02">
+          <%= link_to("https://docs.wixstatic.com/ugd/62de3d_07547f46eae549008299ee2ddc46784c.pdf") do %>
+            <%#= image_tag(asset_path("pdf.png"), style:"background-color:white;border-radius:5px;") %>
+          <% end %>
+          <br>SFO / Feuille d'information sur les IVTs</div>
+        <p></p>
+      </div>
     </div>
-    <%= image_tag('lieu_2_po.jpg', class: "img_lieu", alt: "") %>
   </div>
-  <%= link_to(("https://www.google.fr/maps/place/54+Avenue+Charles+de+Gaulle,+13140+Miramas/@43.5842536,4.99973,17z/data=!3m1!4b1!4m5!3m4!1s0x12b603bf3a8aa1a7:0x4e4fa9953db8c285!8m2!3d43.5842497!4d5.0019187"), target: "_blank") do %>
-    <%= image_tag('map.png', class: "map", alt: "") %>
-  <% end %>
-  <p><br><br></p>
-<!------------------------------------ description ------------------------------------------->
+  <!------------------------------------ description ------------------------------------------->
 </div>
-
 <!------------------------------------ bottom bar ------------------------------------------->
 <div class='bottom_bar'>
-  <%= image_tag('logo_ok.png', alt: "", style: "width: 60px") %>
+  <%= image_tag('logobleu.png', alt: "", style: "width: 60px") %>
 </div>
 <!------------------------------------ bottom bar ------------------------------------------->

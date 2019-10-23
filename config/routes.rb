@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
-  get 'choisissezvotreimplants/show'
   root to: 'pages#home'
+
   get 'pages/lunettes'
   get 'pages/centre'
   get 'pages/equipe'
-  get 'pages/rendez_vous'
   get 'pages/telechargements'
 
   resources :pathologies, only: [:show, :index]

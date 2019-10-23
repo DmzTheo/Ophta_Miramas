@@ -18,6 +18,18 @@
     color: #474747;
 }
 
+.eyes{
+  background-image: url(asset-path("banerbleue.jpg"));
+  background-size: cover;
+  background-position: center;
+}
+
+.lunet{
+  background-image: url(asset-path("two_faces.jpg"));
+  background-size: cover;
+  background-position: center;
+}
+
 .presentation_home_1, .presentation_home_2, .presentation_home_3, .presentation_home_4 {
 
     align-content: center;

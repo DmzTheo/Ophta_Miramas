@@ -15,15 +15,22 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-var links = ["./assets/two_faces.jpg","./assets/banerbleue"];
-var images = ["./assets/two_faces.jpg","./assets/banerbleue.jpg"];
-var i = 0;
-var renew = setInterval(function(){
-  if(links.length == i){
-      i = 0;
-  }
-  else {
-  document.getElementById("banner").src = images[i];
-  i++;
-  }
-},5000);
+// var links = [1,2];
+// var cssclass = ["eyes", "lunet"]
+// var i = 0;
+// var renew = setInterval(function(){
+//   if(links.length == i){
+//       i = 0;
+//   }
+//   else {
+//     if(document.getElementById("banner").hasClass("eyes"){
+//       document.getElementById("banner").addClass("lunet");
+//       document.getElementById("banner").removeClass("eyes");
+//     }
+//     else {
+//       document.getElementById("banner").addClass("eyes");
+//       document.getElementById("banner").removeClass("lunet");
+//     }
+//   i++;
+//   }
+// },5000);
