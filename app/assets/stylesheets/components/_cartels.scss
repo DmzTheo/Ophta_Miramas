@@ -238,6 +238,32 @@ margin-left: 139px;
     border: 1px solid #207FDE;
 }
 
+.btn_telechargements{
+  color: white;
+  display: block;
+  border: 1px solid #207FDD;
+  background-color: #207FDD;
+  padding: 10px;
+  width: 22%;
+  margin: 50px auto;
+  font-family: 'roboto';
+  font-weight: bold;
+  border-radius: 2px;
+  letter-spacing: 0.5px;
+  transition: 1s;
+  text-align: center;
+  font-size: 90%;
+  text-decoration: none;
+  margin: 30px 13% 30px 0;
+}
+
+.btn_telechargements:hover {
+  color: #207FDD;
+  background-color: white;
+  transition: 0.3s;
+  border: 1px solid white;
+}
+
 .cartel_lunette {
     width: 45%;
     display: block;
