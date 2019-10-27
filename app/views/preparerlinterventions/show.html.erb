@@ -1,3 +1,5 @@
+<%= content_for :meta_title, "#{@preparer.name} | #{DEFAULT_META["meta_title"]}" %>
+
 <% case @preparer.name %>
   <% when 'Cataracte' %>
     <%= render "cataracte" %>

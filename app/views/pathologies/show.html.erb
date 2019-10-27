@@ -1,3 +1,5 @@
+<%= content_for :meta_title, "#{@pathologie.nom} | #{DEFAULT_META["meta_title"]}" %>
+
 <% case @pathologie.nom %>
   <% when 'Glaucome' %>
     <%= render "glaucomepatho" %>

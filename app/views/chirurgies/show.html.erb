@@ -1,3 +1,5 @@
+<%= content_for :meta_title, "#{@chirurgie.nom} | #{DEFAULT_META["meta_title"]}" %>
+
 <% case @chirurgie.nom %>
   <% when 'Cataracte' %>
     <%= render "cataracte" %>
