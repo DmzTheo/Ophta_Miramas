@@ -55,9 +55,9 @@
 <!-------------------------------- carte Cataracte --------------------------------------->
 
 
-<!---------------------------- carte Chirurgie laser ----------------------------------->
+<!---------------------------- carte Chirurgie réfractive ----------------------------------->
   <% @chirurgies.each do |chirurgie| %>
-    <% if chirurgie.nom == 'Chirurgie Laser' %>
+    <% if chirurgie.nom == 'Chirurgie réfractive' %>
       <%= link_to(chirurgy_path(chirurgie)) do %>
         <div class='link_diabete'>
           <h2>CHIRURGIE REFRACTIVE</h2>
@@ -70,7 +70,7 @@
       <% end %>
     <% end %>
   <% end %>
-<!---------------------------- carte Chirurgie laser ----------------------------------->
+<!---------------------------- carte Chirurgie réfractive ----------------------------------->
 
 
 <!------------------------ carte Chirurgie des paupières ------------------------------->

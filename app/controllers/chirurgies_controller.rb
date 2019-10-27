@@ -4,7 +4,7 @@ class ChirurgiesController < ApplicationController
   end
 
   def show
-    @chirurgie = Chirurgie.find(params[:id])
+    @chirurgie = Chirurgie.friendly.find(params[:id])
     @bilans = Bilancliniquepreoperatoire.all
     @choisisses = Choisissezvotreimplant.all
     @consignes = Consignepostoperatoire.all

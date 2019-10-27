@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_15_160354) do
+ActiveRecord::Schema.define(version: 2019_10_27_084707) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,36 +19,59 @@ ActiveRecord::Schema.define(version: 2019_10_15_160354) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name"
+    t.string "slug"
+    t.index ["slug"], name: "index_bilancliniquepreoperatoires_on_slug", unique: true
   end
 
   create_table "chirurgies", force: :cascade do |t|
     t.string "nom"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "slug"
+    t.index ["slug"], name: "index_chirurgies_on_slug", unique: true
   end
 
   create_table "choisissezvotreimplants", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name"
+    t.string "slug"
+    t.index ["slug"], name: "index_choisissezvotreimplants_on_slug", unique: true
   end
 
   create_table "consignepostoperatoires", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name"
+    t.string "slug"
+    t.index ["slug"], name: "index_consignepostoperatoires_on_slug", unique: true
+  end
+
+  create_table "friendly_id_slugs", force: :cascade do |t|
+    t.string "slug", null: false
+    t.integer "sluggable_id", null: false
+    t.string "sluggable_type", limit: 50
+    t.string "scope"
+    t.datetime "created_at"
+    t.index ["slug", "sluggable_type", "scope"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope", unique: true
+    t.index ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type"
+    t.index ["sluggable_type", "sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_type_and_sluggable_id"
   end
 
   create_table "pathologies", force: :cascade do |t|
     t.string "nom"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "slug"
+    t.index ["slug"], name: "index_pathologies_on_slug", unique: true
   end
 
   create_table "preparerlinterventions", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name"
+    t.string "slug"
+    t.index ["slug"], name: "index_preparerlinterventions_on_slug", unique: true
   end
 
 end

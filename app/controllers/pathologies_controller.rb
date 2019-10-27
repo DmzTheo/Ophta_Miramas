@@ -4,6 +4,6 @@ class PathologiesController < ApplicationController
   end
 
   def show
-    @pathologie = Pathologie.find(params[:id])
+    @pathologie = Pathologie.friendly.find(params[:id])
   end
 end

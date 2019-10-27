@@ -2,6 +2,10 @@ puts 'Destroying previous seed...'
 
 Pathologie.destroy_all
 Bilancliniquepreoperatoire.destroy_all
+Consignepostoperatoire.destroy_all
+Preparerlintervention.destroy_all
+Preparerlintervention.destroy_all
+Choisissezvotreimplant.destroy_all
 Chirurgie.destroy_all
 
 puts 'Creating pathologies...'
@@ -16,7 +20,7 @@ end
 
 puts 'Creating chirurgies et chirurgies descriptions...'
 
-chirurgy = ['Cataracte', 'IVT', 'Chirurgie Laser', 'Chirurgie des paupières']
+chirurgy = ['Cataracte', 'IVT', 'Chirurgie réfractive', 'Chirurgie des paupières']
 
 chirurgy.each do |intervention|
   Chirurgie.create!(

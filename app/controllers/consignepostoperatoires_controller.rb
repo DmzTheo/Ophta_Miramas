@@ -1,6 +1,6 @@
 class ConsignepostoperatoiresController < ApplicationController
   def show
-    @consigne = Consignepostoperatoire.find(params[:id])
+    @consigne = Consignepostoperatoire.friendly.find(params[:id])
     @bilans = Bilancliniquepreoperatoire.all
     @choisisses = Choisissezvotreimplant.all
     @consignes = Consignepostoperatoire.all

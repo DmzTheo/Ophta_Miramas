@@ -152,7 +152,7 @@
 <!-------------------------------------- liens détails --------------------------------------------->
   <div class='bottom_elements'>
     <% @bilans.each do |bilan| %>
-      <% if bilan.name == 'Chirurgie Laser' %>
+      <% if bilan.name == 'Chirurgie réfractive' %>
         <div class="bottom_element_1">
           <%= link_to (bilancliniquepreoperatoire_path(bilan)), class: "bottom_description" do %>
             <h2>Bilan clinique pré-opératoire</h2>
@@ -163,7 +163,7 @@
       <% end %>
     <% end %>
     <% @prepares.each do |prepare| %>
-      <% if prepare.name == 'Chirurgie Laser' %>
+      <% if prepare.name == 'Chirurgie réfractive' %>
         <div class="bottom_element_1">
           <%= link_to (preparerlintervention_path(prepare)), class: "bottom_description" do %>
             <h2>Preparer l'intervention</h2>
@@ -174,7 +174,7 @@
       <% end %>
     <% end %>
     <% @consignes.each do |consigne| %>
-      <% if consigne.name == 'Chirurgie Laser' %>
+      <% if consigne.name == 'Chirurgie réfractive' %>
         <div class="bottom_element_1">
           <%= link_to (consignepostoperatoire_path(consigne)), class: "bottom_description" do %>
             <h2>Consignes post-opératoires</h2>
