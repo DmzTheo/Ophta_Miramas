@@ -36,6 +36,8 @@ gem 'simple_form'
 
 gem 'friendly_id', '~> 5.2.4'
 
+gem 'sitemap_generator'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

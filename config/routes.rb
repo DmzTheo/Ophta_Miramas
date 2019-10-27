@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'pages/robots'
   root to: 'pages#home'
 
   get 'pages/lunettes'
@@ -20,5 +21,6 @@ Rails.application.routes.draw do
 
   # 301 redirect from old URLs
   get "/old_path_to_posts/:id", to: redirect("/posts/%{id}s")
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
