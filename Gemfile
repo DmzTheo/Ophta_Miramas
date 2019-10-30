@@ -38,6 +38,8 @@ gem 'friendly_id', '~> 5.2.4'
 
 gem 'sitemap_generator'
 
+gem 'google-analytics-rails', '1.1.1'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
