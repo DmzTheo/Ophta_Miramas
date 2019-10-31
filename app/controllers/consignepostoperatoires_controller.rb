@@ -5,5 +5,7 @@ class ConsignepostoperatoiresController < ApplicationController
     @choisisses = Choisissezvotreimplant.all
     @consignes = Consignepostoperatoire.all
     @prepares = Preparerlintervention.all
+
+    add_breadcrumb @consigne.name, consignepostoperatoire_path(@consigne)
   end
 end

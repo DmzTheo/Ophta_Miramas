@@ -1,4 +1,6 @@
 class ChirurgiesController < ApplicationController
+  add_breadcrumb 'Chirurgies', :chirurgies_path
+
   def index
     @chirurgies = Chirurgie.all
   end
@@ -9,5 +11,7 @@ class ChirurgiesController < ApplicationController
     @choisisses = Choisissezvotreimplant.all
     @consignes = Consignepostoperatoire.all
     @prepares = Preparerlintervention.all
+
+    add_breadcrumb @chirurgie.nom, chirurgy_path(@chirurgie)
   end
 end
