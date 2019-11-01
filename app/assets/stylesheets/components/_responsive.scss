@@ -135,12 +135,23 @@
     padding: 0 45px 0 0;
     height: 610px;
   }
-
-  .navbar a {
-      font-size: 52%;
-      margin: 0 3px;
+  .navbar {
+    width: 100%;
+    flex-shrink: 0;
   }
-
+  .navbar_all {
+    margin: 0;
+    width: 100%;
+  }
+  .navbar a {
+    font-size: 65%;
+    margin: 0 5px;
+    text-align: center;
+    height: auto;
+  }
+  .img_navbar {
+    display: none;
+  }
   .titre_center {
     margin-left: 3%;
     font-size: 25px;
@@ -160,11 +171,15 @@
   .bienvenue h4{
     font-size: 30px;
   }
+
+  .bienvenue h3{
+    font-size: 19px;
+  }
 }
 
 @media (max-width: 444px) {
   .bienvenue h3{
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 
