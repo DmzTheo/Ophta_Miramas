@@ -1,12 +1,18 @@
+@media (max-width: 1169px) {
+  .cartel_center2 p {
+      font-size: 18px;
+  }
+}
+
 @media (max-width: 960px) {
     .chest_centre, .mapimg {
         width: 75%;
 }
     .cartel_center2 {
-      height: 600px;
+      height: auto;
     }
     .cartel_center2 p {
-      font-size: 18.5px;
+      font-size: 17px;
     }
 
     .cartel_center1 {
@@ -123,7 +129,7 @@
       width: 95%;
   }
   .cartel_center2 {
-      height: 500px;
+      height: auto;
   }
   .cartel_center2 p {
       font-size: 15px;
@@ -133,7 +139,7 @@
   }
   .cartel_center1 {
     padding: 0 45px 0 0;
-    height: 610px;
+    height: auto;
   }
   .navbar {
     width: 100%;
