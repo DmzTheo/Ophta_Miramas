@@ -150,10 +150,11 @@
     width: 100%;
   }
   .navbar a {
-    font-size: 65%;
+    font-size: 85%;
     margin: 0 5px;
     text-align: center;
     height: auto;
+    font-weight: normal;
   }
   .img_navbar {
     display: none;
@@ -180,6 +181,10 @@
 
   .bienvenue h3{
     font-size: 19px;
+  }
+
+  .link_rendez_vous {
+    display: none;
   }
 }
 
