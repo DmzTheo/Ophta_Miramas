@@ -194,6 +194,12 @@
   }
 }
 
+@media (max-width: 373px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+}
+
 @media (max-width: 345px) {
   .bienvenue h4, h3{
     visibility: collapse;
