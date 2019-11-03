@@ -10,6 +10,10 @@ class SitemapsController < ApplicationController
     @prepares = Preparerlintervention.all
     @pathologies = Pathologie.all
     @chirurgies = Chirurgie.all
+
+    respond_to do |format|
+      format.xml
+    end
   end
 
   private

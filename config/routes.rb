@@ -13,7 +13,8 @@ Rails.application.routes.draw do
   get 'pages/centre'
   get 'pages/equipe'
   get 'pages/telechargements'
-  get '/sitemap.xml' => 'sitemaps#index', defaults: { format: 'xml' }
+
+  get '/sitemap.xml' => 'sitemaps#index', :format => "xml", :as => :sitemap
 
   resources :pathologies, only: [:show, :index]
 
