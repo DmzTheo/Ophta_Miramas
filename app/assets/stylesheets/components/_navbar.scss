@@ -5,7 +5,7 @@ body {
 }
 /* _____________NAVBAR_____________________________ */
 .navbar {
-    z-index: 2;
+    z-index: 200;
     text-align: center;
     width: 80%;
     height: 45px;
@@ -47,7 +47,7 @@ body {
     top: 0px;
     // border-radius: 0 0 3px 3px;
     border-bottom: 0.5px solid lightgray;
-    z-index: 1;
+    z-index: 255;
 }
 
 .navbar a {
