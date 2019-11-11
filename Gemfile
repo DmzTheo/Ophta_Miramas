@@ -35,7 +35,6 @@ gem 'popper_js', '~> 1.14.5'
 
 gem 'breadcrumbs_on_rails'
 gem 'friendly_id', '~> 5.2.4'
-gem 'google-analytics-rails', '1.1.1'
 gem 'simple_form'
 gem 'sitemap_generator'
 
