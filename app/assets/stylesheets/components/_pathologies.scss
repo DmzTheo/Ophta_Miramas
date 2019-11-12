@@ -74,7 +74,10 @@
     margin: 20px 20px;
     font-weight: 300;
     color: #474747;
+}
 
+.chest_patho .line_height {
+  line-height: 144%;
 }
 
 .chest_each_patho p {
@@ -96,7 +99,7 @@
     letter-spacing: 2px;
 }
 
-.chest_patho h4 {
+.chest_patho .plus_patho {
     color: white;
     border: none;
     font-family: 'roboto';
