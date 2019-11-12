@@ -38,7 +38,7 @@
       <p>Dans votre dossier, vous trouverez 2 ordonnances :</p>
       <p style="font-weight: normal;">- ordonnance concernant le produit d'exception (couleur bleu) : il est indispensable d'aller chercher le produit en pharmacie quelques jours avant car la clinique n'en dispose pas,</p>
       <p style="border-radius: 0 0 20px 0">- ordonnance post-opératoire : collyres à instiller avant et après l'intervention.</p>
-      <h2 style="font-size: smaller; background-color: white; width: 80%; padding: 20px 0px; margin: 15px auto;">Pensez à aller à la pharmacie avant l'injection pour gagner en sérénité et ainsi pouvoir rentrer immédiatement à votre domicile après l'injection.</h2>
+      <p class="italique">Pensez à aller à la pharmacie avant l'injection pour gagner en sérénité et ainsi pouvoir rentrer immédiatement à votre domicile après l'injection.</p>
     </div>
     <!--  <%= image_tag('ordo.jpg', alt: "", class: "image_pathology") %> -->
   </div>
@@ -48,7 +48,7 @@
       <% if bilan.name == 'IVT' %>
         <div class="bottom_element_1">
           <%= link_to (bilancliniquepreoperatoire_path(bilan)), class: "bottom_description" do %>
-            <h3>Bilan clinique pré-opératoire</h3>
+            <p class="titre_bottom">Bilan clinique pré-opératoire</p>
             <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
             <p class="plus">En savoir plus</p>
           <% end %>
@@ -59,7 +59,7 @@
       <% if prepare.name == 'IVT' %>
         <div class="bottom_element_1">
           <%= link_to (preparerlintervention_path(prepare)), class: "bottom_description" do %>
-            <h3>Preparer l'intervention</h3>
+            <p class="titre_bottom">Preparer l'intervention</p>
             <p>Les éléments essentiels à préparer avant l'intervention</p>
             <p class="plus">En savoir plus</p>
           <% end %>
@@ -70,7 +70,7 @@
       <% if consigne.name == 'IVT' %>
         <div class="bottom_element_1">
           <%= link_to (consignepostoperatoire_path(consigne)), class: "bottom_description" do %>
-            <h3>Consignes post-opératoires</h3>
+            <p class="titre_bottom">Consignes post-opératoires</p>
             <p>Après la chirurgie, que faire ?</p>
             <p class="plus">En savoir plus</p>
           <% end %>

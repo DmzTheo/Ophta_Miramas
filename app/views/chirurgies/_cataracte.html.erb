@@ -31,7 +31,7 @@
   <div class="conteneur_text_chirurgies">
     <div class="textes">
       <%= image_tag('cataracte.jpg', alt: "", class: "image_pathology", style: "heigth: 170px;width:200px") %>
-      <p >La cataracte correspond à l’opacification d'une structure intra-oculaire dénommée cristallin. Cette opacification progressive perturbe la progression de la lumière dans l'oeil. Une information visuelle de moins bonne qualité est alors communiquée au cerveau.</p>
+      <p>La cataracte correspond à l’opacification d'une structure intra-oculaire dénommée cristallin. Cette opacification progressive perturbe la progression de la lumière dans l'oeil. Une information visuelle de moins bonne qualité est alors communiquée au cerveau.</p>
       <p>Quand la correction apportée par les lunettes ou les lentilles ne suffit plus, l’opération est alors envisagée. Elle a pour but de rétablir la transparence du cristallin et donc, de rendre une meilleure vue.</p>
       <p>Cliquez ci-dessous, vous trouverez les éléments pour vous guider à chaque étape de votre chirurgie.</p>
     </div>
@@ -42,7 +42,7 @@
       <% if bilan.name == 'Cataracte' %>
         <div class="bottom_element_1">
           <%= link_to (bilancliniquepreoperatoire_path(bilan)), class: "bottom_description" do %>
-            <h3>Bilan clinique pré-opératoire</h3>
+            <p class="titre_bottom">Bilan clinique pré-opératoire</p>
             <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
             <p class="plus">En savoir plus</p>
           <% end %>
@@ -53,7 +53,7 @@
       <% if prepare.name == 'Cataracte' %>
         <div class="bottom_element_1">
           <%= link_to (preparerlintervention_path(prepare)), class: "bottom_description" do %>
-            <h3>Preparer l'intervention</h3>
+            <p class="titre_bottom">Preparer l'intervention</p>
             <p>Les éléments essentiels à préparer avant l'intervention</p>
             <p class="plus">En savoir plus</p>
           <% end %>
@@ -64,7 +64,7 @@
       <% if consigne.name == 'Cataracte' %>
         <div class="bottom_element_1">
           <%= link_to (consignepostoperatoire_path(consigne)), class: "bottom_description" do %>
-            <h3>Consignes post-opératoires</h3>
+            <p class="titre_bottom">Consignes post-opératoires</p>
             <p>Après la chirurgie, que faire ?</p>
             <p class="plus">En savoir plus</p>
           <% end %>

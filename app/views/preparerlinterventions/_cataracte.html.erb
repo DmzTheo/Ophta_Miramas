@@ -53,14 +53,14 @@
       <p style="border-radius: 0 0 20px 0">• ordonnance post-opératoire : collyres à instiller dès le soir même de l'intervention.</p>
     </div>
   </div>
-  <h2 style="font-size: smaller;margin: 25px auto; width: 80%; padding: 20px 0px">Concernant l’ordonnance post-opératoire, pensez à vous rendre à la pharmacie avant l'opération pour gagner en sérénité et ainsi pouvoir rentrer immédiatement à votre domicile après la chirurgie.</h2>
+  <p  class="italique">Concernant l’ordonnance post-opératoire, pensez à vous rendre à la pharmacie avant l'opération pour gagner en sérénité et ainsi pouvoir rentrer immédiatement à votre domicile après la chirurgie.</p>
   <!-------------------------------------- liens détails --------------------------------------------->
   <div class='bottom_elements'>
     <% @bilans.each do |bilan| %>
       <% if bilan.name == 'Cataracte' %>
         <div class="bottom_element_1">
           <%= link_to (bilancliniquepreoperatoire_path(bilan)), class: "bottom_description" do %>
-            <h3>Bilan clinique pré-opératoire</h3>
+            <p class="titre_bottom">Bilan clinique pré-opératoire</p>
             <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
             <p class="plus">En savoir plus</p>
           <% end %>
@@ -71,7 +71,7 @@
       <% if prepare.name == 'Cataracte' %>
         <div class="bottom_element_1">
           <%= link_to (preparerlintervention_path(prepare)), class: "bottom_description" do %>
-            <h3>Preparer l'intervention</h3>
+            <p class="titre_bottom">Preparer l'intervention</p>
             <p>Les éléments essentiels à préparer avant l'intervention</p>
             <p class="plus">En savoir plus</p>
           <% end %>
@@ -82,7 +82,7 @@
       <% if consigne.name == 'Cataracte' %>
         <div class="bottom_element_1">
           <%= link_to (consignepostoperatoire_path(consigne)), class: "bottom_description" do %>
-            <h3>Consignes post-opératoires</h3>
+            <p class="titre_bottom">Consignes post-opératoires</p>
             <p>Après la chirurgie, que faire ?</p>
             <p class="plus">En savoir plus</p>
           <% end %>

@@ -44,7 +44,7 @@
       <% if bilan.name == 'IVT' %>
         <div class="bottom_element_1">
           <%= link_to (bilancliniquepreoperatoire_path(bilan)), class: "bottom_description" do %>
-            <h3>Bilan clinique pré-opératoire</h3>
+            <p class="titre_bottom">Bilan clinique pré-opératoire</p>
             <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
             <p class="plus">En savoir plus</p>
           <% end %>
@@ -55,7 +55,7 @@
       <% if prepare.name == 'IVT' %>
         <div class="bottom_element_1">
           <%= link_to (preparerlintervention_path(prepare)), class: "bottom_description" do %>
-            <h3>Preparer l'intervention</h3>
+            <p class="titre_bottom">Preparer l'intervention</p>
             <p>Les éléments essentiels à préparer avant l'intervention</p>
             <p class="plus">En savoir plus</p>
           <% end %>
@@ -66,7 +66,7 @@
       <% if consigne.name == 'IVT' %>
         <div class="bottom_element_1">
           <%= link_to (consignepostoperatoire_path(consigne)), class: "bottom_description" do %>
-            <h3>Consignes post-opératoires</h3>
+            <p class="titre_bottom">Consignes post-opératoires</p>
             <p>Après la chirurgie, que faire ?</p>
             <p class="plus">En savoir plus</p>
           <% end %>
