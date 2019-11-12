@@ -94,12 +94,11 @@
   <!-------------------------------------- étape suivante --------------------------------------------->
   <% @choisisses.each do |choisisse| %>
     <% if choisisse.name == 'Cataracte' %>
-      <div class="etapes">
         <%= link_to (choisissezvotreimplant_path(choisisse)), class: 'etape' do %>
+          <%= image_tag('fleche01.png', alt:"fleche", style: "width: 70px;") %>
           <p>Etape suivante : Choisissez votre implant</p>
         <% end %>
-      </div>
-    <% end %>
+      <% end %>
   <% end %>
   <!-------------------------------------- étape suivante --------------------------------------------->
 </div>

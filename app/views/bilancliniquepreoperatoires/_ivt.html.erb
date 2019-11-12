@@ -92,7 +92,7 @@
 
 
 
-      <p>Au cours de la consultation, nous :</p>
+      <p>Au cours de la consultation, nous :
 
       <br>  - vous proposerons plusieurs dates opératoires selon vos disponibilités ou celles de votre entourage,
 
@@ -146,11 +146,10 @@
   <!-------------------------------------- étape suivante --------------------------------------------->
   <% @prepares.each do |prepare| %>
     <% if prepare.name == 'IVT' %>
-      <div class="etapes">
         <%= link_to (preparerlintervention_path(prepare)), class: 'etape' do %>
+          <%= image_tag('fleche01.png', alt:"fleche", style: "width: 70px;") %>
           <p>Etape suivante : Preparer l'intervention</p>
         <% end %>
-      </div>
     <% end %>
   <% end %>
 <!-------------------------------------- étape suivante --------------------------------------------->

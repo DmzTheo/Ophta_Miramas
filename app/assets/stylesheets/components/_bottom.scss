@@ -13,14 +13,16 @@
 
 .bottom_element_1 {
   position: relative;
-  height: 230px;
-  width: 240px;
+  height: 210px;
+  width: 230px;
   text-align: center;
   margin: 0 18px;
+  border-radius: 5px;
+  padding: 20px 10px;
 }
 
 .bottom_element_1:hover {
-  background-color: #FAFAFA;
+  background-color: #f4f4f4;
 }
 
 
@@ -35,7 +37,6 @@
 }
 .bottom_description {
   text-decoration:none;
-
 }
 
 .bottom_element_1 p {
@@ -127,10 +128,15 @@
   margin-top: 50px;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: row;
   text-decoration: none;
   background: #f4f4f4;
   padding: 20px 0;
+}
+
+.etape:hover {
+  background: #dfdddd;
 }
 
 .etapes h2 {

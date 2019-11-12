@@ -82,11 +82,10 @@
   <!-------------------------------------- étape suivante --------------------------------------------->
   <% @consignes.each do |consigne| %>
     <% if consigne.name == 'IVT' %>
-      <div class="etapes">
         <%= link_to (consignepostoperatoire_path(consigne)), class: 'etape' do %>
+          <%= image_tag('fleche01.png', alt:"fleche", style: "width: 70px;") %>
           <p>Etape suivante : Après la chirurgie, que faire ?</p>
         <% end %>
-      </div>
     <% end %>
   <% end %>
   <!-------------------------------------- étape suivante --------------------------------------------->

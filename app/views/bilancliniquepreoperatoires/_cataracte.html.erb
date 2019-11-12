@@ -135,11 +135,10 @@
   <!-------------------------------------- étape suivante --------------------------------------------->
   <% @prepares.each do |prepare| %>
     <% if prepare.name == 'Cataracte' %>
-      <div class="etapes">
         <%= link_to (preparerlintervention_path(prepare)), class: 'etape' do %>
+          <%= image_tag('fleche01.png', alt:"fleche", style: "width: 70px;") %>
           <p>Etape suivante : Preparer l'intervention</p>
         <% end %>
-      </div>
     <% end %>
   <% end %>
 </div>

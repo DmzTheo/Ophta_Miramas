@@ -89,11 +89,10 @@
   <!-------------------------------------- étape suivante --------------------------------------------->
   <% @bilans.each do |bilan| %>
     <% if bilan.name == 'Chirurgie réfractive' %>
-      <div class="etapes">
         <%= link_to (bilancliniquepreoperatoire_path(bilan)), class: 'etape' do %>
+          <%= image_tag('fleche01.png', alt:"fleche", style: "width: 70px;") %>
           <p>Etape suivante : Bilan clinique pré-opératoire</p>
         <% end %>
-      </div>
     <% end %>
   <% end %>
 <!-------------------------------------- étape suivante --------------------------------------------->
