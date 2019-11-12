@@ -95,9 +95,9 @@
       <% if bilan.name == 'Chirurgie réfractive' %>
         <div class="bottom_element_1">
           <%= link_to (bilancliniquepreoperatoire_path(bilan)), class: "bottom_description" do %>
-            <h2>Bilan clinique pré-opératoire</h2>
+            <h3>Bilan clinique pré-opératoire</h3>
             <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
-            <h4>En savoir plus</h4>
+            <p class="plus">En savoir plus</p>
           <% end %>
         </div>
       <% end %>
@@ -106,9 +106,9 @@
       <% if prepare.name == 'Chirurgie réfractive' %>
         <div class="bottom_element_1">
           <%= link_to (preparerlintervention_path(prepare)), class: "bottom_description" do %>
-            <h2>Preparer l'intervention</h2>
+            <h3>Preparer l'intervention</h3>
             <p>Les éléments essentiels à préparer avant l'intervention</p>
-            <h4>En savoir plus</h4>
+            <p class="plus">En savoir plus</p>
           <% end %>
         </div>
       <% end %>
@@ -117,9 +117,9 @@
       <% if consigne.name == 'Chirurgie réfractive' %>
         <div class="bottom_element_1">
           <%= link_to (consignepostoperatoire_path(consigne)), class: "bottom_description" do %>
-            <h2>Consignes post-opératoires</h2>
+            <h3>Consignes post-opératoires</h3>
             <p>Après la chirurgie, que faire ?</p>
-            <h4>En savoir plus</h4>
+            <p class="plus">En savoir plus</p>
           <% end %>
         </div>
       <% end %>
