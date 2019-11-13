@@ -6,13 +6,13 @@ Rails.application.routes.draw do
     },  :via => [:get, :post]
   end
 
-  get 'pages/robots'
   root to: 'pages#home'
 
   get 'pages/lunettes'
   get 'pages/centre'
   get 'pages/equipe'
   get 'pages/telechargements'
+  get '/robots.:format' => 'pages#robots'
 
   get '/sitemap.xml' => 'sitemaps#index', :format => "xml", :as => :sitemap
 

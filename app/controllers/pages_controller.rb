@@ -20,6 +20,5 @@ class PagesController < ApplicationController
 
   def robots
     respond_to :text
-    add_breadcrumb 'robots', pages_robots_path
   end
 end
