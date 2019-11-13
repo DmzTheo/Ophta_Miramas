@@ -3,7 +3,7 @@
 <!------------------------------------- logo -------------------------------------------->
 <div class='logo'>
   <%= link_to root_path do %>
-  <%= image_tag('logobleu.png', alt: "", id: "img_logo") %>
+  <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", id: "img_logo") %>
   <% end %>
 </div>
 <!------------------------------------- logo -------------------------------------------->
@@ -11,7 +11,7 @@
 <div class='nav_back'>
   <div class='navbar_all'>
     <%= link_to((root_path), class: 'a_img') do %>
-      <%= image_tag('view.png', alt: "", class: "img_navbar") %>
+      <%= image_tag('view.png', alt: "logo oeil", class: "img_navbar") %>
     <% end %>
     <div class="navbar">
       <%= link_to "CENTRE", pages_centre_path %>
@@ -32,36 +32,36 @@
   <div class="position_row">
     <div class='text_centre'>
       <div class="cartel_center1" style="height: 100%;">
-        <%= image_tag(asset_path("pdf.png")) %>
+        <%= image_tag(asset_path("pdf.png"), alt: 'pdf') %>
         <p style="text-align: center;margin-left: auto;margin-right: auto;width: 80%; padding: 30% 0;">Vous trouverez ici <strong>toutes les informations</strong> sur les interventions chirurgicales à télécharger en PDF</p>
       </div>
       <div class="cartel_center2" style="height: 80%:">
         <p class="text01" style="border-bottom:0px; padding-bottom:0px;">Cataracte</p>
         <div class="text02">
           <%= link_to(("https://docs.wixstatic.com/ugd/62de3d_07547f46eae549008299ee2ddc46784c.pdf"), class: 'pdflink') do %>
-            <%= image_tag(asset_path("pdf.png"), style:"background-color:white;border-radius:5px;") %>
+            <%= image_tag(asset_path("pdf.png"), alt: 'pdf', style:"background-color:white;border-radius:5px;") %>
           <% end %>
           <br>SFO / Feuille d'information sur la chirurgie <br><br>
           <%= link_to("https://docs.wixstatic.com/ugd/62de3d_07547f46eae549008299ee2ddc46784c.pdf") do %>
-            <%= image_tag(asset_path("pdf.png"), style:"background-color:white;border-radius:5px;") %>
+            <%= image_tag(asset_path("pdf.png"), alt: 'pdf', style:"background-color:white;border-radius:5px;") %>
           <% end %>
           <br>SFO / Feuille d'information cataracte secondaire-YAG <br><br>
           <%= link_to("https://docs.wixstatic.com/ugd/62de3d_07547f46eae549008299ee2ddc46784c.pdf") do %>
-            <%= image_tag(asset_path("pdf.png"), style:"background-color:white;border-radius:5px;") %>
+            <%= image_tag(asset_path("pdf.png"), alt: 'pdf', style:"background-color:white;border-radius:5px;") %>
           <% end %>
           <br>SFO / Feuille d'information implants premiums</div>
         <p></p>
         <p class="text01" style="border-bottom:0px; padding-bottom:0px;">Chirurgie réfractive au laser</p>
         <div class="text02">
           <%= link_to("https://docs.wixstatic.com/ugd/62de3d_07547f46eae549008299ee2ddc46784c.pdf") do %>
-            <%= image_tag(asset_path("pdf.png"), style:"background-color:white;border-radius:5px;") %>
+            <%= image_tag(asset_path("pdf.png"), alt: 'pdf', style:"background-color:white;border-radius:5px;") %>
           <% end %>
           <br>Feuille d'information sur la chirurgie / SFO</div>
         <p></p>
         <p class="text01" style="border-bottom:0px; padding-bottom:0px;">Injection intra-vitréennes</p>
         <div class="text02">
           <%= link_to("https://docs.wixstatic.com/ugd/62de3d_07547f46eae549008299ee2ddc46784c.pdf") do %>
-            <%= image_tag(asset_path("pdf.png"), style:"background-color:white;border-radius:5px;") %>
+            <%= image_tag(asset_path("pdf.png"), alt: 'pdf', style:"background-color:white;border-radius:5px;") %>
           <% end %>
           <br>SFO / Feuille d'information sur les IVTs</div>
         <p></p>
@@ -72,6 +72,6 @@
 </div>
 <!------------------------------------ bottom bar ------------------------------------------->
 <div class='bottom_bar'>
-  <%= image_tag('logobleu.png', alt: "", style: "width: 60px") %>
+  <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", style: "width: 60px") %>
 </div>
 <!------------------------------------ bottom bar ------------------------------------------->
