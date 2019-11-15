@@ -1,12 +1,11 @@
 
 
 .cartel_cataracte {
-    background-color: white;
-    box-shadow: 0 0 20px #EBEBEB;
-    width: 250px;
+    // background-color: #f4f4f4;
+    width: 220px;
     padding: 10px 30px;
     border-radius: 4px;
-    margin: 10px auto;
+    margin: 10px 8px;
 }
 
 .cartel_cataracte h2 {
@@ -27,18 +26,17 @@
   font-weight: 700;
   font-size: 80%;
   padding: 15px;
-  margin-left: 139px;
+  margin-left: 107px;
 }
 
 /* -------------- */
 
 .cartel_injections {
-  background-color: white;
-  box-shadow: 0 0 20px #EBEBEB;
-  width: 250px;
+  // background-color: #f4f4f4;
+  width: 220px;
   padding: 10px 30px;
   border-radius: 4px;
-  margin: 10px auto;
+  margin: 10px 8px;
 }
 
 .cartel_injections h2 {
@@ -59,22 +57,21 @@
   font-weight: 700;
   font-size: 80%;
   padding: 15px;
-  margin-left: 139px;
+  margin-left: 107px;
 }
 
 /* -------------- */
 
 .cartel_paupieres {
-  background-color: white;
-  box-shadow: 0 0 20px #EBEBEB;
-  width: 250px;
+  // background-color: #f4f4f4;
+  width: 220px;
   padding: 10px 30px;
   border-radius: 4px;
-  margin: 10px auto;
+  margin: 10px 8px;
 }
 
 .cartel_paupieres h2 {
-  font-family: 'Playfair';
+  font-family: 'roboto';
   font-weight: 400;
 }
 
@@ -91,18 +88,17 @@
   font-weight: 700;
   font-size: 80%;
   padding: 15px;
-  margin-left: 139px;
+  margin-left: 107px;
 }
 
 /* -------------- */
 
 .cartel_pathologies {
-  background-color: white;
-  box-shadow: 0 0 20px #EBEBEB;
-  width: 250px;
+  // background-color: #f4f4f4;
+  width: 220px;
   padding: 10px 30px;
   border-radius: 4px;
-  margin: 10px auto;
+  margin: 10px 32px;
 }
 
 .cartel_pathologies h2 {
@@ -123,18 +119,17 @@
   font-weight: 700;
   font-size: 80%;
   padding: 15px;
-  margin-left: 139px;
+  margin-left: 107px;
 }
 
 /* -------------- */
 
 .cartel_paupieres {
-  background-color: white;
-  box-shadow: 0 0 20px #EBEBEB;
-  width: 250px;
+  // background-color: #f4f4f4;
+  width: 220px;
   padding: 10px 30px;
   border-radius: 4px;
-  margin: 10px auto;
+  margin: 10px 8px;
 }
 
 .cartel_paupieres h2 {
@@ -155,18 +150,17 @@
   font-weight: 700;
   font-size: 80%;
   padding: 15px;
-  margin-left: 139px;
+  margin-left: 107px;
 }
 
 /* -------------- */
 
 .cartel_laser {
-  background-color: white;
-  box-shadow: 0 0 20px #EBEBEB;
-  width: 250px;
+  // background-color: #f4f4f4;
+  width: 220px;
   padding: 10px 30px;
   border-radius: 4px;
-  margin: 10px auto;
+  margin: 10px 32px;
 }
 
 .cartel_laser h2 {
@@ -187,29 +181,36 @@
   font-weight: 700;
   font-size: 80%;
   padding: 15px;
-  margin-left: 139px;
+  margin-left: 107px;
 }
 
 /* _________________ */
 
 .cartels_up {
-    display: block;
     display: flex;
     align-content: center;
-    width: 90%;
+    justify-content: space-around;
+    width: 100%;
     text-align: center;
-    margin: 70px auto 20px auto;
+    margin: 60px 0 20px 0;
     flex-flow: row wrap;
 }
 
 .cartels_down {
-    display: block;
     display: flex;
     align-content: center;
-    width: 60%;
+    justify-content: center;
+    width: 100%;
     text-align: center;
-    margin: 10px auto 30px auto;
+    margin: 8px 0 20px 0;
     flex-flow: row wrap;
+}
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid #f4f4f4;
 }
 
 

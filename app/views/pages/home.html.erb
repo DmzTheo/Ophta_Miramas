@@ -2,17 +2,15 @@
 <!------------------------------------- logo -------------------------------------------->
 <div class='logo'>
   <%= link_to root_path do %>
-    <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", id: "img_logo") %>
+  <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", id: "img_logo") %>
   <% end %>
 </div>
 <!------------------------------------- logo -------------------------------------------->
-
-
 <!------------------------------------ navbar ------------------------------------------->
 <div class='nav_back'>
   <div class='navbar_all'>
     <%= link_to((root_path), class: 'a_img') do %>
-      <%= image_tag('view.png', alt: "logo oeil", class: "img_navbar") %>
+    <%= image_tag('view.png', alt: "logo oeil", class: "img_navbar") %>
     <% end %>
     <div class="navbar">
       <%= link_to "CENTRE", pages_centre_path %>
@@ -25,8 +23,6 @@
   </div>
 </div>
 <!------------------------------------ navbar ------------------------------------------->
-
-
 <!------------------------------------ banner ------------------------------------------->
 <!-- Swiper -->
 <div class="swiper-container">
@@ -37,40 +33,30 @@
     <div class="swiper-slide">
       <%= image_tag('two_faces.jpg', alt: "deux visage enfant et adulte", class:'banner') %>
     </div>
-<!--     <div class="swiper-slide">
-
+    <!--     <div class="swiper-slide">
     </div>
     <div class="swiper-slide">
-
     </div>
     <div class="swiper-slide">
-
     </div>
     <div class="swiper-slide">
-
     </div>
     <div class="swiper-slide">
-
     </div>
     <div class="swiper-slide">
-
     </div>
     <div class="swiper-slide">
-
     </div>
     <div class="swiper-slide">
-
     </div> -->
   </div>
   <!-- Add Pagination -->
-<!--   <div class="swiper-pagination"></div> -->
+  <!--   <div class="swiper-pagination"></div> -->
   <!-- Add Arrows
   <div class="swiper-button-next"></div>
   <div class="swiper-button-prev"></div> -->
 </div>
 <!------------------------------------ banner ------------------------------------------->
-
-
 <!---------------------------------- bienvenue ------------------------------------------>
 <div class='chest_body'>
   <div class='bienvenue'>
@@ -78,37 +64,86 @@
     <h2>dans notre cabinet d'ophtalmologie</h2>
     <h3>OPHTA MIRAMAS</h3>
   </div>
-<!---------------------------------- bienvenue ------------------------------------------>
-
-
-<!---------------------------------- présentation ------------------------------------------>
+  <!---------------------------------- bienvenue ------------------------------------------>
+  <!---------------------------------- présentation ------------------------------------------>
   <div class='presentation_home'>
     <%= link_to((pages_equipe_path), target: "_blank", class: 'presentation_home_1') do %>
-      <%= image_tag('nurse-bustred.png', alt: "nurse", style: "width: 60px") %>
-      <p>Une équipe qualifiée et dynamique à votre écoute</p>
+    <%= image_tag('nurse-bustred.png', alt: "nurse", style: "width: 60px") %>
+    <p>Une équipe qualifiée et dynamique à votre écoute</p>
     <% end %>
     <%= link_to((pages_centre_path), target: "_blank", class: 'presentation_home_2') do %>
-      <%= image_tag('hospital-microscopered.png', alt: "hospital", style: "width: 60px") %>
-      <p>Du matériel à la pointe de la technologie</p>
+    <%= image_tag('hospital-microscopered.png', alt: "hospital", style: "width: 60px") %>
+    <p>Du matériel à la pointe de la technologie</p>
     <% end %>
     <%= link_to((chirurgies_path), target: "_blank", class: 'presentation_home_3') do %>
-      <%= image_tag('growthred.jpg', alt: "growthred", style: "width: 60px") %>
-      <p>Une prise en charge personnalisée et un accompagnement continu</p>
+    <%= image_tag('growthred.jpg', alt: "growthred", style: "width: 60px") %>
+    <p>Une prise en charge personnalisée et un accompagnement continu</p>
     <% end %>
     <%= link_to(("https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php"), target: "_blank", class: 'presentation_home_4') do %>
-      <%= image_tag('calendarred.png', alt: "calendar", style: "width: 60px") %>
-      <p>Une prise de rendez-vous en ligne</p>
+    <%= image_tag('calendarred.png', alt: "calendar", style: "width: 60px") %>
+    <p>Une prise de rendez-vous en ligne</p>
     <% end %>
   </div>
-<!---------------------------------- présentation ------------------------------------------>
 
+  <div class="cartels_equipe">
+    <div class="image"></div>
+    <div class="texte">
+      <div class="contenu">
+        <h2></h2>
+        <p></p>
+      </div>
+    </div>
+  </div>
 
-<!---------------------------------- bouton rendez-vous ------------------------------------------>
-  <%= link_to "PRENDRE RENDEZ-VOUS", "https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php", class: "btn_rdv", target: '_blank' %>
+  <div class='cartels_up'>
+    <div class='cartel_cataracte flex_column'>
+      <h2>CATARACTE</h2>
+      <p>Votre vision se trouble, vous êtes éblouis la nuit et vous êtes âgé de plus de 60 ans.
+        <br> <br>Peut-être êtes-vous atteint d'une cataracte ?
+        <br> <br>Vous souhaitez connaître les modalités de prise en charge (avant, pendant et après l'intervention).
+      </p>
+      <a><p class='plus_patho'>En savoir plus</p></a>
+    </div>
+    <div class='cartel_injections flex_column'>
+      <h2>INJECTIONS INTRA-VITRÉENNES</h2>
+      <p>Vous avez une DMLA, une atteinte rétinienne secondaire à votre diabète ou à un problème vasculaire.
+        <br> <br>Ces pathologies peuvent bénéficier d'injections.
+        <br> <br>Vous souhaitez connaître les modalités de prise en charge (avant, pendant et après l'intervention).
+      </p>
+      <a><p class='plus_patho'>En savoir plus</p></a>
+    </div>
+    <div class='cartel_paupieres flex_column'>
+      <h2>CHIRURGIE DES PAUPIÈRES</h2>
+      <p>Rides, poches, regard triste, sévère ou fatigué ?
+        <br>  <br>Améliorer votre image et votre bien être, avec un résultat naturel ?
+        <br>  <br>Les injections de toxine botulique (botox) ou d'acide hyaluronique sont des solutions efficaces et simples.
+      </p>
+      <a><p class='plus_patho'>En savoir plus</p></a>
+    </div>
+  </div>
+  <div class='cartels_down'>
+    <div class='cartel_pathologies flex_column'>
+      <h2>PATHOLOGIES</h2>
+      <p>Lexique et définitions des pathologies ophtalmologiques bénignes ou plus graves.
+        <br> <br>Permet la compréhension facile d'atteintes courantes.
+        <br> <br>Chalazion (compère), décollement du vitré, conjonctivite, DMLA, décollement de rétine, corps flottants...
+      </p>
+      <a><p class='plus_patho'>En savoir plus</p></a>
+    </div>
+    <div class='cartel_laser flex_column'>
+      <h2>CHIRURGIE LASER</h2>
+      <p>Vous souhaitez ne plus porter de lunettes ou de lentilles.
+        <br> <br>Vous êtes myope, hypermétrope, astigmate ou même presbyte.
+        <br> <br>Vous pouvez certainement bénéficier d'un traitement.
+      </p>
+      <a><p class='plus_patho'>En savoir plus</p></a>
+    </div>
+  </div>
+  <!---------------------------------- présentation ------------------------------------------>
+  <!---------------------------------- bouton rendez-vous ------------------------------------------>
+  <%= link_to "PRENDRE RENDEZ-VOUS", "https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php", class: "btn_rdv", target: '_blank', rel: 'nofollow' %>
 </div>
 <!---------------------------------- bouton rendez-vous ------------------------------------------>
-
-
 <!---------------------------------- bottom bar ------------------------------------------>
 <div class='bottom_bar'>
   <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", style: "width: 60px") %>

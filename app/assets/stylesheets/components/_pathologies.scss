@@ -101,32 +101,47 @@
     font-weight: 300;
     color: #474747;
     line-height: 150%;
-
 }
 
 .chest_each_patho h2 {
-    text-decoration: none;
-    font-family: 'roboto';
-    color: black;
-    margin: 2px 48px;
-    letter-spacing: 2px;
+  text-decoration: none;
+  font-family: 'roboto';
+  color: black;
+  margin: 2px 48px;
+  letter-spacing: 2px;
 }
 
 .chest_patho .plus_patho {
-    color: white;
-    border: none;
-    font-family: 'roboto';
-    font-weight: 700;
-    font-size: 15px;
-    text-align: right;
-    margin: 10px 20px;
-    border-radius : 3px;
-    background-color: #ce1452;
-    width: 15%;
-    padding: 10px 15px;
-    text-align: center;
-    margin-left: 80%;
-    opacity: 0.7;
+  color: white;
+  border: none;
+  font-family: 'roboto';
+  font-weight: 700;
+  font-size: 15px;
+  text-align: right;
+  margin: 10px 20px;
+  border-radius : 3px;
+  background-color: #ce1452;
+  width: 15%;
+  padding: 10px 15px;
+  text-align: center;
+  margin-left: 80%;
+  opacity: 0.7;
+}
+
+.chest_body .plus_patho {
+  color: white;
+  border: none;
+  font-family: 'roboto';
+  font-weight: 500;
+  font-size: 15px;
+  text-align: right;
+  border-radius: 3px;
+  background-color: #ce1452;
+  width: 43%;
+  padding: 10px 15px;
+  text-align: center;
+  margin-left: 50%;
+  opacity: 0.7;
 }
 
 .plus_patho:hover {
