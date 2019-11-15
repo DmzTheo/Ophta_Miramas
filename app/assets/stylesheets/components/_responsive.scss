@@ -121,9 +121,6 @@
     }
 }
 @media (max-width: 540px) {
-  h3.bienvenue_text, h4.bienvenue_ophta {
-    visibility: collapse;
-  }
 
   .chest_centre, .mapimg, .chest_patho, .chest_each_patho {
       width: 95%;
@@ -189,6 +186,10 @@
 }
 
 @media (max-width: 444px) {
+    .bienvenue h2 {
+    visibility: collapse;
+  }
+
   .bienvenue h3{
     font-size: 17px;
   }

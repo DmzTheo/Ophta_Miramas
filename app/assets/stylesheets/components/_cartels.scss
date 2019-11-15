@@ -8,11 +8,6 @@
     margin: 10px 8px;
 }
 
-.cartel_cataracte h2 {
-    font-family: 'Playfair';
-    font-weight: 400;
-}
-
 .cartel_cataracte p {
     font-family: 'roboto';
     font-weight: 300;
@@ -39,12 +34,7 @@
   margin: 10px 8px;
 }
 
-.cartel_injections h2 {
-  font-family: 'Playfair';
-  font-weight: 400;
-}
-
-.cartel_injections p {
+.cartel_tout p {
   font-family: 'roboto';
   font-weight: 300;
   font-size: 90%;
@@ -70,17 +60,6 @@
   margin: 10px 8px;
 }
 
-.cartel_paupieres h2 {
-  font-family: 'roboto';
-  font-weight: 400;
-}
-
-.cartel_paupieres p {
-  font-family: 'roboto';
-  font-weight: 300;
-  font-size: 90%;
-}
-
 .cartel_paupieres button {
   color: #1E737D;
   border: none;
@@ -99,17 +78,6 @@
   padding: 10px 30px;
   border-radius: 4px;
   margin: 10px 32px;
-}
-
-.cartel_pathologies h2 {
-  font-family: 'Playfair';
-  font-weight: 400;
-}
-
-.cartel_pathologies p {
-  font-family: 'roboto';
-  font-weight: 300;
-  font-size: 90%;
 }
 
 .cartel_pathologies button {
@@ -132,17 +100,6 @@
   margin: 10px 8px;
 }
 
-.cartel_paupieres h2 {
-  font-family: 'Playfair';
-  font-weight: 400;
-}
-
-.cartel_paupieres p {
-  font-family: 'roboto';
-  font-weight: 300;
-  font-size: 90%;
-}
-
 .cartel_paupieres button {
   color: #1E737D;
   border: none;
@@ -163,15 +120,9 @@
   margin: 10px 32px;
 }
 
-.cartel_laser h2 {
-    font-family: 'Playfair';
-    font-weight: 400;
-}
-
-.cartel_laser p {
+.cartel_tout h2 {
     font-family: 'roboto';
-    font-weight: 300;
-    font-size: 90%;
+    font-weight: 400;
 }
 
 .cartel_laser button {
@@ -206,11 +157,17 @@
     flex-flow: row wrap;
 }
 
+.text_cartel {
+  display: flex;
+  flex-direction: column;
+}
+
 .flex_column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 2px solid #f4f4f4;
+  background-color: #f4f4f4;
+  color: #474747;
 }
 
 
@@ -296,7 +253,7 @@
 }
 
 .cartel_lunette h2 {
-    font-family: 'Playfair';
+    font-family: 'roboto';
     font-weight: 400;
 }
 
