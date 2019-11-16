@@ -1,17 +1,14 @@
 <% content_for :meta_title, "Centre d'ophtalmologie #{DEFAULT_META["meta_title"]}" %>
 <% content_for :meta_description, "Découvrez le centre d’ophtalmologie OphtaMiramas. Vous trouverez l’adresse, le plan, l’accès et les horaires d’ouvertures." %>
-<!------------------------------------- logo -------------------------------------------->
 <div class='logo'>
   <%= link_to root_path do %>
   <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", id: "img_logo") %>
   <% end %>
 </div>
-<!------------------------------------- logo -------------------------------------------->
-<!------------------------------------ navbar ------------------------------------------->
 <div class='nav_back'>
   <div class='navbar_all'>
     <%= link_to((root_path), class: 'a_img') do %>
-      <%= image_tag('view.png', alt: "logo oeil", class: "img_navbar") %>
+    <%= image_tag('view.png', alt: "logo oeil", class: "img_navbar") %>
     <% end %>
     <div class="navbar">
       <%= link_to "CENTRE", pages_centre_path, {style: 'border-bottom: 0.5px solid #363636;'} %>
@@ -23,11 +20,7 @@
     </div>
   </div>
 </div>
-<!------------------------------------ navbar ------------------------------------------->
-<!------------------------------------ titre ------------------------------------------->
 <h1 class="titre_center">LE CENTRE</h1>
-<!------------------------------------ titre ------------------------------------------->
-<!------------------------------------ description ------------------------------------------->
 <div class="chest_centre">
   <div class="position_row">
     <div class='text_centre'>
@@ -43,18 +36,12 @@
         <p class="text05"><br>Au sein du cabinet, un plateau technique à la pointe de la technologie, capable de détecter toute pathologies, est présent pour un bilan et une prise en charge adaptées</p>
       </div>
     </div>
-    <!-- <%#= image_tag('lieu_2_po.jpg', class: "img_lieu", alt: "photo centre") %> -->
   </div>
- <!--  <%#= link_to(("https://www.google.fr/maps/place/54+Avenue+Charles+de+Gaulle,+13140+Miramas/@43.5842536,4.99973,17z/data=!3m1!4b1!4m5!3m4!1s0x12b603bf3a8aa1a7:0x4e4fa9953db8c285!8m2!3d43.5842497!4d5.0019187"), target: "_blank", class: "mapimg") do %> -->
-  <!-- <%#= image_tag('map.png', class: "map", alt: "map") %> -->
-  <!------------------------------------ description ------------------------------------------->
 </div>
-  <div class="mapimg">
-    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.0623238543135!2d5.0018125709686565!3d43.58441815824707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b603bf3a8aa1a7%3A0x6bf4b15a8ab8eada!2sCentre%20de%20sp%C3%A9cialiste!5e0!3m2!1sfr!2sfr!4v1571824916552!5m2!1sfr!2sfr" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-    <%= image_tag('lieu_2_po.jpg', class: "img_lieu", alt: "photo centre") %>
-  </div>
-<!------------------------------------ bottom bar ------------------------------------------->
+<div class="mapimg">
+  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.0623238543135!2d5.0018125709686565!3d43.58441815824707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b603bf3a8aa1a7%3A0x6bf4b15a8ab8eada!2sCentre%20de%20sp%C3%A9cialiste!5e0!3m2!1sfr!2sfr!4v1571824916552!5m2!1sfr!2sfr" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  <%= image_tag('lieu_2_po.jpg', class: "img_lieu", alt: "photo centre") %>
+</div>
 <div class='bottom_bar'>
   <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", style: "width: 60px") %>
 </div>
-<!------------------------------------ bottom bar ------------------------------------------->

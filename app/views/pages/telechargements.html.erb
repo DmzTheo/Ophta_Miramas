@@ -1,17 +1,14 @@
 <% content_for :meta_title, "Téléchargements #{DEFAULT_META["meta_title"]} : interventions chirurgicales" %>
 <% content_for :meta_description, "Téléchargez toutes les informations sur les interventions chirurgicales en PDF : cataracte, chirurgie refractive, IVT..." %>
-<!------------------------------------- logo -------------------------------------------->
 <div class='logo'>
   <%= link_to root_path do %>
   <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", id: "img_logo") %>
   <% end %>
 </div>
-<!------------------------------------- logo -------------------------------------------->
-<!------------------------------------ navbar ------------------------------------------->
 <div class='nav_back'>
   <div class='navbar_all'>
     <%= link_to((root_path), class: 'a_img') do %>
-      <%= image_tag('view.png', alt: "logo oeil", class: "img_navbar") %>
+    <%= image_tag('view.png', alt: "logo oeil", class: "img_navbar") %>
     <% end %>
     <div class="navbar">
       <%= link_to "CENTRE", pages_centre_path %>
@@ -23,11 +20,7 @@
     </div>
   </div>
 </div>
-<!------------------------------------ navbar ------------------------------------------->
-<!------------------------------------ titre ------------------------------------------->
 <h1 class="titre_center">TÉLÉCHARGEMENTS</h1>
-<!------------------------------------ titre ------------------------------------------->
-<!------------------------------------ description ------------------------------------------->
 <div class="chest_centre" style="height: 800px;">
   <div class="position_row">
     <div class='text_centre'>
@@ -39,39 +32,36 @@
         <p class="text01" style="border-bottom:0px; padding-bottom:0px;">Cataracte</p>
         <div class="text02">
           <%= link_to(("https://docs.wixstatic.com/ugd/62de3d_07547f46eae549008299ee2ddc46784c.pdf"), class: 'pdflink') do %>
-            <%= image_tag(asset_path("pdf.png"), alt: 'pdf', style:"background-color:white;border-radius:5px;") %>
+          <%= image_tag(asset_path("pdf.png"), alt: 'pdf', style:"background-color:white;border-radius:5px;") %>
           <% end %>
           <br>SFO / Feuille d'information sur la chirurgie <br><br>
           <%= link_to("https://docs.wixstatic.com/ugd/62de3d_07547f46eae549008299ee2ddc46784c.pdf") do %>
-            <%= image_tag(asset_path("pdf.png"), alt: 'pdf', style:"background-color:white;border-radius:5px;") %>
+          <%= image_tag(asset_path("pdf.png"), alt: 'pdf', style:"background-color:white;border-radius:5px;") %>
           <% end %>
           <br>SFO / Feuille d'information cataracte secondaire-YAG <br><br>
           <%= link_to("https://docs.wixstatic.com/ugd/62de3d_07547f46eae549008299ee2ddc46784c.pdf") do %>
-            <%= image_tag(asset_path("pdf.png"), alt: 'pdf', style:"background-color:white;border-radius:5px;") %>
+          <%= image_tag(asset_path("pdf.png"), alt: 'pdf', style:"background-color:white;border-radius:5px;") %>
           <% end %>
-          <br>SFO / Feuille d'information implants premiums</div>
+        <br>SFO / Feuille d'information implants premiums</div>
         <p></p>
         <p class="text01" style="border-bottom:0px; padding-bottom:0px;">Chirurgie réfractive au laser</p>
         <div class="text02">
           <%= link_to("https://docs.wixstatic.com/ugd/62de3d_07547f46eae549008299ee2ddc46784c.pdf") do %>
-            <%= image_tag(asset_path("pdf.png"), alt: 'pdf', style:"background-color:white;border-radius:5px;") %>
+          <%= image_tag(asset_path("pdf.png"), alt: 'pdf', style:"background-color:white;border-radius:5px;") %>
           <% end %>
-          <br>Feuille d'information sur la chirurgie / SFO</div>
+        <br>Feuille d'information sur la chirurgie / SFO</div>
         <p></p>
         <p class="text01" style="border-bottom:0px; padding-bottom:0px;">Injection intra-vitréennes</p>
         <div class="text02">
           <%= link_to("https://docs.wixstatic.com/ugd/62de3d_07547f46eae549008299ee2ddc46784c.pdf") do %>
-            <%= image_tag(asset_path("pdf.png"), alt: 'pdf', style:"background-color:white;border-radius:5px;") %>
+          <%= image_tag(asset_path("pdf.png"), alt: 'pdf', style:"background-color:white;border-radius:5px;") %>
           <% end %>
-          <br>SFO / Feuille d'information sur les IVTs</div>
+        <br>SFO / Feuille d'information sur les IVTs</div>
         <p></p>
       </div>
     </div>
   </div>
-  <!------------------------------------ description ------------------------------------------->
 </div>
-<!------------------------------------ bottom bar ------------------------------------------->
 <div class='bottom_bar'>
   <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", style: "width: 60px") %>
 </div>
-<!------------------------------------ bottom bar ------------------------------------------->

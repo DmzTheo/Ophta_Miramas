@@ -1,19 +1,14 @@
 <% content_for :meta_title, "Ophtalmologie #{DEFAULT_META["meta_title"]} : Décollement de la rétine" %>
 <% content_for :meta_description, "Renseignez vous sur le décollement de la rétine : définition, symptômes, traitements, conséquences, quand dois-je consulter..." %>
-<!------------------------------------- logo -------------------------------------------->
 <div class='logo'>
   <%= link_to root_path do %>
-    <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", id: "img_logo") %>
+  <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", id: "img_logo") %>
   <% end %>
 </div>
-<!------------------------------------- logo -------------------------------------------->
-
-
-<!------------------------------------ navbar ------------------------------------------->
 <div class='nav_back'>
   <div class='navbar_all'>
     <%= link_to((root_path), class: 'a_img') do %>
-      <%= image_tag('view.png', alt: "logo oeil", class: "img_navbar") %>
+    <%= image_tag('view.png', alt: "logo oeil", class: "img_navbar") %>
     <% end %>
     <div class="navbar">
       <%= link_to "CENTRE", pages_centre_path %>
@@ -25,55 +20,34 @@
     </div>
   </div>
 </div>
-<!------------------------------------ navbar ------------------------------------------->
-
-
-<!------------------------------------ titre ------------------------------------------->
 <h1 class="titre_pathologies" style="margin-left: 13%;">DECOLEMENT DE LA RETINE</h1>
-<!------------------------------------ titre ------------------------------------------->
-
-
 <div class='chest_each_patho'>
-    <div class="conteneur_text_pathologies">
-      <div class="textes">
-
-        <h2 class="titre_path">Définition</h2>
-         <%= image_tag('schema-decollement-retine.jpg', alt: "schema decollement de la retine", class: "image_pathology") %>
-        <p><br>La rétine peut être comparée à la pellicule d'un appareil photo.
-          Le décollement de rétine est un soulèvement de cette pellicule photo, comme si une tapisserie se détachait d'un mur.
-          <br>La cause est en majorité liée à une petite déchirure sur la rétine.
-        <br>Ces déchirures sont favorisées par le vieillissement, la myopie forte, les traumatismes oculaires et la chirurgie de la cataracte.</p>
-
-      </div>
-        <h2>Symptômes</h2>
-        <p><br>Présence de corps flottant dans le champ visuel à type de mouche volante, parfois de façon très importante telle une pluie de suie noire, flash, éclair lumineux, sensation de voile sur un oeil tel un rideau ou un volet que l'on ferme.</p>
-        <p>La baisse de vue peut survenir plus ou moins rapidement mais est importante.</p>
-
-
-        <h2>La présentation clinique</h2>
-        <p><br>Seul votre ophtalmologiste pourra confirmer le diagnostic par un examen complet de votre fond d’œil après dilatation de la pupille.</p>
-
-
-
-        <h2>Les traitements</h2>
-        <p><br>Le traitement est chirurgical et sera programmé rapidement. Il aura pour but de réappliquer la rétine et de traiter la lésion responsable de son décollement.</p>
-        <p>En attendant l'intervention, le médecin pourra vous recommander une position pour éviter que le soulèvement de la rétine ne progresse.</p>
-        <p>Éventuellement certains collyres pourront être prescrits pour faciliter l'intervention.</p>
-
-
-        <h2>Les conséquences</h2>
-        <p><br>Si le décollement de la rétine est partiel et ne touche pas la macula (zone centrale de la rétine), la récupération est généralement bonne en quelques mois.</p>
-        <p>Si le décollement de rétine est plus important et touche la macula, la récupération est limitée et pourra constituer une séquelle irréversible.</p>
-
-        <h2>Quand dois-je consulter ?</h2>
-        <p><br>En cas de symptômes compatibles, une consultation urgente est nécessaire auprès d'un ophtalmologiste afin d'effectuer un fond d’œil.
-        </p>
-
+  <div class="conteneur_text_pathologies">
+    <div class="textes">
+      <h2 class="titre_path">Définition</h2>
+      <%= image_tag('schema-decollement-retine.jpg', alt: "schema decollement de la retine", class: "image_pathology") %>
+      <p><br>La rétine peut être comparée à la pellicule d'un appareil photo.
+        Le décollement de rétine est un soulèvement de cette pellicule photo, comme si une tapisserie se détachait d'un mur.
+        <br>La cause est en majorité liée à une petite déchirure sur la rétine.
+      <br>Ces déchirures sont favorisées par le vieillissement, la myopie forte, les traumatismes oculaires et la chirurgie de la cataracte.</p>
     </div>
-
+    <h2>Symptômes</h2>
+    <p><br>Présence de corps flottant dans le champ visuel à type de mouche volante, parfois de façon très importante telle une pluie de suie noire, flash, éclair lumineux, sensation de voile sur un oeil tel un rideau ou un volet que l'on ferme.</p>
+    <p>La baisse de vue peut survenir plus ou moins rapidement mais est importante.</p>
+    <h2>La présentation clinique</h2>
+    <p><br>Seul votre ophtalmologiste pourra confirmer le diagnostic par un examen complet de votre fond d’œil après dilatation de la pupille.</p>
+    <h2>Les traitements</h2>
+    <p><br>Le traitement est chirurgical et sera programmé rapidement. Il aura pour but de réappliquer la rétine et de traiter la lésion responsable de son décollement.</p>
+    <p>En attendant l'intervention, le médecin pourra vous recommander une position pour éviter que le soulèvement de la rétine ne progresse.</p>
+    <p>Éventuellement certains collyres pourront être prescrits pour faciliter l'intervention.</p>
+    <h2>Les conséquences</h2>
+    <p><br>Si le décollement de la rétine est partiel et ne touche pas la macula (zone centrale de la rétine), la récupération est généralement bonne en quelques mois.</p>
+    <p>Si le décollement de rétine est plus important et touche la macula, la récupération est limitée et pourra constituer une séquelle irréversible.</p>
+    <h2>Quand dois-je consulter ?</h2>
+    <p><br>En cas de symptômes compatibles, une consultation urgente est nécessaire auprès d'un ophtalmologiste afin d'effectuer un fond d’œil.
+    </p>
+  </div>
 </div>
-<!------------------------------------ bottom bar ------------------------------------------->
 <div class='bottom_bar'>
   <%= image_tag('logo_ok.png', alt: "schema-decollement-retine", style: "width: 60px") %>
 </div>
-<!------------------------------------ bottom bar ------------------------------------------->

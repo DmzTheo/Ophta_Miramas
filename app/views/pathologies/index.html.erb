@@ -1,19 +1,24 @@
 <% content_for :meta_title, "ophtalmologie #{DEFAULT_META["meta_title"]} : toutes les pathologies occulaires" %>
 <% content_for :meta_description, "Renseignez vous sur les pathologies occulaires : glaucome, diabète, DMLA, décolement de la rétine et autres..." %>
-<!------------------------------------- logo -------------------------------------------->
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "MedicalProcedure",
+  "url": "<%= pathologies_url %>",
+  "headline": "Renseignez vous sur les pathologies occulaires"
+}
+</script>
+
 <div class='logo'>
   <%= link_to root_path do %>
-    <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", id: "img_logo") %>
+  <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", id: "img_logo") %>
   <% end %>
 </div>
-<!------------------------------------- logo -------------------------------------------->
-
-
-<!------------------------------------ navbar ------------------------------------------->
 <div class='nav_back'>
   <div class='navbar_all'>
     <%= link_to((root_path), class: 'a_img') do %>
-      <%= image_tag('view.png', alt: "logo oeil", class: "img_navbar") %>
+    <%= image_tag('view.png', alt: "logo oeil", class: "img_navbar") %>
     <% end %>
     <div class="navbar">
       <%= link_to "CENTRE", pages_centre_path %>
@@ -25,92 +30,59 @@
     </div>
   </div>
 </div>
-<!------------------------------------ navbar ------------------------------------------->
-
-
-<!------------------------------------ titre ------------------------------------------->
 <h1 class="titre_pathologies">PATHOLOGIES OCCULAIRES</h1>
-<!------------------------------------ titre ------------------------------------------->
-
-
 <div class='chest_patho'>
   <div class="vide"></div>
-<!------------------------------------ carte glaucome ------------------------------------------->
   <% @pathologies.each do |maladie| %>
-    <% if maladie.nom == 'Glaucome' %>
-
-        <div class='link_glaucome'>
-          <h2>GLAUCOME</h2>
-          <p class="line_height">Le glaucome est une maladie occulaire qui touche surtout les personnes de plus de 45 ans. Il est dû à une montée de la pression occulaire, entrainant un atteinte du nerf optique et du champs visuel.</p>
-          <%= link_to(pathology_path(maladie)) do %>
-          <p class="plus_patho">En savoir plus</p>
-        </div>
-      <% end %>
-    <% end %>
+  <% if maladie.nom == 'Glaucome' %>
+  <div class='link_glaucome'>
+    <h2>GLAUCOME</h2>
+    <p class="line_height">Le glaucome est une maladie occulaire qui touche surtout les personnes de plus de 45 ans. Il est dû à une montée de la pression occulaire, entrainant un atteinte du nerf optique et du champs visuel.</p>
+    <%= link_to(pathology_path(maladie)) do %>
+    <p class="plus_patho">En savoir plus</p>
+  </div>
   <% end %>
-<!------------------------------------ carte glaucome ------------------------------------------->
-
-
-<!------------------------------------ carte diabète ------------------------------------------->
+  <% end %>
+  <% end %>
   <% @pathologies.each do |maladie| %>
-    <% if maladie.nom == 'Diabète' %>
-
-        <div class='link_diabete'>
-          <h2>DIABÈTE</h2>
-          <p class="line_height">La rétinopathie diabétique (atteintes des yeux: oeil et rétine) est une grave complication du diabète qui touche 50% des patients diabétiques de type 2. En france, elle est la première cause de cécité avant 65 ans</p>
-          <%= link_to(pathology_path(maladie)) do %>
-          <p class="plus_patho">En savoir plus</p>
-        </div>
-      <% end %>
-    <% end %>
+  <% if maladie.nom == 'Diabète' %>
+  <div class='link_diabete'>
+    <h2>DIABÈTE</h2>
+    <p class="line_height">La rétinopathie diabétique (atteintes des yeux: oeil et rétine) est une grave complication du diabète qui touche 50% des patients diabétiques de type 2. En france, elle est la première cause de cécité avant 65 ans</p>
+    <%= link_to(pathology_path(maladie)) do %>
+    <p class="plus_patho">En savoir plus</p>
+  </div>
   <% end %>
-<!------------------------------------ carte diabète ------------------------------------------->
-
-
-<!------------------------------------ carte DMLA ------------------------------------------->
+  <% end %>
+  <% end %>
   <% @pathologies.each do |maladie| %>
-    <% if maladie.nom == 'DMLA' %>
-
-        <div class='link_dmla'>
-          <h2>DMLA</h2>
-          <p class="line_height">La dégénérescence de la macula liée à l'âge est une pathologie qui touche les patients de plus 55 ans. Elle entraîne une baisse de vue centrale avec des taches noires et des déformations.</p>
-          <%= link_to(pathology_path(maladie)) do %>
-          <p class="plus_patho">En savoir plus</p>
-        </div>
-      <% end %>
-    <% end %>
+  <% if maladie.nom == 'DMLA' %>
+  <div class='link_dmla'>
+    <h2>DMLA</h2>
+    <p class="line_height">La dégénérescence de la macula liée à l'âge est une pathologie qui touche les patients de plus 55 ans. Elle entraîne une baisse de vue centrale avec des taches noires et des déformations.</p>
+    <%= link_to(pathology_path(maladie)) do %>
+    <p class="plus_patho">En savoir plus</p>
+  </div>
   <% end %>
-<!------------------------------------ carte DMLA ------------------------------------------->
-
-
-<!-------------------------- carte Décollement de la rétine --------------------------------->
+  <% end %>
+  <% end %>
   <% @pathologies.each do |maladie| %>
-    <% if maladie.nom == 'Décolement de la rétine' %>
-        <div class='link_decollement_retine'>
-          <h2>DÉCOLLEMENT DE LA RETINE</h2>
-          <p class="line_height">Baisse de vue brutale, non résolutive avec amputation d'une partie du champ visuel.
-          Souvent précédé "d'éclairs lumineux" ou de "mouches en abondance".</p>
-          <%= link_to(pathology_path(maladie)) do %>
-          <p class="plus_patho">En savoir plus</p>
-        </div>
-      <% end %>
-    <% end %>
+  <% if maladie.nom == 'Décolement de la rétine' %>
+  <div class='link_decollement_retine'>
+    <h2>DÉCOLLEMENT DE LA RETINE</h2>
+    <p class="line_height">Baisse de vue brutale, non résolutive avec amputation d'une partie du champ visuel.
+    Souvent précédé "d'éclairs lumineux" ou de "mouches en abondance".</p>
+    <%= link_to(pathology_path(maladie)) do %>
+    <p class="plus_patho">En savoir plus</p>
+  </div>
   <% end %>
-<!-------------------------- carte Décollement de la rétine --------------------------------->
-
-
-<!------------------------------- carte autres maladies -------------------------------------->
-
+  <% end %>
+  <% end %>
   <div class='link_autres_maladies'>
     <h2>AUTRES MALADIES RETINIENNES</h2>
     <p class="line_height">Uvéite, occlusion artérielle et véneuse rétinienne, membrane épirétinienne et autres sont explorées et traitées au cabinet ou adressées en centre spécialisé de la rétine</p>
   </div>
-<!------------------------------- carte autres maladies -------------------------------------->
 </div>
-
-
-<!------------------------------------ bottom bar ------------------------------------------->
 <div class='bottom_bar'>
   <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", style: "width: 60px") %>
 </div>
-<!----------------------------------- bottom bar ------------------------------------------->

@@ -1,17 +1,14 @@
 <% content_for :meta_title, "#{DEFAULT_META["meta_title"]}, chirurgie réfractive (laser) : préparer l'intervention" %>
 <% content_for :meta_description, "chirurgie réfractive (laser), comment bien préparer l'intervention ? : les traitements, mutuelle/complémentaire, maquillage, lentilles, anticiper la route." %>
-<!------------------------------------- logo -------------------------------------------->
 <div class='logo'>
   <%= link_to root_path do %>
   <%= image_tag('logo_ok.png', alt: "", id: "img_logo") %>
   <% end %>
 </div>
-<!------------------------------------- logo -------------------------------------------->
-<!------------------------------------ navbar ------------------------------------------->
 <div class='nav_back'>
   <div class='navbar_all'>
     <%= link_to((root_path), class: 'a_img') do %>
-      <%= image_tag('view.png', alt: "", class: "img_navbar") %>
+    <%= image_tag('view.png', alt: "", class: "img_navbar") %>
     <% end %>
     <div class="navbar">
       <%= link_to "CENTRE", pages_centre_path %>
@@ -23,10 +20,7 @@
     </div>
   </div>
 </div>
-<!------------------------------------ navbar ------------------------------------------->
-<!------------------------------------ titre ------------------------------------------->
 <h1 class="titre_pathologies" style="margin-left: 13%;">CHIRURGIE REFRACTIVE: Préparer l'intervention</h1>
-<!------------------------------------ titre ------------------------------------------->
 <div class='chest_each_patho'>
   <div class="conteneur_text_bilantech">
     <div class="textes">
@@ -44,59 +38,52 @@
       <p>Il complique la chirurgie et favorise les infections.</p>
       <h2>Anticipez la route !</h2>
       <p style="border-radius: 0 0 20px 0">Toujours pour gagner en sérénité, veillez à prendre une marge horaire pour votre déplacement le jour J.</p>
-    </div></div>
-    <!-------------------------------------- liens détails --------------------------------------------->
+    </div>
+  </div>
   <div class='bottom_elements'>
     <% @bilans.each do |bilan| %>
-      <% if bilan.name == 'Chirurgie réfractive' %>
-        <div class="bottom_element_1">
-          <%= link_to (bilancliniquepreoperatoire_path(bilan)), class: "bottom_description" do %>
-            <p class="titre_bottom">Bilan clinique pré-opératoire</p>
-            <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
-            <p class="plus">En savoir plus</p>
-          <% end %>
-        </div>
+    <% if bilan.name == 'Chirurgie réfractive' %>
+    <div class="bottom_element_1">
+      <%= link_to (bilancliniquepreoperatoire_path(bilan)), class: "bottom_description" do %>
+      <p class="titre_bottom">Bilan clinique pré-opératoire</p>
+      <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
+      <p class="plus">En savoir plus</p>
       <% end %>
+    </div>
+    <% end %>
     <% end %>
     <% @prepares.each do |prepare| %>
-      <% if prepare.name == 'Chirurgie réfractive' %>
-        <div class="bottom_element_1">
-          <%= link_to (preparerlintervention_path(prepare)), class: "bottom_description" do %>
-            <p class="titre_bottom">Preparer l'intervention</p>
-            <p>Les éléments essentiels à préparer avant l'intervention</p>
-            <p class="plus">En savoir plus</p>
-          <% end %>
-        </div>
+    <% if prepare.name == 'Chirurgie réfractive' %>
+    <div class="bottom_element_1">
+      <%= link_to (preparerlintervention_path(prepare)), class: "bottom_description" do %>
+      <p class="titre_bottom">Preparer l'intervention</p>
+      <p>Les éléments essentiels à préparer avant l'intervention</p>
+      <p class="plus">En savoir plus</p>
       <% end %>
+    </div>
+    <% end %>
     <% end %>
     <% @consignes.each do |consigne| %>
-      <% if consigne.name == 'Chirurgie réfractive' %>
-        <div class="bottom_element_1">
-          <%= link_to (consignepostoperatoire_path(consigne)), class: "bottom_description" do %>
-            <p class="titre_bottom">Consignes post-opératoires</p>
-            <p>Après la chirurgie, que faire ?</p>
-            <p class="plus">En savoir plus</p>
-          <% end %>
-        </div>
-      <% end %>
-    <% end %>
-  </div>
-  <!-------------------------------------- liens détails --------------------------------------------->
-  <!-------------------------------------- étape suivante --------------------------------------------->
-  <% @consignes.each do |consigne| %>
     <% if consigne.name == 'Chirurgie réfractive' %>
-        <%= link_to (consignepostoperatoire_path(consigne)), class: 'etape' do %>
-          <%= image_tag('fleche01.png', alt:"fleche", style: "width: 70px;") %>
-          <p>Etape suivante : Après la chirurgie, que faire ?</p>
-        <% end %>
+    <div class="bottom_element_1">
+      <%= link_to (consignepostoperatoire_path(consigne)), class: "bottom_description" do %>
+      <p class="titre_bottom">Consignes post-opératoires</p>
+      <p>Après la chirurgie, que faire ?</p>
+      <p class="plus">En savoir plus</p>
+      <% end %>
+    </div>
     <% end %>
+    <% end %>
+  </div>
+  <% @consignes.each do |consigne| %>
+  <% if consigne.name == 'Chirurgie réfractive' %>
+  <%= link_to (consignepostoperatoire_path(consigne)), class: 'etape' do %>
+  <%= image_tag('fleche01.png', alt:"fleche", style: "width: 70px;") %>
+  <p>Etape suivante : Après la chirurgie, que faire ?</p>
   <% end %>
-  <!-------------------------------------- étape suivante --------------------------------------------->
+  <% end %>
+  <% end %>
 </div>
-    <!-------------------------------------- étape suivante --------------------------------------------->
-  </div>
-  <!------------------------------------ bottom bar ------------------------------------------->
-  <div class='bottom_bar'>
-    <%= image_tag('logo_ok.png', alt: "", style: "width: 60px") %>
-  </div>
-  <!------------------------------------ bottom bar ------------------------------------------->
+<div class='bottom_bar'>
+<%= image_tag('logo_ok.png', alt: "", style: "width: 60px") %>
+</div>

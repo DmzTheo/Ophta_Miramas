@@ -26,6 +26,42 @@
     })(window,document,'script','dataLayer','GTM-TWZXPNT');</script>
     <!-- End Google Tag Manager -->
 
+    <!-- Structured Data -->
+     <script type="application/ld+json">
+      {
+        "@context": "http://www.schema.org",
+        "@type": "MedicalClinic",
+        "member": ["Docteur Buzzacchera Nadine", "Docteur Hervé-Fey Brigitte"]
+        "name": "OphtaMiramas",
+        "description": "Prendre rendez-vous au cabinet d'ophtalmologie à Miramas des docteurs Buzzacchera Nadine et Hervé-Fey Brigitte. Chirugie refractive, cataracte, DMLA ..."
+        "url": "https://www.ophtalmo-miramas.com/",
+        "logo": "https://www.ophtalmo-miramas.com/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "54 Bis Avenue Charles de Gaulle",
+          "addressLocality": "Miramas",
+          "addressRegion": "Provence-Alpes-Côte d'Azur",
+          "postalCode": "13140",
+          "addressCountry": "France"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "43.584449",
+          "longitude": "5.001879"
+        },
+        "hasMap": "https://goo.gl/maps/4bHEJ7DzEVuawpnf7",
+        "openingHours": ["Mo-Th 08:30-19:00", "Sa 08:30-12:30"],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "0490503350"
+        },
+        "isAccessibleForFree": true,
+        "currenciesAccepted": "EUR",
+        "paymentAccepted":"Cash, Credit Card, Bank check",
+      }
+    </script>
+    <!-- End Structured Data -->
+
 
     <%= javascript_pack_tag 'application' %>
 
@@ -42,9 +78,6 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <%= yield %>
-
-    <!-- Swiper JS -->
-<!--     <script src="../package/js/swiper.min.js"></script> -->
 
     <!-- Initialize Swiper -->
     <script>

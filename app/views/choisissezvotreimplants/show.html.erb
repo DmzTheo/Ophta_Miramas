@@ -1,15 +1,20 @@
 <% content_for :meta_title, "#{DEFAULT_META["meta_title"]}, chirurgie de la cataracte : implants" %>
 <% content_for :meta_description, "Chirurgie de la cataracte, choisissez votre implant : pourquoi une chirurgie prémium ? Quelle différence ? Surcoût ?" %>
-<!------------------------------------- logo -------------------------------------------->
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "MedicalProcedure",
+  "url": "<%= choisissezvotreimplant_url(@choisisses) %>",
+  "headline": "Chirurgie de la cataracte, choisissez votre implant"
+}
+</script>
+
 <div class='logo'>
   <%= link_to root_path do %>
     <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", id: "img_logo") %>
   <% end %>
 </div>
-<!------------------------------------- logo -------------------------------------------->
-
-
-<!------------------------------------ navbar ------------------------------------------->
 <div class='nav_back'>
   <div class='navbar_all'>
     <%= link_to((root_path), class: 'a_img') do %>
@@ -25,14 +30,7 @@
     </div>
   </div>
 </div>
-<!------------------------------------ navbar ------------------------------------------->
-
-
-<!------------------------------------ titre ------------------------------------------->
     <h1 class="titre_pathologies;" style="font-family: 'roboto';font-weight: 500;letter-spacing: 3px;font-size: 35px;width: 60%;display: flex;display: block;margin: 30px 13%;color: white;font-size: 27px;">CATARACTE : Chirurgie premium</h1>
-<!------------------------------------ titre ------------------------------------------->
-
-
     <div class='chest_each_patho'>
   <div class="conteneur_text_bilantech">
       <div class="vide"></div>
@@ -63,8 +61,6 @@
       <p>Vous retrouverez dans la section <%= link_to "page des téléchargements", pages_telechargements_path %>, différents documents expliquant cette chirurgie et les implants.</p>
       <p><br><br></p>
     </div>
-
-<!-------------------------------------- liens détails --------------------------------------------->
   <div class='bottom_elements'>
     <% @bilans.each do |bilan| %>
       <% if bilan.name == 'Cataracte' %>
@@ -100,8 +96,6 @@
       <% end %>
     <% end %>
   </div>
-  <!-------------------------------------- liens détails --------------------------------------------->
-  <!-------------------------------------- étape suivante --------------------------------------------->
   <% @consignes.each do |consigne| %>
     <% if consigne.name == 'Cataracte' %>
         <%= link_to (consignepostoperatoire_path(consigne)), class: 'etape' do %>
@@ -110,12 +104,7 @@
         <% end %>
     <% end %>
   <% end %>
-<!-------------------------------------- étape suivante --------------------------------------------->
   </div>
-
-
-<!------------------------------------ bottom bar ------------------------------------------->
 <div class='bottom_bar'>
   <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", style: "width: 60px") %>
 </div>
-<!------------------------------------ bottom bar ------------------------------------------->

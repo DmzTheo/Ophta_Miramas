@@ -1,3 +1,12 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "MedicalProcedure",
+  "url": "<%= consignepostoperatoire_url(@consigne) %>",
+  "headline": "Consignes post-opératoires - <%= @consigne.name %>"
+}
+</script>
+
 <% case @consigne.name %>
   <% when 'Cataracte' %>
     <%= render "cataracte" %>

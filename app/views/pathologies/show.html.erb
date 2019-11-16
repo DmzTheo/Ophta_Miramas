@@ -1,3 +1,12 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "MedicalProcedure",
+  "url": "<%= pathology_url(@pathologie) %>",
+  "headline": "<%= @pathologie.nom %>"
+}
+</script>
+
 <% case @pathologie.nom %>
   <% when 'Glaucome' %>
     <%= render "glaucomepatho" %>

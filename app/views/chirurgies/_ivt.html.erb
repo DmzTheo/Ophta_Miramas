@@ -1,17 +1,14 @@
 <% content_for :meta_title, "#{DEFAULT_META["meta_title"]} : injection intra-vitréenne" %>
 <% content_for :meta_description, "Renseignez vous sur l'injection intra-vitréenne : bilan clinique, comment préparer l'intervention et les consignes post-opératoires." %>
-<!------------------------------------- logo -------------------------------------------->
 <div class='logo'>
   <%= link_to root_path do %>
   <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", id: "img_logo") %>
   <% end %>
 </div>
-<!------------------------------------- logo -------------------------------------------->
-<!------------------------------------ navbar ------------------------------------------->
 <div class='nav_back'>
   <div class='navbar_all'>
     <%= link_to((root_path), class: 'a_img') do %>
-      <%= image_tag('view.png', alt: "logo oeil", class: "img_navbar") %>
+    <%= image_tag('view.png', alt: "logo oeil", class: "img_navbar") %>
     <% end %>
     <div class="navbar">
       <%= link_to "CENTRE", pages_centre_path %>
@@ -23,10 +20,7 @@
     </div>
   </div>
 </div>
-<!------------------------------------ navbar ------------------------------------------->
-<!------------------------------------ titre ------------------------------------------->
 <h1 class="titre_pathologies">INJECTION INTRA-VITREENNE</h1>
-<!------------------------------------ titre ------------------------------------------->
 <div class='chest_each_patho'>
   <div class="conteneur_text_image">
     <div class="textes" style="width:70%">
@@ -38,56 +32,50 @@
     <%= image_tag('ivt_schema.jpg', alt: "schema ivt", style: "width: 200px") %>
   </div>
   <p><br><br></p>
-  <!-------------------------------------- liens détails --------------------------------------------->
   <div class='bottom_elements'>
     <% @bilans.each do |bilan| %>
-      <% if bilan.name == 'IVT' %>
-        <div class="bottom_element_1">
-          <%= link_to (bilancliniquepreoperatoire_path(bilan)), class: "bottom_description" do %>
-            <p class="titre_bottom">Bilan clinique pré-opératoire</p>
-            <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
-            <p class="plus">En savoir plus</p>
-          <% end %>
-        </div>
+    <% if bilan.name == 'IVT' %>
+    <div class="bottom_element_1">
+      <%= link_to (bilancliniquepreoperatoire_path(bilan)), class: "bottom_description" do %>
+      <p class="titre_bottom">Bilan clinique pré-opératoire</p>
+      <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
+      <p class="plus">En savoir plus</p>
       <% end %>
+    </div>
+    <% end %>
     <% end %>
     <% @prepares.each do |prepare| %>
-      <% if prepare.name == 'IVT' %>
-        <div class="bottom_element_1">
-          <%= link_to (preparerlintervention_path(prepare)), class: "bottom_description" do %>
-            <p class="titre_bottom">Preparer l'intervention</p>
-            <p>Les éléments essentiels à préparer avant l'intervention</p>
-            <p class="plus">En savoir plus</p>
-          <% end %>
-        </div>
+    <% if prepare.name == 'IVT' %>
+    <div class="bottom_element_1">
+      <%= link_to (preparerlintervention_path(prepare)), class: "bottom_description" do %>
+      <p class="titre_bottom">Preparer l'intervention</p>
+      <p>Les éléments essentiels à préparer avant l'intervention</p>
+      <p class="plus">En savoir plus</p>
       <% end %>
+    </div>
+    <% end %>
     <% end %>
     <% @consignes.each do |consigne| %>
-      <% if consigne.name == 'IVT' %>
-        <div class="bottom_element_1">
-          <%= link_to (consignepostoperatoire_path(consigne)), class: "bottom_description" do %>
-            <p class="titre_bottom">Consignes post-opératoires</p>
-            <p>Après la chirurgie, que faire ?</p>
-            <p class="plus">En savoir plus</p>
-          <% end %>
-        </div>
+    <% if consigne.name == 'IVT' %>
+    <div class="bottom_element_1">
+      <%= link_to (consignepostoperatoire_path(consigne)), class: "bottom_description" do %>
+      <p class="titre_bottom">Consignes post-opératoires</p>
+      <p>Après la chirurgie, que faire ?</p>
+      <p class="plus">En savoir plus</p>
       <% end %>
+    </div>
+    <% end %>
     <% end %>
   </div>
-  <!-------------------------------------- liens détails --------------------------------------------->
-  <!-------------------------------------- étape suivante --------------------------------------------->
   <% @bilans.each do |bilan| %>
-    <% if bilan.name == 'IVT' %>
-        <%= link_to (bilancliniquepreoperatoire_path(bilan)), class: 'etape' do %>
-          <%= image_tag('fleche01.png', alt:"fleche", style: "width: 70px;") %>
-          <p>Etape suivante : Bilan clinique pré-opératoire</p>
-        <% end %>
-    <% end %>
+  <% if bilan.name == 'IVT' %>
+  <%= link_to (bilancliniquepreoperatoire_path(bilan)), class: 'etape' do %>
+  <%= image_tag('fleche01.png', alt:"fleche", style: "width: 70px;") %>
+  <p>Etape suivante : Bilan clinique pré-opératoire</p>
   <% end %>
-  <!-------------------------------------- étape suivante --------------------------------------------->
+  <% end %>
+  <% end %>
 </div>
-<!------------------------------------ bottom bar ------------------------------------------->
 <div class='bottom_bar'>
   <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", style: "width: 60px") %>
 </div>
-<!------------------------------------ bottom bar ------------------------------------------->

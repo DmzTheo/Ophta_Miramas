@@ -1,19 +1,14 @@
 <% content_for :meta_title, "#{DEFAULT_META["meta_title"]}, chirurgie de la cataracte : post-opératoire" %>
 <% content_for :meta_description, "Chirurgie de la cataracte, consignes post-opératoires : Quand rentrer à son domicile ? Comment mettre les gouttes ? quand aura lieu le contrôle post-op ?" %>
-<!------------------------------------- logo -------------------------------------------->
 <div class='logo'>
   <%= link_to root_path do %>
-    <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", id: "img_logo") %>
+  <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", id: "img_logo") %>
   <% end %>
 </div>
-<!------------------------------------- logo -------------------------------------------->
-
-
-<!------------------------------------ navbar ------------------------------------------->
 <div class='nav_back'>
   <div class='navbar_all'>
     <%= link_to((root_path), class: 'a_img') do %>
-      <%= image_tag('view.png', alt: "logo oeil", class: "img_navbar") %>
+    <%= image_tag('view.png', alt: "logo oeil", class: "img_navbar") %>
     <% end %>
     <div class="navbar">
       <%= link_to "CENTRE", pages_centre_path %>
@@ -25,123 +20,70 @@
     </div>
   </div>
 </div>
-<!------------------------------------ navbar ------------------------------------------->
-
-
-<!------------------------------------ titre ------------------------------------------->
 <h1 class="titre_pathologies">CATARACTE : vous venez d'être opéré(e): que faire ?</h1>
-<!------------------------------------ titre ------------------------------------------->
-
-
-    <div class='chest_each_patho'>
+<div class='chest_each_patho'>
   <div class="conteneur_text_bilantech">
     <div class="textes">
       <h2 style="border-radius: 0 20px 0 0">Quand puis-je rentrer à mon domicile ?</h2>
       <p>Une fois la chirurgie terminée, une infirmière vous donnera toutes les consignes post-opératoires (que faire du pansement, comment et quand mettre les gouttes, dates post-opératoire, etc...) et vous proposera une collation.</p>
-
-
       <p>Après votre sortie administrative, vous êtes libre !</p>
-
-
       <p>Entre votre entrée et votre sortie, souvent moins de 2h30 se seront écoulées.</p>
-
-
-
       <h2>Quand vais-je revoir ? Vais-je avoir mal ?</h2>
       <p>Dans la très grande majorité des cas (95%), l’œil opéré de la cataracte est indolore.</p>
-
-
-
       <p>La vision s’améliore très rapidement, souvent dès le lendemain, et une correction adaptée par lunettes peut être prescrite au bout de quelques semaines.</p>
-
-
-
       <p>Les soins locaux sont réduits à l’instillation de gouttes.</p>
-
-
-
       <h2>Que faire de mon pansement ?</h2>
       <p>Le pansement ou rondelle oculaire doit être retiré le lendemain matin de l'intervention. La coque sera ensuite porté 5 à 7 jours la nuit uniquement.</p>
-
-
-
       <h2>Quand dois-je commencer à mettre les gouttes</h2>
       <p>Vous devez instiller les premières gouttes aussitôt le pansement retiré.</p>
-
-
-
       <p>Vous pouvez instiller les différents traitement à la suite, en attendant une minute entre chaque traitement.</p>
-
-
-
       <h2>Qui doit m'instiller les gouttes ?</h2>
       <p>Dans la mesure du possible, c'est vous qui devez les instiller.</p>
-
-
       <p>Ce n'est pas compliqué, en s'aidant d'un miroir.</p>
-
-
       <p>Attention, pensez à toujours vous laver les mains avant d'appliquer le traitement.</p>
-
-
-
       <p>Il n'y a aucun risque à instiller plusieurs gouttes d'un même traitement, l'essentiel étant de mettre au moins une goutte dans l’œil. Une unidose comprend assez de gouttes pour faire des "erreurs". Il n'y a donc aucun souci si des gouttes tombent sur votre joue ou au sol.</p>
-
-
-
       <p>Dans l'impossibilité de réaliser ce traitement vous même, demandez de l'aide à votre famille ou votre entourage (voisins, amis...). En dernier recours, vous pouvez faire appel à une infirmière diplômée d'état qui viendra faire les soins à domicile (l'ordonnance sera rédigée par le médecin).</p>
-
-
-
       <h2>Quand aura lieu le contrôle post-opératoire ?</h2>
       <p>Avant votre intervention, le médecin vous remettra un dossier complet post-opératoire personnalisé.</p>
-
       <p style="border-radius: 0 0 20px 0">Dans celui-ci figure la date et l'heure de votre rendez-vous prévu au centre d'ophtalmologie à Miramas. En cas d'impossibilité de vous rendre à ce rendez-vous, merci de contacter le secrétariat via le numéro de téléphone indiqué.</p>
+    </div>
   </div>
-</div>
-
-<!-------------------------------------- liens détails --------------------------------------------->
   <div class='bottom_elements'>
     <% @bilans.each do |bilan| %>
-      <% if bilan.name == 'Cataracte' %>
-        <div class="bottom_element_1">
-          <%= link_to (bilancliniquepreoperatoire_path(bilan)), class: "bottom_description" do %>
-            <p class="titre_bottom">Bilan clinique pré-opératoire</p>
-            <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
-            <p class="plus">En savoir plus</p>
-          <% end %>
-        </div>
+    <% if bilan.name == 'Cataracte' %>
+    <div class="bottom_element_1">
+      <%= link_to (bilancliniquepreoperatoire_path(bilan)), class: "bottom_description" do %>
+      <p class="titre_bottom">Bilan clinique pré-opératoire</p>
+      <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
+      <p class="plus">En savoir plus</p>
       <% end %>
+    </div>
+    <% end %>
     <% end %>
     <% @prepares.each do |prepare| %>
-      <% if prepare.name == 'Cataracte' %>
-        <div class="bottom_element_1">
-          <%= link_to (preparerlintervention_path(prepare)), class: "bottom_description" do %>
-            <p class="titre_bottom">Preparer l'intervention</p>
-            <p>Les éléments essentiels à préparer avant l'intervention</p>
-            <p class="plus">En savoir plus</p>
-          <% end %>
-        </div>
+    <% if prepare.name == 'Cataracte' %>
+    <div class="bottom_element_1">
+      <%= link_to (preparerlintervention_path(prepare)), class: "bottom_description" do %>
+      <p class="titre_bottom">Preparer l'intervention</p>
+      <p>Les éléments essentiels à préparer avant l'intervention</p>
+      <p class="plus">En savoir plus</p>
       <% end %>
+    </div>
+    <% end %>
     <% end %>
     <% @consignes.each do |consigne| %>
-      <% if consigne.name == 'Cataracte' %>
-        <div class="bottom_element_1">
-          <%= link_to (consignepostoperatoire_path(consigne)), class: "bottom_description" do %>
-            <p class="titre_bottom">Consignes post-opératoires</p>
-            <p>Après la chirurgie, que faire ?</p>
-            <p class="plus">En savoir plus</p>
-          <% end %>
-        </div>
+    <% if consigne.name == 'Cataracte' %>
+    <div class="bottom_element_1">
+      <%= link_to (consignepostoperatoire_path(consigne)), class: "bottom_description" do %>
+      <p class="titre_bottom">Consignes post-opératoires</p>
+      <p>Après la chirurgie, que faire ?</p>
+      <p class="plus">En savoir plus</p>
       <% end %>
+    </div>
+    <% end %>
     <% end %>
   </div>
 </div>
-  <!-------------------------------------- liens détails --------------------------------------------->
-<!-------------------------------------- liens détails --------------------------------------------->
-
-<!------------------------------------ bottom bar ------------------------------------------->
 <div class='bottom_bar'>
   <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", style: "width: 60px") %>
 </div>
-<!------------------------------------ bottom bar ------------------------------------------->

@@ -1,19 +1,14 @@
 <% content_for :meta_title, "#{DEFAULT_META["meta_title"]}, chirurgie de la cataracte : bilan clinique" %>
 <% content_for :meta_description, "Chirurgie de la cataracte, renseignez vous sur le bilan clinique pré-opératoire : contenu de la consultation, entretien, programmation de l'intervention" %>
-<!------------------------------------- logo -------------------------------------------->
 <div class='logo'>
   <%= link_to root_path do %>
-    <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", id: "img_logo") %>
+  <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", id: "img_logo") %>
   <% end %>
 </div>
-<!------------------------------------- logo -------------------------------------------->
-
-
-<!------------------------------------ navbar ------------------------------------------->
 <div class='nav_back'>
   <div class='navbar_all'>
     <%= link_to((root_path), class: 'a_img') do %>
-      <%= image_tag('view.png', alt: "logo oeil", class: "img_navbar") %>
+    <%= image_tag('view.png', alt: "logo oeil", class: "img_navbar") %>
     <% end %>
     <div class="navbar">
       <%= link_to "CENTRE", pages_centre_path %>
@@ -25,77 +20,41 @@
     </div>
   </div>
 </div>
-<!------------------------------------ navbar ------------------------------------------->
-
-
-<!------------------------------------ titre ------------------------------------------->
 <h1 class="titre_pathologies">CATARACTE : Bilan clinique pré-opératoire</h1>
-<!------------------------------------ titre ------------------------------------------->
-
-
-    <div class='chest_each_patho'>
+<div class='chest_each_patho'>
   <div class="conteneur_text_bilantech">
     <div class="textes">
       <h2 style="border-radius: 0 20px 0 0">La cataracte ?</h2>
       <p><br>La cataracte correspond à l'opacification progressive du cristallin majoritairement liée au vieillissement naturel. Le cristallin est une lentille qui se trouve derrière l'iris.</p>
-
       <p>Cette opacification perturbe la pénétration de la lumière dans l’œil. Il en résulte une baisse de la netteté, une diminution des contrastes, de la lumière et une moindre perception des détails.</p>
-
       <p>La cataracte touche 100% des humains, avec un pic de fréquence entre 70 et 80 ans. Il est cependant possible d'avoir la cataracte beaucoup plus jeune.</p>
-
-
       <p>La cataracte représente la première cause de cécité curable dans le monde.</p>
-
-
       <h2>Contenu de la consultation</h2>
       <p><br>Lors de la consultation pré-opératoire vous rencontrerez successivement :
-
-      <br>  - un orthoptiste,
+        <br>  - un orthoptiste,
       <br>  - et un ophtalmologiste.</p>
-
       <p>Cette consultation complète permet de déterminer :
-
-      <br>  - votre acuité visuelle oeil par oeil,
-
-      <br>  - si la cataracte est bien la cause de votre baisse de vue,
-
+        <br>  - votre acuité visuelle oeil par oeil,
+        <br>  - si la cataracte est bien la cause de votre baisse de vue,
       <br>  - si les autres structures oculaires essentielles ne présentent pas d'altérations compromettant la récupération visuelle post-opératoire.</p>
-
-
       <p>La cataracte touche 100% des humains, avec un pic de fréquence entre 70 et 80 ans. Il est cependant possible d'avoir la cataracte beaucoup plus jeune.</p>
-
-
       <p>Ainsi les examens cliniques et paracliniques permettent de définir la qualité : de la cornée, de la rétine et du nerf optique.</p>
-
       <h2>Entretien</h2>
       <p><br>Si le diagnostic est confirmé, nous vous exposerons au cours d'un entretien et de manière très simplifiée :
-
-      <br>  - l'origine et la conséquence de la cataracte,
-
-      <br>  - les possibilités thérapeutiques,
-
-      <br>  - l'intérêt et les risques de la chirurgie.</p>
-
-
-
+        <br>  - l'origine et la conséquence de la cataracte,
+        <br>  - les possibilités thérapeutiques,
+        <br>  - l'intérêt et les risques de la chirurgie.
+      </p>
       <h2>Programmation de la chirurgie</h2>
       <p><br>La décision opératoire revient au patient, après réflexion, suites aux informations délivrées par le médecin.</p>
-
-
-
       <p>Au cours de la consultation, nous :
-
-      <br>  - vous proposerons plusieurs dates opératoires selon vos disponibilités ou celles de votre entourage,
-
-      <br>  - éditera le dossier pré-opératoire complet,
-
-      <br>  - finaliserons les mesures (réalisation d'une biométrie oculaire) afin de commander l'implant (cristallin artificiel) posé lors de la chirurgie.</p>
-
-</div>
-</div>
-      <p class="italique">Nous faisons le maximum pour diminuer vos déplacements et faire TOUS les examens et mesures nécessaires en une seule consultation.</p>
-
-<!-------------------------------------- liens détails --------------------------------------------->
+        <br>  - vous proposerons plusieurs dates opératoires selon vos disponibilités ou celles de votre entourage,
+        <br>  - éditera le dossier pré-opératoire complet,
+        <br>  - finaliserons les mesures (réalisation d'une biométrie oculaire) afin de commander l'implant (cristallin artificiel) posé lors de la chirurgie.
+      </p>
+    </div>
+  </div>
+  <p class="italique">Nous faisons le maximum pour diminuer vos déplacements et faire TOUS les examens et mesures nécessaires en une seule consultation.</p>
   <div class='bottom_elements'>
     <% @bilans.each do |bilan| %>
       <% if bilan.name == 'Cataracte' %>
@@ -110,41 +69,36 @@
     <% end %>
     <% @prepares.each do |prepare| %>
       <% if prepare.name == 'Cataracte' %>
-        <div class="bottom_element_1">
-          <%= link_to (preparerlintervention_path(prepare)), class: "bottom_description" do %>
-            <p class="titre_bottom">Preparer l'intervention</p>
-            <p>Les éléments essentiels à préparer avant l'intervention</p>
-            <p class="plus">En savoir plus</p>
-          <% end %>
-        </div>
+      <div class="bottom_element_1">
+        <%= link_to (preparerlintervention_path(prepare)), class: "bottom_description" do %>
+        <p class="titre_bottom">Preparer l'intervention</p>
+        <p>Les éléments essentiels à préparer avant l'intervention</p>
+        <p class="plus">En savoir plus</p>
+        <% end %>
+      </div>
       <% end %>
     <% end %>
     <% @consignes.each do |consigne| %>
-      <% if consigne.name == 'Cataracte' %>
-        <div class="bottom_element_1">
-          <%= link_to (consignepostoperatoire_path(consigne)), class: "bottom_description" do %>
-            <p class="titre_bottom">Consignes post-opératoires</p>
-            <p>Après la chirurgie, que faire ?</p>
-            <p class="plus">En savoir plus</p>
-          <% end %>
-        </div>
+    <% if consigne.name == 'Cataracte' %>
+    <div class="bottom_element_1">
+      <%= link_to (consignepostoperatoire_path(consigne)), class: "bottom_description" do %>
+      <p class="titre_bottom">Consignes post-opératoires</p>
+      <p>Après la chirurgie, que faire ?</p>
+      <p class="plus">En savoir plus</p>
       <% end %>
+    </div>
+    <% end %>
     <% end %>
   </div>
-  <!-------------------------------------- liens détails --------------------------------------------->
-  <!-------------------------------------- étape suivante --------------------------------------------->
   <% @prepares.each do |prepare| %>
-    <% if prepare.name == 'Cataracte' %>
-        <%= link_to (preparerlintervention_path(prepare)), class: 'etape' do %>
-          <%= image_tag('fleche01.png', alt:"fleche", style: "width: 70px;") %>
-          <p>Etape suivante : Preparer l'intervention</p>
-        <% end %>
-    <% end %>
+  <% if prepare.name == 'Cataracte' %>
+  <%= link_to (preparerlintervention_path(prepare)), class: 'etape' do %>
+  <%= image_tag('fleche01.png', alt:"fleche", style: "width: 70px;") %>
+  <p>Etape suivante : Preparer l'intervention</p>
+  <% end %>
+  <% end %>
   <% end %>
 </div>
-<!-------------------------------------- liens détails --------------------------------------------->
-<!------------------------------------ bottom bar ------------------------------------------->
 <div class='bottom_bar'>
   <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", style: "width: 60px") %>
 </div>
-<!------------------------------------ bottom bar ------------------------------------------->

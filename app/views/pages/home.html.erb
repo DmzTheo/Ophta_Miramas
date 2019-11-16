@@ -1,12 +1,9 @@
 <% content_for :meta_title, "#{DEFAULT_META["meta_title"]}: ophtalmologie à Miramas" %>
-<!------------------------------------- logo -------------------------------------------->
 <div class='logo'>
   <%= link_to root_path do %>
   <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", id: "img_logo") %>
   <% end %>
 </div>
-<!------------------------------------- logo -------------------------------------------->
-<!------------------------------------ navbar ------------------------------------------->
 <div class='nav_back'>
   <div class='navbar_all'>
     <%= link_to((root_path), class: 'a_img') do %>
@@ -22,8 +19,6 @@
     </div>
   </div>
 </div>
-<!------------------------------------ navbar ------------------------------------------->
-<!------------------------------------ banner ------------------------------------------->
 <!-- Swiper -->
 <div class="swiper-container">
   <div class="swiper-wrapper">
@@ -56,16 +51,12 @@
   <div class="swiper-button-next"></div>
   <div class="swiper-button-prev"></div> -->
 </div>
-<!------------------------------------ banner ------------------------------------------->
-<!---------------------------------- bienvenue ------------------------------------------>
 <div class='chest_body'>
   <div class='bienvenue'>
     <h1>BIENVENUE</h1>
     <h2>dans notre cabinet d'ophtalmologie</h2>
     <h3>OPHTA MIRAMAS</h3>
   </div>
-  <!---------------------------------- bienvenue ------------------------------------------>
-  <!---------------------------------- présentation ------------------------------------------>
   <div class='presentation_home'>
     <%= link_to((pages_equipe_path), target: "_blank", class: 'presentation_home_1') do %>
     <%= image_tag('nurse-bustred.png', alt: "nurse", style: "width: 60px") %>
@@ -84,7 +75,6 @@
     <p>Une prise de rendez-vous en ligne</p>
     <% end %>
   </div>
-
   <div class="cartels_equipe">
     <div class="image"></div>
     <div class="texte">
@@ -94,7 +84,7 @@
       </div>
     </div>
   </div>
-<!--
+  <!--
   <div class='cartels_up'>
     <div class='cartel_cataracte cartel_tout flex_column'>
       <div class="text_cartel">
@@ -149,13 +139,8 @@
       <a><p class='plus_patho'>En savoir plus</p></a>
     </div>
   </div> -->
-  <!---------------------------------- présentation ------------------------------------------>
-  <!---------------------------------- bouton rendez-vous ------------------------------------------>
   <%= link_to "PRENDRE RENDEZ-VOUS", "https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php", class: "btn_rdv", target: '_blank', rel: 'nofollow' %>
 </div>
-<!---------------------------------- bouton rendez-vous ------------------------------------------>
-<!---------------------------------- bottom bar ------------------------------------------>
 <div class='bottom_bar'>
   <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", style: "width: 60px") %>
 </div>
-<!---------------------------------- bottom bar ------------------------------------------>

@@ -1,3 +1,12 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "MedicalProcedure",
+  "url": "<%= bilancliniquepreoperatoire_url(@bilan) %>",
+  "headline": "Bilan clinique pré-opératoire - <%= @bilan.name %>"
+}
+</script>
+
 <% case @bilan.name %>
   <% when 'Cataracte' %>
     <%= render "cataracte" %>

@@ -1,3 +1,12 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "MedicalProcedure",
+  "url": "<%= preparerlintervention_url(@preparer) %>",
+  "headline": "Préparer l'intervention - <%= @preparer.name %>"
+}
+</script>
+
 <% case @preparer.name %>
   <% when 'Cataracte' %>
     <%= render "cataracte" %>

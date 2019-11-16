@@ -1,13 +1,10 @@
 <% content_for :meta_title, "#{DEFAULT_META["meta_title"]}, chirurgie de la cataracte : préparer l'intervention" %>
 <% content_for :meta_description, "Chirurgie de la cataracte, comment bien préparer l'intervention ? : l'administratif, l'anesthésiste et l'entretien avec le médecin" %>
-<!------------------------------------- logo -------------------------------------------->
 <div class='logo'>
   <%= link_to root_path do %>
   <%= image_tag('logo_ok.png', alt: "", id: "img_logo") %>
   <% end %>
 </div>
-<!------------------------------------- logo -------------------------------------------->
-<!------------------------------------ navbar ------------------------------------------->
 <div class='nav_back'>
   <div class='navbar_all'>
     <%= link_to((root_path), class: 'a_img') do %>
@@ -23,10 +20,7 @@
     </div>
   </div>
 </div>
-<!------------------------------------ navbar ------------------------------------------->
-<!------------------------------------ titre ------------------------------------------->
 <h1 class="titre_pathologies" style="margin-left: 13%;">CATARACTE : Préparer l'intervention</h1>
-<!------------------------------------ titre ------------------------------------------->
 <div class='chest_each_patho'>
   <div class="conteneur_text_bilantech">
     <div class="textes">
@@ -54,7 +48,6 @@
     </div>
   </div>
   <p  class="italique">Concernant l’ordonnance post-opératoire, pensez à vous rendre à la pharmacie avant l'opération pour gagner en sérénité et ainsi pouvoir rentrer immédiatement à votre domicile après la chirurgie.</p>
-  <!-------------------------------------- liens détails --------------------------------------------->
   <div class='bottom_elements'>
     <% @bilans.each do |bilan| %>
       <% if bilan.name == 'Cataracte' %>
@@ -90,8 +83,6 @@
       <% end %>
     <% end %>
   </div>
-  <!-------------------------------------- liens détails --------------------------------------------->
-  <!-------------------------------------- étape suivante --------------------------------------------->
   <% @choisisses.each do |choisisse| %>
     <% if choisisse.name == 'Cataracte' %>
         <%= link_to (choisissezvotreimplant_path(choisisse)), class: 'etape' do %>
@@ -100,10 +91,7 @@
         <% end %>
       <% end %>
   <% end %>
-  <!-------------------------------------- étape suivante --------------------------------------------->
 </div>
-<!------------------------------------ bottom bar ------------------------------------------->
 <div class='bottom_bar'>
   <%= image_tag('logo_ok.png', alt: "", style: "width: 60px") %>
 </div>
-<!------------------------------------ bottom bar ------------------------------------------->

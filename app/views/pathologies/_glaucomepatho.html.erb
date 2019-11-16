@@ -1,15 +1,10 @@
 <% content_for :meta_title, "Ophtalmologie #{DEFAULT_META["meta_title"]} : glaucome" %>
 <% content_for :meta_description, "Renseignez vous sur le glaucome : définition, symptômes, traitements, conséquences, quand dois-je consulter..." %>
-<!------------------------------------- logo -------------------------------------------->
 <div class='logo'>
   <%= link_to root_path do %>
     <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", id: "img_logo") %>
   <% end %>
 </div>
-<!------------------------------------- logo -------------------------------------------->
-
-
-<!------------------------------------ navbar ------------------------------------------->
 <div class='nav_back'>
   <div class='navbar_all'>
     <%= link_to((root_path), class: 'a_img') do %>
@@ -25,14 +20,7 @@
     </div>
   </div>
 </div>
-<!------------------------------------ navbar ------------------------------------------->
-
-
-<!------------------------------------ titre ------------------------------------------->
 <h1 class="titre_pathologies" style="margin-left: 13%;">GLAUCOME</h1>
-<!------------------------------------ titre ------------------------------------------->
-
-
 <div class='chest_each_patho'>
     <div class="conteneur_text_pathologies">
       <div class="textes">
@@ -61,8 +49,6 @@
     </div>
 
 </div>
-<!------------------------------------ bottom bar ------------------------------------------->
 <div class='bottom_bar'>
   <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", style: "width: 60px") %>
 </div>
-<!------------------------------------ bottom bar ------------------------------------------->

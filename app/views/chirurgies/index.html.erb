@@ -1,15 +1,20 @@
 <% content_for :meta_title, "ophtalmologie #{DEFAULT_META["meta_title"]} : les chirurgies" %>
 <% content_for :meta_description, "Renseignez vous sur les chirurgies : chirurgie réfractive, cataracte, paupières et IVT..." %>
-<!------------------------------------- logo -------------------------------------------->
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "MedicalProcedure",
+  "url": "<%= chirurgies_url %>",
+  "headline": "Renseignez vous sur les chirurgies"
+}
+</script>
+
 <div class='logo'>
   <%= link_to root_path do %>
     <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", id: "img_logo") %>
   <% end %>
 </div>
-<!------------------------------------- logo -------------------------------------------->
-
-
-<!------------------------------------ navbar ------------------------------------------->
 <div class='nav_back'>
   <div class='navbar_all'>
     <%= link_to((root_path), class: 'a_img') do %>
@@ -25,22 +30,12 @@
     </div>
   </div>
 </div>
-<!------------------------------------ navbar ------------------------------------------->
-
-
-<!------------------------------------ titre ------------------------------------------->
 <div class="titre_pathologies_telechargement">
   <h1 class="titre_pathologies">CHIRURGIES</h1>
   <%= link_to("TÉLÉCHARGEMENTS", pages_telechargements_path, class:"btn_telechargements") %>
 </div>
-<!------------------------------------ titre ------------------------------------------->
-
-
 <div class='chest_patho'>
   <div class="vide"></div>
-
-
-<!-------------------------------- carte Cataracte --------------------------------------->
   <% @chirurgies.each do |chirurgie| %>
     <% if chirurgie.nom == 'Cataracte' %>
       <%= link_to(chirurgy_path(chirurgie)) do %>
@@ -54,10 +49,6 @@
       <% end %>
     <% end %>
   <% end %>
-<!-------------------------------- carte Cataracte --------------------------------------->
-
-
-<!---------------------------- carte Chirurgie réfractive ----------------------------------->
   <% @chirurgies.each do |chirurgie| %>
     <% if chirurgie.nom == 'Chirurgie réfractive' %>
       <%= link_to(chirurgy_path(chirurgie)) do %>
@@ -72,10 +63,6 @@
       <% end %>
     <% end %>
   <% end %>
-<!---------------------------- carte Chirurgie réfractive ----------------------------------->
-
-
-<!------------------------ carte Chirurgie des paupières ------------------------------->
   <% @chirurgies.each do |chirurgie| %>
     <% if chirurgie.nom == 'Chirurgie des paupières' %>
       <%= link_to(chirurgy_path(chirurgie)) do %>
@@ -88,10 +75,6 @@
       <% end %>
     <% end %>
   <% end %>
-<!------------------------ carte Chirurgie des paupières ------------------------------->
-
-
-<!---------------------------------- carte IVT ----------------------------------------->
   <% @chirurgies.each do |chirurgie| %>
     <% if chirurgie.nom == 'IVT' %>
       <%= link_to(chirurgy_path(chirurgie)) do %>
@@ -106,12 +89,8 @@
       <% end %>
     <% end %>
   <% end %>
-<!---------------------------------- carte IVT ----------------------------------------->
   <%= link_to("TÉLÉCHARGEMENTS", pages_telechargements_path, class:"btn_rdv") %>
 </div>
-
-<!----------------------------------- bottom bar ------------------------------------------>
 <div class='bottom_bar'>
   <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", style: "width: 60px") %>
 </div>
-<!----------------------------------- bottom bar ------------------------------------------>
