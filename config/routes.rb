@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get 'pages/centre'
   get 'pages/equipe'
   get 'pages/telechargements'
-  get '/robots.:format' => 'pages#robots'
+  get '/robots.txt' => 'pages#robots', :format => "text"
 
   get '/sitemap.xml' => 'sitemaps#index', :format => "xml", :as => :sitemap
 
