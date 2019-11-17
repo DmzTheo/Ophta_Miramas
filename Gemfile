@@ -36,7 +36,6 @@ gem 'popper_js', '~> 1.14.5'
 gem 'breadcrumbs_on_rails'
 gem 'friendly_id', '~> 5.2.4'
 gem 'haml'
-gem 'secure_headers', '~> 6.1', '>= 6.1.1'
 gem 'simple_form'
 
 # Use Capistrano for deployment
