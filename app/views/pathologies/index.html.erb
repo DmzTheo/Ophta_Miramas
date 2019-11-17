@@ -6,9 +6,24 @@
   "@context": "http://schema.org",
   "@type": "MedicalProcedure",
   "url": "<%= pathologies_url %>",
-  "description": "Renseignez vous sur les pathologies occulaires"
+  "description": "Renseignez vous sur les pathologies occulaires : glaucome, diabète, DMLA, décolement de la rétine et autres..."
 }
 </script>
+
+<!-- BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "affections",
+      "item": "<%= pathologies_url %>"
+    }]
+  }
+</script>
+<!-- End BreadcrumbList -->
 
 <div class='logo'>
   <%= link_to root_path do %>

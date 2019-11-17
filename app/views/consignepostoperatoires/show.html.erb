@@ -7,6 +7,35 @@
 }
 </script>
 
+<!-- BreadcrumbList -->
+<script type="application/ld+json">
+<% @chirurgies.each do |chirurgie| %>
+  <% if chirurgie.nom == @consigne.name %>
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "chirurgies",
+          "item": "<%= chirurgies_url %>"
+        },{
+          "@type": "ListItem",
+          "position": 2,
+          "name": "<%= chirurgie.nom %>",
+          "item": "<%= chirurgy_url(chirurgie) %>"
+        },{
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Consignes post-opératoires",
+          "item": "<%= consignepostoperatoire_url(@consigne) %>"
+        }]
+    }
+  <% end %>
+<% end %>
+</script>
+<!-- End BreadcrumbList -->
+
 <% case @consigne.name %>
   <% when 'Cataracte' %>
     <%= render "cataracte" %>

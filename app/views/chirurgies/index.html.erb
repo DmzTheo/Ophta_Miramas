@@ -6,9 +6,24 @@
   "@context": "http://schema.org",
   "@type": "MedicalProcedure",
   "url": "<%= chirurgies_url %>",
-  "description": "Renseignez vous sur les chirurgies"
+  "description": "Renseignez vous sur les chirurgies : chirurgie réfractive, cataracte, paupières et IVT..."
 }
 </script>
+
+<!-- BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "chirurgies",
+      "item": "<%= chirurgies_url %>"
+    }]
+  }
+</script>
+<!-- End BreadcrumbList -->
 
 <div class='logo'>
   <%= link_to root_path do %>

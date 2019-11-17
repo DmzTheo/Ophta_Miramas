@@ -5,7 +5,6 @@ class BilancliniquepreoperatoiresController < ApplicationController
     @choisisses = Choisissezvotreimplant.all
     @consignes = Consignepostoperatoire.all
     @prepares = Preparerlintervention.all
-
-    add_breadcrumb @bilan.name, bilancliniquepreoperatoire_path(@bilan)
+    @chirurgies = Chirurgie.all
   end
 end

@@ -10,6 +10,35 @@
 }
 </script>
 
+<!-- BreadcrumbList -->
+<script type="application/ld+json">
+<% @chirurgies.each do |chirurgie| %>
+  <% if chirurgie.nom == @choisisses.name %>
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "chirurgies",
+          "item": "<%= chirurgies_url %>"
+        },{
+          "@type": "ListItem",
+          "position": 2,
+          "name": "<%= chirurgie.nom %>",
+          "item": "<%= chirurgy_url(chirurgie) %>"
+        },{
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Choisissez votre implant",
+          "item": "<%= choisissezvotreimplant_url(@choisisses) %>"
+        }]
+    }
+  <% end %>
+<% end %>
+</script>
+<!-- End BreadcrumbList -->
+
 <div class='logo'>
   <%= link_to root_path do %>
     <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", id: "img_logo") %>

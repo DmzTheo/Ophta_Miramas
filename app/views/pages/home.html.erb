@@ -1,3 +1,18 @@
+<!-- BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "home",
+      "item": "<%= root_url %>"
+    }]
+  }
+</script>
+<!-- End BreadcrumbList -->
+
 <% content_for :meta_title, "#{DEFAULT_META["meta_title"]}: ophtalmologie à Miramas" %>
 <div class='logo'>
   <%= link_to root_path do %>

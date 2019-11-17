@@ -5,7 +5,6 @@ class PreparerlinterventionsController < ApplicationController
     @choisisses = Choisissezvotreimplant.all
     @consignes = Consignepostoperatoire.all
     @prepares = Preparerlintervention.all
-
-    add_breadcrumb @preparer.name, preparerlintervention_path(@preparer)
+    @chirurgies = Chirurgie.all
   end
 end
