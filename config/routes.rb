@@ -8,10 +8,10 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
 
-  get 'pages/lunettes'
-  get 'pages/centre'
-  get 'pages/equipe'
-  get 'pages/telechargements'
+  get 'lunettes' => 'pages#lunettes'
+  get 'centre' => 'pages#centre'
+  get 'equipe' => 'pages#equipe'
+  get 'telechargements' => 'pages#telechargements'
   get 'robots.:format' => 'pages#robots'
 
   get '/sitemap.xml' => 'sitemaps#index', :format => "xml", :as => :sitemap

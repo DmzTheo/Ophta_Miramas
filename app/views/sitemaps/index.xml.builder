@@ -6,19 +6,19 @@ xml.tag! 'urlset', 'xmlns' => "http://www.sitemaps.org/schemas/sitemap/0.9" do
   end
 
   xml.tag! 'url' do
-    xml.tag! 'loc', pages_lunettes_url
+    xml.tag! 'loc', lunettes_url
   end
 
   xml.tag! 'url' do
-    xml.tag! 'loc', pages_centre_url
+    xml.tag! 'loc', centre_url
   end
 
   xml.tag! 'url' do
-    xml.tag! 'loc', pages_equipe_url
+    xml.tag! 'loc', equipe_url
   end
 
   xml.tag! 'url' do
-    xml.tag! 'loc', pages_telechargements_url
+    xml.tag! 'loc', telechargements_url
   end
 
   xml.tag! 'url' do
