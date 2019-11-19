@@ -51,9 +51,9 @@
   <p class="italique">Cette chirurgie s'adressant à des personnes jeunes et actives, nous ferrons le maximum pour diminuer le nombre de consultations et pour proposer des dates de rencontre adaptées à vos contraintes familiales et professionnelles.</p>
   <div class='bottom_elements'>
     <% @bilans.each do |bilan| %>
-    <% if bilan.name == 'Chirurgie réfractive' %>
+    <% if bilan.chirurgie_id == Chirurgie.find_by(nom: 'Chirurgie réfractive').id %>
     <div class="bottom_element_1">
-      <%= link_to (bilancliniquepreoperatoire_path(bilan)), class: "bottom_description" do %>
+      <%= link_to (chirurgy_bilancliniquepreoperatoires_path(bilan)), class: "bottom_description" do %>
       <p class="titre_bottom">Bilan clinique pré-opératoire</p>
       <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
       <p class="plus">En savoir plus</p>
@@ -62,9 +62,9 @@
     <% end %>
     <% end %>
     <% @prepares.each do |prepare| %>
-    <% if prepare.name == 'Chirurgie réfractive' %>
+    <% if prepare.chirurgie_id == Chirurgie.find_by(nom: 'Chirurgie réfractive').id %>
     <div class="bottom_element_1">
-      <%= link_to (preparerlintervention_path(prepare)), class: "bottom_description" do %>
+      <%= link_to (chirurgy_preparerlintervention_path(prepare)), class: "bottom_description" do %>
       <p class="titre_bottom">Preparer l'intervention</p>
       <p>Les éléments essentiels à préparer avant l'intervention</p>
       <p class="plus">En savoir plus</p>
@@ -73,9 +73,9 @@
     <% end %>
     <% end %>
     <% @consignes.each do |consigne| %>
-    <% if consigne.name == 'Chirurgie réfractive' %>
+    <% if consigne.chirurgie_id == Chirurgie.find_by(nom: 'Chirurgie réfractive').id %>
     <div class="bottom_element_1">
-      <%= link_to (consignepostoperatoire_path(consigne)), class: "bottom_description" do %>
+      <%= link_to (chirurgy_consignepostoperatoire_path(consigne)), class: "bottom_description" do %>
       <p class="titre_bottom">Consignes post-opératoires</p>
       <p>Après la chirurgie, que faire ?</p>
       <p class="plus">En savoir plus</p>
@@ -85,9 +85,9 @@
     <% end %>
   </div>
   <% @prepares.each do |prepare| %>
-  <% if prepare.name == 'Chirurgie réfractive' %>
+  <% if prepare.chirurgie_id == Chirurgie.find_by(nom: 'Chirurgie réfractive').id %>
   <div class="etapes">
-    <%= link_to (preparerlintervention_path(prepare)), class: 'etape' do %>
+    <%= link_to (chirurgy_preparerlintervention_path(prepare)), class: 'etape' do %>
     <%= image_tag('fleche01.png', alt:"fleche", style: "width: 70px;") %>
     <p>Etape suivante : Preparer l'intervention</p>
     <% end %>

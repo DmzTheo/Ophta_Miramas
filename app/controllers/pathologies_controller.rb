@@ -1,5 +1,4 @@
 class PathologiesController < ApplicationController
-
   def index
     @pathologies = Pathologie.all
   end

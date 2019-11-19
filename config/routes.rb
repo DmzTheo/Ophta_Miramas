@@ -18,11 +18,12 @@ Rails.application.routes.draw do
 
   resources :pathologies, only: [:show, :index]
 
-  resources :chirurgies, only: [:show, :index]
-  resources :bilancliniquepreoperatoires, only: [:show]
-  resources :preparerlinterventions, only: [:show]
-  resources :consignepostoperatoires, only: [:show]
-  resources :choisissezvotreimplants, only: [:show]
+  resources :chirurgies, only: [:show, :index] do
+    resources :bilancliniquepreoperatoires, only: [:index]
+    resources :preparerlinterventions, only: [:index]
+    resources :consignepostoperatoires, only: [:index]
+    resources :choisissezvotreimplants, only: [:index]
+  end
 
   get "/404", to: "errors#not_found", via: :all
   get "/422", to: "errors#unacceptable", via: :all

@@ -32,9 +32,9 @@
   </div>
   <div class='bottom_elements'>
     <% @bilans.each do |bilan| %>
-      <% if bilan.name == 'Cataracte' %>
+      <% if bilan.chirurgie_id == Chirurgie.find_by(nom: 'Cataracte').id %>
         <div class="bottom_element_1">
-          <%= link_to (bilancliniquepreoperatoire_path(bilan)), class: "bottom_description" do %>
+          <%= link_to (chirurgy_bilancliniquepreoperatoires_path(bilan)), class: "bottom_description" do %>
             <p class="titre_bottom">Bilan clinique pré-opératoire</p>
             <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
             <p class="plus">En savoir plus</p>
@@ -43,9 +43,9 @@
       <% end %>
     <% end %>
     <% @prepares.each do |prepare| %>
-      <% if prepare.name == 'Cataracte' %>
+      <% if prepare.chirurgie_id == Chirurgie.find_by(nom: 'Cataracte').id %>
         <div class="bottom_element_1">
-          <%= link_to (preparerlintervention_path(prepare)), class: "bottom_description" do %>
+          <%= link_to (chirurgy_preparerlintervention_path(prepare)), class: "bottom_description" do %>
             <p class="titre_bottom">Preparer l'intervention</p>
             <p>Les éléments essentiels à préparer avant l'intervention</p>
             <p class="plus">En savoir plus</p>
@@ -54,9 +54,9 @@
       <% end %>
     <% end %>
     <% @consignes.each do |consigne| %>
-      <% if consigne.name == 'Cataracte' %>
+      <% if consigne.chirurgie_id == Chirurgie.find_by(nom: 'Cataracte').id %>
         <div class="bottom_element_1">
-          <%= link_to (consignepostoperatoire_path(consigne)), class: "bottom_description" do %>
+          <%= link_to (chirurgy_consignepostoperatoire_path(consigne)), class: "bottom_description" do %>
             <p class="titre_bottom">Consignes post-opératoires</p>
             <p>Après la chirurgie, que faire ?</p>
             <p class="plus">En savoir plus</p>
@@ -66,8 +66,8 @@
     <% end %>
   </div>
   <% @bilans.each do |bilan| %>
-    <% if bilan.name == 'Cataracte' %>
-        <%= link_to (bilancliniquepreoperatoire_path(bilan)), class: 'etape' do %>
+    <% if bilan.chirurgie_id == Chirurgie.find_by(nom: 'Cataracte').id %>
+        <%= link_to (chirurgy_bilancliniquepreoperatoires_path(bilan)), class: 'etape' do %>
           <%= image_tag('fleche01.png', alt:"fleche", style: "width: 70px;") %>
           <p>Etape suivante : Bilan clinique pré-opératoire</p>
         <% end %>

@@ -10,16 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_27_084707) do
+ActiveRecord::Schema.define(version: 2019_11_19_165529) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "bilancliniquepreoperatoires", force: :cascade do |t|
+    t.bigint "chirurgie_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "name"
     t.string "slug"
+    t.index ["chirurgie_id"], name: "index_bilancliniquepreoperatoires_on_chirurgie_id"
     t.index ["slug"], name: "index_bilancliniquepreoperatoires_on_slug", unique: true
   end
 
@@ -32,18 +33,20 @@ ActiveRecord::Schema.define(version: 2019_10_27_084707) do
   end
 
   create_table "choisissezvotreimplants", force: :cascade do |t|
+    t.bigint "chirurgie_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "name"
     t.string "slug"
+    t.index ["chirurgie_id"], name: "index_choisissezvotreimplants_on_chirurgie_id"
     t.index ["slug"], name: "index_choisissezvotreimplants_on_slug", unique: true
   end
 
   create_table "consignepostoperatoires", force: :cascade do |t|
+    t.bigint "chirurgie_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "name"
     t.string "slug"
+    t.index ["chirurgie_id"], name: "index_consignepostoperatoires_on_chirurgie_id"
     t.index ["slug"], name: "index_consignepostoperatoires_on_slug", unique: true
   end
 
@@ -67,11 +70,16 @@ ActiveRecord::Schema.define(version: 2019_10_27_084707) do
   end
 
   create_table "preparerlinterventions", force: :cascade do |t|
+    t.bigint "chirurgie_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "name"
     t.string "slug"
+    t.index ["chirurgie_id"], name: "index_preparerlinterventions_on_chirurgie_id"
     t.index ["slug"], name: "index_preparerlinterventions_on_slug", unique: true
   end
 
+  add_foreign_key "bilancliniquepreoperatoires", "chirurgies", column: "chirurgie_id"
+  add_foreign_key "choisissezvotreimplants", "chirurgies", column: "chirurgie_id"
+  add_foreign_key "consignepostoperatoires", "chirurgies", column: "chirurgie_id"
+  add_foreign_key "preparerlinterventions", "chirurgies", column: "chirurgie_id"
 end

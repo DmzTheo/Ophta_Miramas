@@ -1,5 +1,4 @@
 class ChirurgiesController < ApplicationController
-
   def index
     @chirurgies = Chirurgie.all
   end
