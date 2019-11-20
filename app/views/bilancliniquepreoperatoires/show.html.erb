@@ -1,16 +1,20 @@
 <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "MedicalProcedure",
-  "url": "<%= bilancliniquepreoperatoire_url(@bilan) %>",
-  "description": "Bilan clinique pré-opératoire - <%= @bilan.name %>"
-}
+<% @chirurgies.each do |chirurgie| %>
+  <% if @bilan.chirurgie_id == chirurgie.id %>
+    {
+      "@context": "http://schema.org",
+      "@type": "MedicalProcedure",
+      "url": "<%= chirurgy_bilancliniquepreoperatoire_url(@chirurgie) %>",
+      "description": "Bilan clinique pré-opératoire - <%= chirurgie.nom %>"
+    }
+  <% end %>
+<% end %>
 </script>
 
 <!-- BreadcrumbList -->
 <script type="application/ld+json">
 <% @chirurgies.each do |chirurgie| %>
-  <% if chirurgie.nom == @bilan.name %>
+  <% if @bilan.chirurgie_id == chirurgie.id %>
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
@@ -28,22 +32,24 @@
           "@type": "ListItem",
           "position": 3,
           "name": "bilan clinique pré-opératoire",
-          "item": "<%= bilancliniquepreoperatoire_url(@bilan) %>"
+          "item": "<%= chirurgy_bilancliniquepreoperatoire_url(@chirurgie) %>"
         }]
     }
   <% end %>
 <% end %>
 </script>
 <!-- End BreadcrumbList -->
-
-<% case @bilan.name %>
-  <% when 'Cataracte' %>
-    <%= render "cataracte" %>
-  <% when 'Glaucome' %>
-    <%= render "glaucomechir" %>
-  <% when 'IVT' %>
-    <%= render "ivt" %>
-  <% when 'Chirurgie réfractive' %>
-    <%= render "laser" %>
+<% @chirurgies.each do |chirurgie| %>
+  <% if @bilan.chirurgie_id == chirurgie.id %>
+    <% case chirurgie.nom %>
+      <% when 'Cataracte' %>
+        <%= render "cataracte" %>
+      <% when 'Glaucome' %>
+        <%= render "glaucomechir" %>
+      <% when 'IVT' %>
+        <%= render "ivt" %>
+      <% when 'Chirurgie réfractive' %>
+        <%= render "laser" %>
+    <% end %>
+  <% end %>
 <% end %>
-

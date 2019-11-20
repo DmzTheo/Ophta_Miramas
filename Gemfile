@@ -33,7 +33,7 @@ gem 'popper_js', '~> 1.14.5'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
-gem 'friendly_id', '~> 5.2.4'
+gem 'friendly_id'
 gem 'haml'
 gem 'simple_form'
 

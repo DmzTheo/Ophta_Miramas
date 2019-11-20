@@ -4,10 +4,6 @@ class SitemapsController < ApplicationController
   before_action :init_sitemap
 
   def index
-    @bilans = Bilancliniquepreoperatoire.all
-    @choisisses = Choisissezvotreimplant.all
-    @consignes = Consignepostoperatoire.all
-    @prepares = Preparerlintervention.all
     @pathologies = Pathologie.all
     @chirurgies = Chirurgie.all
 

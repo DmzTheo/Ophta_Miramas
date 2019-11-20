@@ -1,53 +1,50 @@
 <% content_for :meta_title, "#{DEFAULT_META["meta_title"]}, chirurgie de la cataracte : implants" %>
 <% content_for :meta_description, "Chirurgie de la cataracte, choisissez votre implant : pourquoi une chirurgie prémium ? Quelle différence ? Surcoût ?" %>
-
 <script type="application/ld+json">
 {
-  "@context": "http://schema.org",
-  "@type": "MedicalProcedure",
-  "url": "<%= choisissezvotreimplant_url(@choisisses) %>",
-  "description": "Chirurgie de la cataracte, choisissez votre implant"
+"@context": "http://schema.org",
+"@type": "MedicalProcedure",
+"url": "<%= chirurgy_choisissezvotreimplant_url(@chirurgie) %>",
+"description": "Chirurgie de la cataracte, choisissez votre implant"
 }
 </script>
-
 <!-- BreadcrumbList -->
 <script type="application/ld+json">
 <% @chirurgies.each do |chirurgie| %>
-  <% if chirurgie.nom == @choisisses.name %>
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-        "itemListElement": [{
-          "@type": "ListItem",
-          "position": 1,
-          "name": "chirurgies",
-          "item": "<%= chirurgies_url %>"
-        },{
-          "@type": "ListItem",
-          "position": 2,
-          "name": "<%= chirurgie.nom %>",
-          "item": "<%= chirurgy_url(chirurgie) %>"
-        },{
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Choisissez votre implant",
-          "item": "<%= choisissezvotreimplant_url(@choisisses) %>"
-        }]
-    }
-  <% end %>
+<% if @choisissez.chirurgie_id == chirurgie.id %>
+{
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [{
+"@type": "ListItem",
+"position": 1,
+"name": "chirurgies",
+"item": "<%= chirurgies_url %>"
+},{
+"@type": "ListItem",
+"position": 2,
+"name": "<%= chirurgie.nom %>",
+"item": "<%= chirurgy_url(chirurgie) %>"
+},{
+"@type": "ListItem",
+"position": 3,
+"name": "Choisissez votre implant",
+"item": "<%= chirurgy_choisissezvotreimplant_url(@chirurgie) %>"
+}]
+}
+<% end %>
 <% end %>
 </script>
 <!-- End BreadcrumbList -->
-
 <div class='logo'>
   <%= link_to root_path do %>
-    <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", id: "img_logo") %>
+  <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", id: "img_logo") %>
   <% end %>
 </div>
 <div class='nav_back'>
   <div class='navbar_all'>
     <%= link_to((root_path), class: 'a_img') do %>
-      <%= image_tag('view.png', alt: "oeil", class: "img_navbar") %>
+    <%= image_tag('view.png', alt: "oeil", class: "img_navbar") %>
     <% end %>
     <div class="navbar">
       <%= link_to "CENTRE", centre_path %>
@@ -59,81 +56,57 @@
     </div>
   </div>
 </div>
-    <h1 class="titre_pathologies;" style="font-family: 'roboto';font-weight: 500;letter-spacing: 3px;font-size: 35px;width: 60%;display: flex;display: block;margin: 30px 13%;color: white;font-size: 27px;">CATARACTE : Chirurgie premium</h1>
-    <div class='chest_each_patho'>
+<h1 class="titre_pathologies;" style="font-family: 'roboto';font-weight: 500;letter-spacing: 3px;font-size: 35px;width: 60%;display: flex;display: block;margin: 30px 13%;color: white;font-size: 27px;">CATARACTE : Chirurgie premium</h1>
+<div class='chest_each_patho'>
   <div class="conteneur_text_bilantech">
-      <div class="vide"></div>
-      <h2>Pourquoi une chirurgie Premium ?</h2>
-      <p><br>La chirurgie de la cataracte vise à récupérer une acuité visuelle maximale de loin. </p>
-
-      <p>Toutefois, une correction optique sera parfois nécessaire pour corriger un astigmatisme résiduel.</p>
-
-      <p>Dans tous les cas, le port de lunettes pour la vision de près sera indispensable.</p>
-
-      <p class="italique" style="margin: 0;padding: 15px;"><br> Si vous souhaitez ne plus porter de lunettes du tout, la chirurgie dite Premium s'adresse à vous.</p>
-
-      <p><br></p>
-
-      <h2>Quelle est la différence avec la chirurgie standard ?</h2>
-      <p><br>Lors de la consultation, une attention particulière sera portée sur vos besoins visuels, vos activités et sur votre correction optique.</p>
-      <p>Cet examen approfondi permettra de sélectionner l'implant cristallinien le mieux adapter à votre cas :
+    <div class="vide"></div>
+    <h2>Pourquoi une chirurgie Premium ?</h2>
+    <p><br>La chirurgie de la cataracte vise à récupérer une acuité visuelle maximale de loin. </p>
+    <p>Toutefois, une correction optique sera parfois nécessaire pour corriger un astigmatisme résiduel.</p>
+    <p>Dans tous les cas, le port de lunettes pour la vision de près sera indispensable.</p>
+    <p class="italique" style="margin: 0;padding: 15px;"><br> Si vous souhaitez ne plus porter de lunettes du tout, la chirurgie dite Premium s'adresse à vous.</p>
+    <p><br></p>
+    <h2>Quelle est la différence avec la chirurgie standard ?</h2>
+    <p><br>Lors de la consultation, une attention particulière sera portée sur vos besoins visuels, vos activités et sur votre correction optique.</p>
+    <p>Cet examen approfondi permettra de sélectionner l'implant cristallinien le mieux adapter à votre cas :
       <br>- implant torique pour corriger l'astigmatisme en vision de loin,
       <br>- implant multifocal pour corriger la vision de loin et la vision de près sans port de lunettes,
-      <br>- implant multifocal torique qui corrige l'astigmatisme en vision de loin et également la vision de près.</p>
-      <p><br></p>
-
-      <h2>Y-a-t-il un surcoût ?</h2>
-      <p><br>Oui, la sécurité sociale ne prend pas en charge le surcoût lié au type d'implant dit Premium car celui-ci est plus complexe à fabriquer.</p>
-
-      <p>C'est pourquoi votre chirurgien vous donnera un devis détaillé concernant l'implant sélectionné. Vous devrez payer la différence de prix, directement là la clinique, entre votre implant "Premium" et l'implant standard (de 64 à 500€ par œil). La clinique se charge en effet de la fourniture de cet implant sur recommandation de votre chirurgien.</p>
-
-      <p>Vous retrouverez dans la section <%= link_to "page des téléchargements", telechargements_path %>, différents documents expliquant cette chirurgie et les implants.</p>
-      <p><br><br></p>
-    </div>
+    <br>- implant multifocal torique qui corrige l'astigmatisme en vision de loin et également la vision de près.</p>
+    <p><br></p>
+    <h2>Y-a-t-il un surcoût ?</h2>
+    <p><br>Oui, la sécurité sociale ne prend pas en charge le surcoût lié au type d'implant dit Premium car celui-ci est plus complexe à fabriquer.</p>
+    <p>C'est pourquoi votre chirurgien vous donnera un devis détaillé concernant l'implant sélectionné. Vous devrez payer la différence de prix, directement là la clinique, entre votre implant "Premium" et l'implant standard (de 64 à 500€ par œil). La clinique se charge en effet de la fourniture de cet implant sur recommandation de votre chirurgien.</p>
+    <p>Vous retrouverez dans la section <%= link_to "page des téléchargements", telechargements_path %>, différents documents expliquant cette chirurgie et les implants.</p>
+    <p><br><br></p>
+  </div>
   <div class='bottom_elements'>
-    <% @bilans.each do |bilan| %>
-      <% if bilan.name == 'Cataracte' %>
-        <div class="bottom_element_1">
-          <%= link_to (bilancliniquepreoperatoire_path(bilan)), class: "bottom_description" do %>
-            <p class="titre_bottom">Bilan clinique pré-opératoire</p>
-            <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
-            <p class="plus">En savoir plus</p>
-          <% end %>
-        </div>
+    <div class="bottom_element_1">
+      <%= link_to (chirurgy_bilancliniquepreoperatoire_path(@chirurgie)), class: "bottom_description" do %>
+      <p class="titre_bottom">Bilan clinique pré-opératoire</p>
+      <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
+      <p class="plus">En savoir plus</p>
       <% end %>
-    <% end %>
-    <% @prepares.each do |prepare| %>
-      <% if prepare.name == 'Cataracte' %>
-        <div class="bottom_element_1">
-          <%= link_to (preparerlintervention_path(prepare)), class: "bottom_description" do %>
-            <p class="titre_bottom">Preparer l'intervention</p>
-            <p>Les éléments essentiels à préparer avant l'intervention</p>
-            <p class="plus">En savoir plus</p>
-          <% end %>
-        </div>
+    </div>
+    <div class="bottom_element_1">
+      <%= link_to (chirurgy_preparerlintervention_path(@chirurgie)), class: "bottom_description" do %>
+      <p class="titre_bottom">Preparer l'intervention</p>
+      <p>Les éléments essentiels à préparer avant l'intervention</p>
+      <p class="plus">En savoir plus</p>
       <% end %>
-    <% end %>
-    <% @consignes.each do |consigne| %>
-      <% if consigne.name == 'Cataracte' %>
-        <div class="bottom_element_1">
-          <%= link_to (consignepostoperatoire_path(consigne)), class: "bottom_description" do %>
-            <p class="titre_bottom">Consignes post-opératoires</p>
-            <p>Après la chirurgie, que faire ?</p>
-            <p class="plus">En savoir plus</p>
-          <% end %>
-        </div>
+    </div>
+    <div class="bottom_element_1">
+      <%= link_to (chirurgy_consignepostoperatoire_path(@chirurgie)), class: "bottom_description" do %>
+      <p class="titre_bottom">Consignes post-opératoires</p>
+      <p>Après la chirurgie, que faire ?</p>
+      <p class="plus">En savoir plus</p>
       <% end %>
-    <% end %>
+    </div>
   </div>
-  <% @consignes.each do |consigne| %>
-    <% if consigne.name == 'Cataracte' %>
-        <%= link_to (consignepostoperatoire_path(consigne)), class: 'etape' do %>
-          <%= image_tag('fleche01.png', alt:"fleche", style: "width: 70px;") %>
-          <p>Etape suivante : Consignes post-opératoires</p>
-        <% end %>
-    <% end %>
+  <%= link_to (chirurgy_consignepostoperatoire_path(@chirurgie)), class: 'etape' do %>
+  <%= image_tag('fleche01.png', alt:"fleche", style: "width: 70px;") %>
+  <p>Etape suivante : Consignes post-opératoires</p>
   <% end %>
-  </div>
+</div>
 <div class='bottom_bar'>
   <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", style: "width: 60px") %>
 </div>
