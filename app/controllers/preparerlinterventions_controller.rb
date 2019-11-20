@@ -1,6 +1,7 @@
 class PreparerlinterventionsController < ApplicationController
-  def index
-    @preparer = Preparerlintervention.find(params[:id])
+  def show
+    @chirurgie = Chirurgie.friendly.find(params[:chirurgy_id])
+    @preparer = @chirurgie.preparerlintervention
     @bilans = Bilancliniquepreoperatoire.all
     @choisisses = Choisissezvotreimplant.all
     @consignes = Consignepostoperatoire.all

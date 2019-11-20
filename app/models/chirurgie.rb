@@ -1,8 +1,8 @@
 class Chirurgie < ApplicationRecord
-  has_many :bilancliniquepreoperatoires
-  has_many :consignepostoperatoires
-  has_many :preparerlinterventions
-  has_one :choisissezvotreimplants
+  has_one :bilancliniquepreoperatoire
+  has_one :consignepostoperatoire
+  has_one :preparerlintervention
+  has_one :choisissezvotreimplant
 
   extend FriendlyId
   friendly_id :nom, use: :slugged

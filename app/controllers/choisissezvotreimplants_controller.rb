@@ -1,6 +1,7 @@
 class ChoisissezvotreimplantsController < ApplicationController
-  def index
-    @choisissez = Choisissezvotreimplant.find(params[:id])
+  def show
+    @chirurgie = Chirurgie.friendly.find(params[:chirurgy_id])
+    @choisissez = @chirurgie.choisissezvotreimplant
     @bilans = Bilancliniquepreoperatoire.all
     @choisisses = Choisissezvotreimplant.all
     @consignes = Consignepostoperatoire.all

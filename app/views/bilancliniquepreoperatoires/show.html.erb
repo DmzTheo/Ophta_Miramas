@@ -4,7 +4,7 @@
     {
       "@context": "http://schema.org",
       "@type": "MedicalProcedure",
-      "url": "<%= bilancliniquepreoperatoire_url(@bilan) %>",
+      "url": "<%= chirurgy_bilancliniquepreoperatoire_url(@chirurgie) %>",
       "description": "Bilan clinique pré-opératoire - <%= chirurgie.nom %>"
     }
   <% end %>
@@ -32,7 +32,7 @@
           "@type": "ListItem",
           "position": 3,
           "name": "bilan clinique pré-opératoire",
-          "item": "<%= bilancliniquepreoperatoire_url(@bilan) %>"
+          "item": "<%= chirurgy_bilancliniquepreoperatoire_url(@chirurgie) %>"
         }]
     }
   <% end %>

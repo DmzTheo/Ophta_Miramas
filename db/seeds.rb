@@ -31,7 +31,8 @@ puts 'Creating bilans'
 
 chirurgy.each do |intervention|
   Bilancliniquepreoperatoire.create!(
-    chirurgie_id: Chirurgie.find_by(nom: intervention).id
+    chirurgie_id: Chirurgie.find_by(nom: intervention).id,
+    name: "bilan clinique pre-operatoire"
   )
 end
 
@@ -39,22 +40,25 @@ puts 'Creating consignes'
 
 chirurgy.each do |intervention|
   Consignepostoperatoire.create!(
-    chirurgie_id: Chirurgie.find_by(nom: intervention).id
+    chirurgie_id: Chirurgie.find_by(nom: intervention).id,
+    name: "consignes post-operatoire"
   )
 end
 
-puts 'Creating consignes'
+puts 'Creating interventions'
 
 chirurgy.each do |intervention|
   Preparerlintervention.create!(
-    chirurgie_id: Chirurgie.find_by(nom: intervention).id
+    chirurgie_id: Chirurgie.find_by(nom: intervention).id,
+    name: "preparer l'intervention"
   )
 end
 
 puts 'Creating one implant'
 
 Choisissezvotreimplant.create!(
-  chirurgie_id: Chirurgie.find_by(nom: 'Cataracte').id
+  chirurgie_id: Chirurgie.find_by(nom: 'Cataracte').id,
+  name: "choisissez votre implant"
 )
 
 puts 'finished!'

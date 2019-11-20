@@ -1,6 +1,7 @@
 class ConsignepostoperatoiresController < ApplicationController
-  def index
-    @consigne = Consignepostoperatoire.find(params[:id])
+  def show
+    @chirurgie = Chirurgie.friendly.find(params[:chirurgy_id])
+    @consigne = @chirurgie.consignepostoperatoire
     @bilans = Bilancliniquepreoperatoire.all
     @choisisses = Choisissezvotreimplant.all
     @consignes = Consignepostoperatoire.all

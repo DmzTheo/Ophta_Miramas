@@ -1,6 +1,6 @@
 class Choisissezvotreimplant < ApplicationRecord
-  belongs_to :chirurgie
+  extend FriendlyId
+  friendly_id :name, use: :slugged
 
-  # extend FriendlyId
-  # friendly_id :name, use: :slugged
+  belongs_to :chirurgie
 end

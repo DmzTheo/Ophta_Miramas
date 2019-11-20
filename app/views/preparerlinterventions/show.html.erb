@@ -1,11 +1,11 @@
 <script type="application/ld+json">
 <% @chirurgies.each do |chirurgie| %>
-  <% if @consigne.chirurgie_id == chirurgie.id %>
+  <% if @preparer.chirurgie_id == chirurgie.id %>
     {
       "@context": "http://schema.org",
       "@type": "MedicalProcedure",
-      "url": "<%= consignepostoperatoire_url(@consigne) %>",
-      "description": "Consignes post-opératoires - <%= chirurgie.nom %>"
+      "url": "<%= chirurgy_preparerlintervention_url(@chirurgie) %>",
+      "description": "Préparer l'intervention - <%= chirurgie.nom %>"
     }
   <% end %>
 <% end %>
@@ -14,7 +14,7 @@
 <!-- BreadcrumbList -->
 <script type="application/ld+json">
 <% @chirurgies.each do |chirurgie| %>
-  <% if @consigne.chirurgie_id == chirurgie.id %>
+  <% if @preparer.chirurgie_id == chirurgie.id %>
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
@@ -31,8 +31,8 @@
         },{
           "@type": "ListItem",
           "position": 3,
-          "name": "Consignes post-opératoires",
-          "item": "<%= consignepostoperatoire_url(@consigne) %>"
+          "name": "Préparer l'intervention",
+          "item": "<%= chirurgy_preparerlintervention_url(@chirurgie) %>"
         }]
     }
   <% end %>
@@ -40,7 +40,7 @@
 </script>
 <!-- End BreadcrumbList -->
 <% @chirurgies.each do |chirurgie| %>
-  <% if @consigne.chirurgie_id == chirurgie.id %>
+  <% if @preparer.chirurgie_id == chirurgie.id %>
     <% case chirurgie.nom %>
       <% when 'Cataracte' %>
         <%= render "cataracte" %>
