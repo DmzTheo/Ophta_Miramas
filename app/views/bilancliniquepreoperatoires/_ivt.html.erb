@@ -15,8 +15,8 @@
       <%= link_to "EQUIPE", equipe_path %>
       <%= link_to "LUNETTES", lunettes_path %>
       <%= link_to "AFFECTIONS", pathologies_path %>
-      <%= link_to "CHIRURGIES", chirurgies_path, {style: 'border-bottom: 0.5px solid #363636;'} %>
-      <%= link_to "RENDEZ-VOUS", "https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php", style: 'color:#207fde', target: '_blank', class: "link_rendez_vous", rel: 'nofollow' %>
+      <%= link_to "CHIRURGIES", chirurgies_path, {class: 'chirurgie_bb'} %>
+      <%= link_to "RENDEZ-VOUS", "https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php", target: '_blank', class: "link_rendez_vous color_link", rel: 'noopener nofollow' %>
     </div>
   </div>
 </div>
@@ -24,7 +24,7 @@
 <div class='chest_each_patho'>
   <div class="conteneur_text_bilantech">
     <div class="textes">
-      <h2 style="border-radius: 0 20px 0 0">Les injections intra-vitréennes ?</h2>
+      <h2 class= 'border-radius'>Les injections intra-vitréennes ?</h2>
       <p>IVT est l’acronyme de injection intra-vitréenne. L' humeur vitrée est le liquide présent dans la partie postérieure de l’œil dans laquelle le traitement sera directement injecté.</p>
       <p>L’ avantage de l’injection intra-vitréenne est que le produit est déposé directement au niveau du site de la lésion, c’est-à-dire près de la rétine. De plus ce moyen d'administration permet une diffusion minime au niveau de l'organisme.</p>
       <p>L’avantage également est la rapidité du geste, avec peu de risques et totalement indolore.</p>
@@ -75,10 +75,10 @@
         </div>
       </div>
       <%= link_to (chirurgy_preparerlintervention_path(@chirurgie)), class: 'etape' do %>
-      <%= image_tag('fleche01.png', alt:"fleche", style: "width: 70px;") %>
+      <%= image_tag('fleche01.png', alt:"fleche", class: 'width_70') %>
       <p>Etape suivante : Preparer l'intervention</p>
       <% end %>
     </div>
     <div class='bottom_bar'>
-      <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", style: "width: 60px") %>
+      <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", class: 'img_prez') %>
     </div>

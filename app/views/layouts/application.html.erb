@@ -10,6 +10,23 @@
     <meta property="og:url" content="<%= request.original_url %>">
     <meta property="og:image" content="<%= meta_image %>">
     <meta property="og:site_name" content="Ophtalmo-miramas">
+    <link rel="apple-touch-icon" sizes="57x57" href="<%= asset_path("apple-icon-57x57.png") %>">
+    <link rel="apple-touch-icon" sizes="60x60" href="<%= asset_path("apple-icon-60x60.png") %>">
+    <link rel="apple-touch-icon" sizes="72x72" href="<%= asset_path("apple-icon-72x72.png") %>">
+    <link rel="apple-touch-icon" sizes="76x76" href="<%= asset_path("apple-icon-76x76.png") %>">
+    <link rel="apple-touch-icon" sizes="114x114" href="<%= asset_path("apple-icon-114x114.png") %>">
+    <link rel="apple-touch-icon" sizes="120x120" href="<%= asset_path("apple-icon-120x120.png") %>">
+    <link rel="apple-touch-icon" sizes="144x144" href="<%= asset_path("apple-icon-144x144.png") %>">
+    <link rel="apple-touch-icon" sizes="152x152" href="<%= asset_path("apple-icon-152x152.png") %>">
+    <link rel="apple-touch-icon" sizes="180x180" href="<%= asset_path("apple-icon-180x180.png") %>">
+    <link rel="icon" type="image/png" sizes="192x192"  href="<%= asset_path("android-icon-192x192.png") %>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<%= asset_path("favicon-32x32.png") %>">
+    <link rel="icon" type="image/png" sizes="96x96" href="<%= asset_path("favicon-96x96.png") %>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<%= asset_path("favicon-16x16.png") %>">
+    <link rel="manifest" href="<%= asset_path("/manifest.json") %>">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +35,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <script nonce=<%= request.content_security_policy_nonce %>>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
@@ -26,7 +43,7 @@
     <!-- End Google Tag Manager -->
 
     <!-- Structured Data -->
-    <script type="application/ld+json">
+    <script type="application/ld+json" nonce=<%= request.content_security_policy_nonce %>>
       {
         "@context": "http://www.schema.org",
         "@type": "MedicalClinic",
@@ -69,19 +86,19 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js" nonce=<%= request.content_security_policy_nonce %>></script>
   </head>
 
   <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TWZXPNT"
+    <noscript nonce=<%= request.content_security_policy_nonce %>><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TWZXPNT"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <%= yield %>
 
     <!-- Initialize Swiper -->
-    <script>
+    <script nonce=<%= request.content_security_policy_nonce %>>
       var swiper = new Swiper('.swiper-container', {
         spaceBetween: 30,
         effect:'fade',

@@ -1,5 +1,5 @@
 <!-- BreadcrumbList -->
-<script type="application/ld+json">
+<script type="application/ld+json" nonce=<%= request.content_security_policy_nonce %>>
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -13,7 +13,7 @@
 </script>
 <!-- End BreadcrumbList -->
 
-<% content_for :meta_title, "#{DEFAULT_META["meta_title"]}: ophtalmologie à Miramas" %>
+<% content_for :meta_title, "#{DEFAULT_META["meta_title"]}: cabinet d'ophtalmologie à Miramas" %>
 <div class='logo'>
   <%= link_to root_path do %>
   <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", id: "img_logo") %>
@@ -30,7 +30,7 @@
       <%= link_to "LUNETTES", lunettes_path %>
       <%= link_to "AFFECTIONS", pathologies_path %>
       <%= link_to "CHIRURGIES", chirurgies_path %>
-      <%= link_to "RENDEZ-VOUS", "https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php", style: 'color:#207fde', target: '_blank', class: "link_rendez_vous", rel: 'nofollow' %>
+      <%= link_to "RENDEZ-VOUS", "https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php", target: '_blank', class: "link_rendez_vous color_link", rel: 'noopener nofollow' %>
     </div>
   </div>
 </div>
@@ -74,24 +74,24 @@
   </div>
   <div class='presentation_home'>
     <%= link_to((equipe_path), target: "_blank", class: 'presentation_home_1') do %>
-    <%= image_tag('nurse-bustred.png', alt: "nurse", style: "width: 60px") %>
+    <%= image_tag('nurse-bustred.png', alt: "nurse", class: 'img_prez') %>
     <p>Une équipe qualifiée et dynamique à votre écoute</p>
     <% end %>
     <%= link_to((centre_path), target: "_blank", class: 'presentation_home_2') do %>
-    <%= image_tag('hospital-microscopered.png', alt: "hospital", style: "width: 60px") %>
+    <%= image_tag('hospital-microscopered.png', alt: "hospital", class: 'img_prez') %>
     <p>Du matériel à la pointe de la technologie</p>
     <% end %>
     <%= link_to((chirurgies_path), target: "_blank", class: 'presentation_home_3') do %>
-    <%= image_tag('growthred.jpg', alt: "growthred", style: "width: 60px") %>
+    <%= image_tag('growthred.jpg', alt: "growthred", class: 'img_prez') %>
     <p>Une prise en charge personnalisée et un accompagnement continu</p>
     <% end %>
     <%= link_to(("https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php"), target: "_blank", class: 'presentation_home_4') do %>
-    <%= image_tag('calendarred.png', alt: "calendar", style: "width: 60px") %>
+    <%= image_tag('calendarred.png', alt: "calendar", class: 'img_prez') %>
     <p>Une prise de rendez-vous en ligne</p>
     <% end %>
   </div>
-  <%= link_to "PRENDRE RENDEZ-VOUS", "https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php", class: "btn_rdv", target: '_blank', rel: 'nofollow' %>
+  <%= link_to "PRENDRE RENDEZ-VOUS", "https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php", class: "btn_rdv", target: '_blank', rel: 'noopener nofollow' %>
 </div>
 <div class='bottom_bar'>
-  <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", style: "width: 60px") %>
+  <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", class: 'img_prez') %>
 </div>

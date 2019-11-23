@@ -15,25 +15,25 @@
       <%= link_to "EQUIPE", equipe_path %>
       <%= link_to "LUNETTES", lunettes_path %>
       <%= link_to "AFFECTIONS", pathologies_path %>
-      <%= link_to "CHIRURGIES", chirurgies_path, {style: 'border-bottom: 0.5px solid #363636;'} %>
-      <%= link_to "RENDEZ-VOUS", "https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php", style: 'color:#207fde', target: '_blank', class: "link_rendez_vous", rel: 'nofollow' %>
+      <%= link_to "CHIRURGIES", chirurgies_path, {class: 'chirurgie_bb'} %>
+      <%= link_to "RENDEZ-VOUS", "https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php", target: '_blank', class: "link_rendez_vous color_link", rel: 'noopener nofollow' %>
     </div>
   </div>
 </div>
 <h1 class="titre_pathologies">CHIRURGIE DES PAUPIERES</h1>
 <div class='chest_each_patho'>
   <div class="conteneur_text_image">
-    <div class="textes" style="width:70%">
-      <p style="width:100%;">Rides, poches, regard triste, austère ou fatigué... les traces de l'âge sont forcément une fatalité.</p>
-      <p style="width:100%;">les ophtalmologistes peuvent vous conseiller et vous proposer des injections réduisant les traces du temps ou une chirurgie de blépharoplastie esthétique.</p>
-      <p style="width:100%;">En première intention, la toxine botulique (ou Botox) permet des résultats rapides et efficaces.</p>
-      <p style="width:100%;">Dans un deuxième temps, un traitement volumateur par acide hyaluronique est possible.</p>
-      <p style="width:100%;">Améliorer votre image et votre bien être, avec un résultat naturel...</p>
+    <div class="textes text_width">
+      <p class="full_width">Rides, poches, regard triste, austère ou fatigué... les traces de l'âge sont forcément une fatalité.</p>
+      <p class="full_width">les ophtalmologistes peuvent vous conseiller et vous proposer des injections réduisant les traces du temps ou une chirurgie de blépharoplastie esthétique.</p>
+      <p class="full_width">En première intention, la toxine botulique (ou Botox) permet des résultats rapides et efficaces.</p>
+      <p class="full_width">Dans un deuxième temps, un traitement volumateur par acide hyaluronique est possible.</p>
+      <p class="full_width">Améliorer votre image et votre bien être, avec un résultat naturel...</p>
     </div>
-    <%= image_tag('esthetic.jpg', alt: "femme", style:"heigth: 100px;width:200px;") %>
+    <%= image_tag('esthetic.jpg', alt: "femme", class: "h_100w200") %>
   </div>
   <p class="italique">Pour plus d'informations sur la chirurgie esthétique des paupières, allez voir la <%= link_to "page des téléchargements", telechargements_path %></p>
 </div>
 <div class='bottom_bar'>
-  <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", style: "width: 60px") %>
+  <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", class: 'img_prez') %>
 </div>

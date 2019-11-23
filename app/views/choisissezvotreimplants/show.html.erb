@@ -1,6 +1,6 @@
 <% content_for :meta_title, "#{DEFAULT_META["meta_title"]}, chirurgie de la cataracte : implants" %>
 <% content_for :meta_description, "Chirurgie de la cataracte, choisissez votre implant : pourquoi une chirurgie prémium ? Quelle différence ? Surcoût ?" %>
-<script type="application/ld+json">
+<script type="application/ld+json" nonce=<%= request.content_security_policy_nonce %>>
 {
 "@context": "http://schema.org",
 "@type": "MedicalProcedure",
@@ -9,7 +9,7 @@
 }
 </script>
 <!-- BreadcrumbList -->
-<script type="application/ld+json">
+<script type="application/ld+json" nonce=<%= request.content_security_policy_nonce %>>
 <% @chirurgies.each do |chirurgie| %>
 <% if @choisissez.chirurgie_id == chirurgie.id %>
 {
@@ -51,12 +51,12 @@
       <%= link_to "EQUIPE", equipe_path %>
       <%= link_to "LUNETTES", lunettes_path %>
       <%= link_to "AFFECTIONS", pathologies_path %>
-      <%= link_to "CHIRURGIES", chirurgies_path, {style: 'border-bottom: 0.5px solid #363636;'} %>
-      <%= link_to "RENDEZ-VOUS", "https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php", style: 'color:#207fde', target: '_blank', class: "link_rendez_vous", rel: 'nofollow' %>
+      <%= link_to "CHIRURGIES", chirurgies_path, {class: 'chirurgie_bb'} %>
+      <%= link_to "RENDEZ-VOUS", "https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php", target: '_blank', class: "link_rendez_vous color_link", rel: 'noopener nofollow' %>
     </div>
   </div>
 </div>
-<h1 class="titre_pathologies;" style="font-family: 'roboto';font-weight: 500;letter-spacing: 3px;font-size: 35px;width: 60%;display: flex;display: block;margin: 30px 13%;color: white;font-size: 27px;">CATARACTE : Chirurgie premium</h1>
+<h1 class="titre_pathologies pathologies_style">CATARACTE : Chirurgie premium</h1>
 <div class='chest_each_patho'>
   <div class="conteneur_text_bilantech">
     <div class="vide"></div>
@@ -64,7 +64,7 @@
     <p><br>La chirurgie de la cataracte vise à récupérer une acuité visuelle maximale de loin. </p>
     <p>Toutefois, une correction optique sera parfois nécessaire pour corriger un astigmatisme résiduel.</p>
     <p>Dans tous les cas, le port de lunettes pour la vision de près sera indispensable.</p>
-    <p class="italique" style="margin: 0;padding: 15px;"><br> Si vous souhaitez ne plus porter de lunettes du tout, la chirurgie dite Premium s'adresse à vous.</p>
+    <p class="italique mp"><br> Si vous souhaitez ne plus porter de lunettes du tout, la chirurgie dite Premium s'adresse à vous.</p>
     <p><br></p>
     <h2>Quelle est la différence avec la chirurgie standard ?</h2>
     <p><br>Lors de la consultation, une attention particulière sera portée sur vos besoins visuels, vos activités et sur votre correction optique.</p>
@@ -103,10 +103,10 @@
     </div>
   </div>
   <%= link_to (chirurgy_consignepostoperatoire_path(@chirurgie)), class: 'etape' do %>
-  <%= image_tag('fleche01.png', alt:"fleche", style: "width: 70px;") %>
+  <%= image_tag('fleche01.png', alt:"fleche", class: 'width_70') %>
   <p>Etape suivante : Consignes post-opératoires</p>
   <% end %>
 </div>
 <div class='bottom_bar'>
-  <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", style: "width: 60px") %>
+  <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", class: 'img_prez') %>
 </div>

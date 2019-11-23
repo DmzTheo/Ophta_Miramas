@@ -65,7 +65,7 @@
   letter-spacing: 1px;
   font-weight: normal;
   font-size: 14px;
-  margin: 25px auto;
+  margin: 0;
   width: 80%;
   padding: 20px 0px;
   line-height: 140%;
@@ -361,4 +361,92 @@ border-top: 4px solid white;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
+}
+
+.pathologies_style {
+  font-family: 'roboto';
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 35px;
+  width: 60%;
+  display: flex;
+  display: block;
+  margin: 30px 13%;
+  color: white;
+  font-size: 27px;
+}
+
+.mp {
+  margin: 0;
+  padding: 15px;
+}
+
+.border_radius {
+  border-radius: 0 0 20px 0 !important;
+}
+
+.bg-bb {
+  background-color: white !important;
+  border-bottom: 1px solid white !important;
+}
+
+.laser {
+  text-decoration: underline !important;
+  background-color: #c0134e !important;
+  color: white !important;
+  border-bottom: 1px solid #c0134e !important;
+  height: 2px !important;
+}
+
+.laser2 {
+  text-decoration: underline !important;
+  background-color: #c0134e !important;
+  color: white !important;
+  border-bottom: 1px solid #c0134e !important;
+  height: 2px !important;
+}
+
+.control {
+  background-color: #c0134e !important;
+  color: white !important;
+  padding-top: 5px !important;
+}
+
+.control2 {
+  background-color: #c0134e !important;
+  border-radius: 0px 0px 20px 0px !important;
+  color: white !important;
+  padding-top: 5px !important;
+  margin-bottom: 30px !important;
+}
+
+.chirurgie_bb {
+  border-bottom: 0.5px solid #363636 !important;
+}
+
+.width_70 {
+  width: 70px !important;
+}
+
+.pathology_hw {
+  height: 170px !important;
+  width:200px !important;
+}
+
+.width_200 {
+  width: 200px !important;
+}
+
+.h_144_w_200 {
+  height: 114px !important;
+  width:220px !important;
+}
+
+.h_100w200 {
+  height: 100px !important;
+  width:200px !important;
+}
+
+.width_60 {
+  width: 60px !important;
 }
