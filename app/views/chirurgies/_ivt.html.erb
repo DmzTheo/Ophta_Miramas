@@ -15,21 +15,21 @@
       <%= link_to "EQUIPE", equipe_path %>
       <%= link_to "LUNETTES", lunettes_path %>
       <%= link_to "AFFECTIONS", pathologies_path %>
-      <%= link_to "CHIRURGIES", chirurgies_path, {style: 'border-bottom: 0.5px solid #363636;'} %>
-      <%= link_to "RENDEZ-VOUS", "https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php", style: 'color:#207fde', target: '_blank', class: "link_rendez_vous", rel: 'nofollow' %>
+      <%= link_to "CHIRURGIES", chirurgies_path, {class: 'chirurgie_bb'} %>
+      <%= link_to "RENDEZ-VOUS", "https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php", target: '_blank', class: "link_rendez_vous color_link", rel: 'noopener nofollow' %>
     </div>
   </div>
 </div>
 <h1 class="titre_pathologies">INJECTION INTRA-VITREENNE</h1>
 <div class='chest_each_patho'>
   <div class="conteneur_text_image">
-    <div class="textes" style="width:70%">
-      <p style="width:100%">Les injections intra-vitréennes sont indiquées dans diverses pathologies dont principalement la DMLA, la maculopathie diabétique et les pathologies vasculaires veineuses.</p>
-      <p style="width:100%">Ce traitement est très efficace et indolore.</p>
-      <p style="width:100%">Les injections sont réalisées dans un environnement spécifique afin d'éviter toutes complications infectieuses.</p>
-      <p style="width:100%">Vous allez être injecté ? Ci-dessous, vous trouverez les éléments pour vous guider à chaque étape de votre traitement.</p>
+    <div class="textes text_width">
+      <p class="full_width">Les injections intra-vitréennes sont indiquées dans diverses pathologies dont principalement la DMLA, la maculopathie diabétique et les pathologies vasculaires veineuses.</p>
+      <p class="full_width">Ce traitement est très efficace et indolore.</p>
+      <p class="full_width">Les injections sont réalisées dans un environnement spécifique afin d'éviter toutes complications infectieuses.</p>
+      <p class="full_width">Vous allez être injecté ? Ci-dessous, vous trouverez les éléments pour vous guider à chaque étape de votre traitement.</p>
     </div>
-    <%= image_tag('ivt_schema.jpg', alt: "schema ivt", style: "width: 200px") %>
+    <%= image_tag('ivt_schema.jpg', alt: "schema ivt width_200") %>
   </div>
   <p><br><br></p>
   <div class='bottom_elements'>
@@ -56,10 +56,10 @@
     </div>
   </div>
   <%= link_to (chirurgy_bilancliniquepreoperatoire_path(@chirurgie)), class: 'etape' do %>
-  <%= image_tag('fleche01.png', alt:"fleche", style: "width: 70px;") %>
+  <%= image_tag('fleche01.png', alt:"fleche", class: 'width_70') %>
   <p>Etape suivante : Bilan clinique pré-opératoire</p>
   <% end %>
 </div>
 <div class='bottom_bar'>
-  <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", style: "width: 60px") %>
+  <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", class: 'img_prez') %>
 </div>

@@ -1,4 +1,4 @@
-<script type="application/ld+json">
+<script type="application/ld+json" nonce=<%= request.content_security_policy_nonce %>>
 <% @chirurgies.each do |chirurgie| %>
   <% if @preparer.chirurgie_id == chirurgie.id %>
     {
@@ -12,7 +12,7 @@
 </script>
 
 <!-- BreadcrumbList -->
-<script type="application/ld+json">
+<script type="application/ld+json" nonce=<%= request.content_security_policy_nonce %>>
 <% @chirurgies.each do |chirurgie| %>
   <% if @preparer.chirurgie_id == chirurgie.id %>
     {

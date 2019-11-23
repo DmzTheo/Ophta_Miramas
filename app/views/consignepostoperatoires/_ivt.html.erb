@@ -15,8 +15,8 @@
       <%= link_to "EQUIPE", equipe_path %>
       <%= link_to "LUNETTES", lunettes_path %>
       <%= link_to "AFFECTIONS", pathologies_path %>
-      <%= link_to "CHIRURGIES", chirurgies_path, {style: 'border-bottom: 0.5px solid #363636;'} %>
-      <%= link_to "RENDEZ-VOUS", "https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php", style: 'color:#207fde', target: '_blank', class: "link_rendez_vous", rel: 'nofollow' %>
+      <%= link_to "CHIRURGIES", chirurgies_path, {class: 'chirurgie_bb'} %>
+      <%= link_to "RENDEZ-VOUS", "https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php", target: '_blank', class: "link_rendez_vous color_link", rel: 'noopener nofollow' %>
     </div>
   </div>
 </div>
@@ -24,7 +24,7 @@
 <div class='chest_each_patho'>
   <div class="conteneur_text_bilantech">
     <div class="textes">
-      <h2 style="border-radius: 0 20px 0 0">Quand puis-je rentrer à mon domicile ?</h2>
+      <h2 class= 'border-radius'>Quand puis-je rentrer à mon domicile ?</h2>
       <p>Une fois l'injection réalisée, une infirmière vous donnera toutes les consignes post-opératoires (comment et quand mettre les gouttes, prochaine injection ou rendez-vous de contrôle).</p>
       <p>Après votre sortie administrative, vous êtes libre !</p>
       <p>Entre votre entrée et votre sortie, souvent moins de 30 minutes se seront écoulées.</p>
@@ -44,7 +44,7 @@
       <p>Dans l'impossibilité de réaliser ce traitement vous même, demandez de l'aide à votre famille ou votre entourage (voisins, amis...). En dernier recours, vous pouvez faire appel à une infirmière diplômée d'état qui viendra faire les soins à domicile (l'ordonnance vous sera rédigée par le médecin).</p>
       <h2>Quand aura lieu la prochaine IVT ou la consultation ?</h2>
       <p>Après votre injection, le médecin vous remettra un compte rendu qui vous donnera la date et l'heure de la prochaine injection  ou de la consultation.</p>
-      <p style="background-color: white; border-bottom: 1px solid white">En cas d'impossibilité de vous rendre à ce rendez-vous, merci de contacter le secrétariat via le numéro de téléphone indiqué ou via le formulaire de contact.</p>
+      <p class="bg-bb">En cas d'impossibilité de vous rendre à ce rendez-vous, merci de contacter le secrétariat via le numéro de téléphone indiqué ou via le formulaire de contact.</p>
     </div>
   </div>
   <div class='bottom_elements'>
@@ -72,5 +72,5 @@
   </div>
 </div>
 <div class='bottom_bar'>
-  <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", style: "width: 60px") %>
+  <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", class: 'img_prez') %>
 </div>

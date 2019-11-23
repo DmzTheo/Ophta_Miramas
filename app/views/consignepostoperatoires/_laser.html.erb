@@ -15,8 +15,8 @@
       <%= link_to "EQUIPE", equipe_path %>
       <%= link_to "LUNETTES", lunettes_path %>
       <%= link_to "AFFECTIONS", pathologies_path %>
-      <%= link_to "CHIRURGIES", chirurgies_path, {style: 'border-bottom: 0.5px solid #363636;'} %>
-      <%= link_to "RENDEZ-VOUS", "https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php", style: 'color:#207fde', target: '_blank', class: "link_rendez_vous", rel: 'nofollow' %>
+      <%= link_to "CHIRURGIES", chirurgies_path, {class: 'chirurgie_bb'} %>
+      <%= link_to "RENDEZ-VOUS", "https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php", target: '_blank', class: "link_rendez_vous color_link", rel: 'noopener nofollow' %>
     </div>
   </div>
 </div>
@@ -24,18 +24,18 @@
 <div class='chest_each_patho'>
   <div class="conteneur_text_bilantech">
     <div class="textes">
-      <h2 style="border-radius: 0 20px 0 0">Quand puis-je rentrer à mon domicile ?</h2>
+      <h2 class= 'border-radius'>Quand puis-je rentrer à mon domicile ?</h2>
       <p>Comme après toute chirurgie, il est recommandé de venir accompagné(e). La conduite automobile peut devenir très compliquée si vos yeux se réveillent durant le retour.</p>
       <p>Aussitôt la sortie du bloc opératoire, votre sortie est autorisée.</p>
       <p>La présence sur place le jour J (accueil administratif, attente, opération, sortie) n'excédera pas une heure.</p>
       <h2>Quand vais-je revoir ? Vais-je avoir mal ?</h2>
-      <p style="text-decoration: underline;">Dans le cadre du LASIK:</p>
+      <p class="underline">Dans le cadre du LASIK:</p>
       <p>Le premier soir, une à deux heures après la chirurgie, vous allez ressentir une gène de type de grains de sable, poussière...</p>
       <p>N'oubliez pas d'instiller les traitements prescrits. Vous pouvez abuser des collyres lubrifiants !</p>
       <p>Cette sensation cessera au cours de la soirée.</p>
       <p>N'oubliez pas de dormir avec les coques fournies les 6 premières nuits.</p>
       <p>La vision s’améliore très rapidement, et souvent dès le lendemain, vous devenez totalement autonome.</p>
-      <p style="text-decoration: underline;">Dans le cadre de la PKR:</p>
+      <p class="underline">Dans le cadre de la PKR:</p>
       <p>L'opération a généralement lieu le jeudi après-midi.</p>
       <p>Les 48 premières heures (vendredi et samedi) sont des jours pénibles où coexisteront les hauts et les bas.</p>
       <p>Eblouissements, larmoiement, sensation de grains de sable, baisse de la vue ...</p>
@@ -54,10 +54,10 @@
       <h2>Quand aura lieu le contrôle post-opératoire ?</h2>
       <p>Le médecin vous remettra un dossier complet post-opératoire personnalisé (convocation post-opératoire, rappel de l'ordonnance des traitements post-opératoires).</p>
       <p>Dans celui-ci figure la date et l'heure de votre rendez-vous prévu. En cas d'impossibilité de vous rendre à ce rendez-vous, merci de contacter le secrétariat via le numéro de téléphone indiqué.</p>
-      <p style="text-decoration: underline; background-color: #c0134e; color: white; border-bottom: 1px solid #c0134e; height: 2px">Dans le cadre du LASIK :</p>
-      <p style="background-color: #c0134e; color: white;padding-top: 5px">contrôle le lendemain matin puis à 5-6 semaines.</p>
-      <p style="text-decoration: underline;background-color: #c0134e; color: white; border-bottom: 1px solid #c0134e; height: 2px">Dans le cadre de la PKR :</p>
-      <p style="background-color: #c0134e; border-radius: 0px 0px 20px 0px; color: white; padding-top: 5px; margin-bottom: 30px">contrôle le lundi suivant puis à 5-6 semaines.</p>
+      <p class="laser">Dans le cadre du LASIK :</p>
+      <p class="control">contrôle le lendemain matin puis à 5-6 semaines.</p>
+      <p class="laser2">Dans le cadre de la PKR :</p>
+     <p class="control2">contrôle le lundi suivant puis à 5-6 semaines.</p>
     </div>
   </div>
   <div class='bottom_elements'>
@@ -85,5 +85,5 @@
   </div>
 </div>
 <div class='bottom_bar'>
-  <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", style: "width: 60px") %>
+  <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", class: 'img_prez') %>
 </div>
