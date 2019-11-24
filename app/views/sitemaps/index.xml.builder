@@ -38,17 +38,21 @@ xml.tag! 'urlset', 'xmlns' => "http://www.sitemaps.org/schemas/sitemap/0.9" do
     xml.tag! 'url' do
       xml.tag! 'loc', chirurgy_url(chirurgy)
     end
-    xml.tag! 'url' do
-      xml.tag! 'loc', chirurgy_bilancliniquepreoperatoire_url(chirurgy)
-    end
-    xml.tag! 'url' do
-      xml.tag! 'loc', chirurgy_choisissezvotreimplant_url(chirurgy)
-    end
-    xml.tag! 'url' do
-      xml.tag! 'loc', chirurgy_consignepostoperatoire_url(chirurgy)
-    end
-    xml.tag! 'url' do
-      xml.tag! 'loc', chirurgy_preparerlintervention_url(chirurgy)
+    if chirurgy.nom != 'Chirurgie des paupières'
+      xml.tag! 'url' do
+        xml.tag! 'loc', chirurgy_bilancliniquepreoperatoire_url(chirurgy)
+      end
+      if chirurgy.nom == 'Cataracte'
+        xml.tag! 'url' do
+          xml.tag! 'loc', chirurgy_choisissezvotreimplant_url(chirurgy)
+        end
+      end
+      xml.tag! 'url' do
+        xml.tag! 'loc', chirurgy_consignepostoperatoire_url(chirurgy)
+      end
+      xml.tag! 'url' do
+        xml.tag! 'loc', chirurgy_preparerlintervention_url(chirurgy)
+      end
     end
   end
 end
