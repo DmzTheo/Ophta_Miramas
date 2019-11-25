@@ -1,0 +1,9 @@
+<div class="erros_pages">
+  <div class="errors_text">
+    <h1>Oops! Pardon.</h1>
+    <p>Quelque chose s'est mal passé (500). Nous enquêtons.</p>
+    <p>Vous pouvez revenir à la page précédente et réessayer,
+      <br>ou si cela ne fonctionne pas, vous pouvez aller à la <%= link_to "la page d'accueil", root_path, {class: 'error_link'} %>.</p>
+    <%= image_tag('500.png', alt: "error 500", class:'error_image') %>
+  </div>
+</div>

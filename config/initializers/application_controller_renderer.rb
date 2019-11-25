@@ -2,7 +2,7 @@
 
 # ActiveSupport::Reloader.to_prepare do
 #   ApplicationController.renderer.defaults.merge!(
-#     http_host: 'example.org',
+#     http_host: 'www.ophtalmo-miramas.com',
 #     https: false
 #   )
 # end
