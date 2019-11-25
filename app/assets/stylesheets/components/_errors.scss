@@ -4,6 +4,7 @@
   width: 100%;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -16,4 +17,9 @@
 
 .error_link {
   color: black;
+}
+
+.error_image {
+  width: 50%;
+  height: auto;
 }

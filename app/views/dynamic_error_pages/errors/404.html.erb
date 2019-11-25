@@ -1,0 +1,9 @@
+<div class="erros_pages">
+  <div class="errors_text">
+    <h1>Ohoh. Rien ici.</h1>
+    <p>La page que vous recherchez n'existe pas (404).</p>
+    <p>Vous avez peut-être mal saisi l'adresse ou la page a été déplacée.
+      <br>Si vous êtes perdu, vous pouvez revenir à <%= link_to "la page d'accueil", root_path, {class: 'error_link'} %>.</p>
+  </div>
+  <%= image_tag('404.png', alt: "error 404", class:'error_image') %>
+</div>
