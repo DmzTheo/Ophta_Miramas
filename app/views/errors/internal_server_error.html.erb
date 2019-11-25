@@ -1,2 +1,9 @@
-<h1>Errors#internal_server_error</h1>
-<p>Find me in app/views/errors/internal_server_error.html.erb</p>
+<div class="erros_pages">
+  <div class="errors_text">
+    <h1>Oops! Sorry.</h1>
+    <p>Something went wrong (500). We are investigating.</p>
+
+    <p>You can go back to the previous page, and try again,
+      <br>or if it doesn't work, you can go to the <%= link_to "the homepage", root_path, {class: 'error_link'} %>.</p>
+  </div>
+</div>
