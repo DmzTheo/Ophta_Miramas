@@ -177,7 +177,7 @@
     border: 1px solid #0f4370;
     background-color: white;
     padding: 10px;
-    width: 22%;
+    width: auto;
     margin: 50px auto;
     font-family: 'roboto';
     font-weight: bold;
@@ -189,6 +189,11 @@
     text-decoration: none;
 }
 
+.width_22 {
+  width: 35%;
+}
+
+
 .btn_rdv:hover {
     color: white;
     background-color: #207FDE;
@@ -199,7 +204,7 @@
 .btn_telechargements{
   color: white;
   display: block;
-  border: 1px solid #207FDD;
+  border: 1px solid white;
   background-color: #207FDD;
   padding: 10px;
   width: 22%;
