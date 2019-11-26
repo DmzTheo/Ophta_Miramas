@@ -53,7 +53,7 @@
   <div class="vide"></div>
   <% @chirurgies.each do |chirurgie| %>
     <% if chirurgie.nom == 'Cataracte' %>
-      <%= link_to(chirurgy_path(chirurgie)) do %>
+      <%= link_to(chirurgy_path(chirurgie), title: 'chirurgie de la cataracte') do %>
         <div class='link_decollement_retine'>
           <h2>CHIRURGIES DE LA CATARACTE</h2>
           <p class="line_height">Votre vision se trouble, vous êtes éblouis la nuit et vous êtes âgé de plus de 60 ans.
@@ -66,7 +66,7 @@
   <% end %>
   <% @chirurgies.each do |chirurgie| %>
     <% if chirurgie.nom == 'Chirurgie réfractive' %>
-      <%= link_to(chirurgy_path(chirurgie)) do %>
+      <%= link_to(chirurgy_path(chirurgie), title: 'chirurgie réfractive') do %>
         <div class='link_diabete'>
           <h2>CHIRURGIE REFRACTIVE</h2>
           <p class="line_height">Vous souhaitez ne plus porter de lunettes ou de lentilles.
@@ -80,7 +80,7 @@
   <% end %>
   <% @chirurgies.each do |chirurgie| %>
     <% if chirurgie.nom == 'Chirurgie des paupières' %>
-      <%= link_to(chirurgy_path(chirurgie)) do %>
+      <%= link_to(chirurgy_path(chirurgie), title: 'chirurgie des paupières') do %>
         <div class='link_glaucome'>
             <h2>CHIRURGIES DE LA PAUPIÈRE</h2>
             <p class="line_height">Rides, poches, regard triste, sévère ou fatigué ? Améliorer votre image et votre bien être, avec un résultat naturel ?
@@ -92,7 +92,7 @@
   <% end %>
   <% @chirurgies.each do |chirurgie| %>
     <% if chirurgie.nom == 'IVT' %>
-      <%= link_to(chirurgy_path(chirurgie)) do %>
+      <%= link_to(chirurgy_path(chirurgie), title: 'injections intra-vitréenne') do %>
         <div class='link_dmla'>
           <h2>INJECTION INTRA VITRÉENNE</h2>
           <p class="line_height">Vous avez une DMLA, une atteinte rétinienne secondaire à votre diabète ou à un problème vasculaire.
