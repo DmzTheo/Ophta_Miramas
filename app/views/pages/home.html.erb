@@ -68,9 +68,9 @@
 </div>
 <div class='chest_body'>
   <div class='bienvenue'>
-    <h1>BIENVENUE</h1>
-    <h2>dans notre cabinet d'ophtalmologie</h2>
-    <h3>OPHTA MIRAMAS</h3>
+    <p class='bienvenue_1'>BIENVENUE</p>
+    <p class='bienvenue_2'>dans notre cabinet d'ophtalmologie</p>
+    <h1 class='bienvenue_3'>OPHTA MIRAMAS</h1>
   </div>
   <div class='presentation_home'>
     <%= link_to((equipe_path), target: "_blank", class: 'presentation_home_1') do %>
@@ -91,6 +91,25 @@
     <% end %>
   </div>
   <%= link_to "PRENDRE RENDEZ-VOUS", "https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php", class: "btn_rdv width_22", target: '_blank', rel: 'noopener nofollow' %>
+  <div class="footer">
+    <div class="column_gauche">
+      <h2>Nous contacter</h2>
+      <p>04 90 50 33 50</p>
+      <p>Centre des spécialistes : Cabinet d'ophtalmologie - OphtaMiramas</p>
+      <p>54 Bis Avenue Charles de Gaulle,
+        <br>13140 Miramas</p>
+      <p></p>
+    </div>
+    <div class="column_droite">
+      <h2>Le conseil de l'ordre des médecins informe</h2>
+      <p></p>
+      <%= link_to 'Consulter la charte de conformité aux critères du CNOM', charte_path, title: 'page charte de conformité', class: 'lien_footer no_decoration' %>
+      <p></p>
+      <%= link_to 'Consulter le site d’information du CNOM', 'https://www.conseil-national.medecin.fr/publications/rapports/charte-conformite-deontologique-sites-web-medecins', title: 'site d’information du CNOM', class: 'lien_footer no_decoration', target: '_blank', rel: 'noopener nofollow' %>
+      <p></p>
+      <%= link_to 'Consulter l’annuaire du Conseil de l’Ordre', 'https://www.conseil-national.medecin.fr/annuaire', title: 'annuauire du CNOM', class: 'lien_footer no_decoration', target: '_blank', rel: 'noopener nofollow' %>
+    </div>
+  </div>
 </div>
 <div class='bottom_bar'>
   <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", class: 'img_prez') %>

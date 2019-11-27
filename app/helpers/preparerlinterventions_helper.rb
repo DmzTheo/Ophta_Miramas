@@ -1,2 +1,0 @@
-module PreparerlinterventionsHelper
-end

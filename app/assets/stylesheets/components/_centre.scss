@@ -157,7 +157,7 @@
 // }
 
 .height1{
-  height: 800px !important;
+  height: auto !important;
 }
 
 .height2{
@@ -177,8 +177,11 @@
 }
 
 .telechargement_bbpb {
-  border-bottom:0px !important;
-  padding-bottom:0px !important;
+  border-bottom: 0px !important;
+  padding: 0 10px;
+  background-color: #ce1452;
+  margin: 0;
+  font-size: 17px;
 }
 
 .ml_13 {

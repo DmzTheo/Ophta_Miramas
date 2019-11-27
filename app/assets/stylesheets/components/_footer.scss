@@ -1,0 +1,41 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 0px;
+  color: #474747;
+  align-items: start;
+  border-top: 1px solid #474747;
+}
+
+.column_gauche {
+  width: 46%;
+  display: block;
+  font-family: 'roboto';
+  font-weight: 300;
+  padding: 0 2%;
+}
+.column_gauche h2, .column_droite h2 {
+  font-weight: normal;
+  padding-top: 15px;
+}
+
+.column_droite {
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  font-family: 'roboto';
+  font-weight: 300;
+  padding: 0 2%;
+  font-size: 90%;
+}
+
+.lien_footer {
+  color: #474747;
+}
+
+.no_decoration {
+  text-decoration: none;
+}
