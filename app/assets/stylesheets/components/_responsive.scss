@@ -65,7 +65,8 @@
     height: 50px;
     width: 110px;
     margin: 0 auto;
-}
+    }
+
     .titre_center {
       margin-left: 5%;
       font-size: 27px;
@@ -179,7 +180,7 @@
     font-size: 30px;
   }
 
-  .bienvenue h3{
+  .bienvenue .bienvenue_3{
     font-size: 19px;
   }
 
@@ -189,11 +190,11 @@
 }
 
 @media (max-width: 444px) {
-    .bienvenue h2 {
+   .bienvenue .bienvenue_2 {
     visibility: collapse;
   }
 
-  .bienvenue h3{
+  .bienvenue .bienvenue_3{
     font-size: 17px;
   }
 }
