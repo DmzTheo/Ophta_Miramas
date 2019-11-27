@@ -1,5 +1,5 @@
 <% content_for :meta_title, "#{DEFAULT_META["meta_title"]} : chirurgie réfractive (laser)" %>
-<% content_for :meta_description, "Renseignez vous sur la chirurgie réfractive (laser) : bilan clinique, comment préparer l'intervention et les consignes post-opératoires." %>
+<% content_for :meta_description, "Renseignez vous sur la chirurgie réfractive (laser) : résumé. Qu'est ce que la chirurgie réfractive (laser) ?." %>
 <div class='logo'>
   <%= link_to root_path do %>
   <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", id: "img_logo") %>
@@ -20,7 +20,7 @@
     </div>
   </div>
 </div>
-<h1 class="titre_pathologies">CHIRURGIE REFRACTIVE</h1>
+<h1 class="titre_pathologies">CHIRURGIE REFRACTIVE (laser)</h1>
 <div class='chest_each_patho'>
   <div class="conteneur_text_image">
     <div class="textes text_width">
@@ -31,32 +31,9 @@
     </div>
     <%= image_tag('lunettes.jpg', alt: "lunettes ophtalmologie", class: "h_144_w_200") %>
   </div>
-  <div class='bottom_elements'>
-    <div class="bottom_element_1">
-      <%= link_to (chirurgy_bilancliniquepreoperatoire_path(@chirurgie)), title: "bilan clinique pré-opératoire", class: "bottom_description" do %>
-      <p class="titre_bottom">Bilan clinique pré-opératoire</p>
-      <p>Contenu de la consultation préalable à toute chirurgie au cabinet</p>
-      <p class="plus">En savoir plus</p>
-      <% end %>
-    </div>
-    <div class="bottom_element_1">
-      <%= link_to (chirurgy_preparerlintervention_path(@chirurgie)), title: "préparer l'intervention", class: "bottom_description" do %>
-      <p class="titre_bottom">Preparer l'intervention</p>
-      <p>Les éléments essentiels à préparer avant l'intervention</p>
-      <p class="plus">En savoir plus</p>
-      <% end %>
-    </div>
-    <div class="bottom_element_1">
-      <%= link_to (chirurgy_consignepostoperatoire_path(@chirurgie)), title: 'consignes post-opératoires', class: "bottom_description" do %>
-      <p class="titre_bottom">Consignes post-opératoires</p>
-      <p>Après la chirurgie, que faire ?</p>
-      <p class="plus">En savoir plus</p>
-      <% end %>
-    </div>
-  </div>
-  <%= link_to (chirurgy_bilancliniquepreoperatoire_path(@chirurgie)), title: "bilan clinique pré-opératoire", class: 'etape' do %>
+  <%= link_to (chirurgy_detail_path(@chirurgie)), title: "chrirugie réfractive (laser) - détails", class: 'etape' do %>
   <%= image_tag('fleche01.png', alt:"fleche", class: 'width_70') %>
-  <p>Etape suivante : Bilan clinique pré-opératoire</p>
+  <p>Voir les détails de la chirurgie réfractive (laser) : bilan clinique, comment préparer l'intervention et les consignes post-opératoires.</p>
   <% end %>
 </div>
 <div class='bottom_bar'>

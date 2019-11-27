@@ -130,25 +130,14 @@
   text-decoration: none;
   background: #f4f4f4;
   padding: 20px 0;
+  transition: 0.5s;
 }
 
 .etape:hover {
   background: #dfdddd;
-}
-
-.etapes h2 {
-  width: 50px;
-  height: 15px;
-  background-image: url(fleche01.png);
-  background-size: cover;
-}
-
-.etapes h2:hover {
   transition: 0.3s;
-  background-image: url(fleche02.png);
-  background-size: cover;
+  font-size: 105%;
 }
-
 
 .border-radius {
   border-radius: 0 20px 0 0;

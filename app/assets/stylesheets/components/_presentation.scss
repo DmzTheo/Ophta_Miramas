@@ -37,11 +37,6 @@
   text-decoration: none;
 }
 
-.conteneur_text_image {
-  display: flex;
-  align-items: center;
-}
-
 .image_pathology {
   width: 380px;
   height: 246px;
@@ -54,6 +49,8 @@
 }
 
 .bg_br {
-  background-color:white !important;
-  border-radius:5px !important;
+}
+
+.margin_none {
+  margin: 5px auto;
 }

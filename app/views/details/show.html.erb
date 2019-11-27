@@ -1,0 +1,61 @@
+<script type="application/ld+json" nonce=<%= request.content_security_policy_nonce %>>
+  <% @chirurgies.each do |chirurgie| %>
+    <% if @detail.chirurgie_id == chirurgie.id %>
+      {
+        "@context": "http://schema.org",
+        "@type": "MedicalProcedure",
+        "url": "<%= chirurgy_detail_url(chirurgie) %>",
+        "description": "Chirurgie - <%= chirurgie.nom %> - détail"
+      }
+    <% end %>
+  <% end %>
+</script>
+
+<!-- BreadcrumbList -->
+<script type="application/ld+json" nonce=<%= request.content_security_policy_nonce %>>
+  <% @chirurgies.each do |chirurgie| %>
+    <% if @detail.chirurgie_id == chirurgie.id %>
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "chirurgies",
+            "item": "<%= chirurgies_url %>"
+          },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "<%= chirurgie.nom %>",
+            "item": "<%= chirurgy_url(chirurgie) %>"
+          },{
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Détail",
+            "item": "<%= chirurgy_detail_url(chirurgie) %>"
+          }]
+      }
+    <% end %>
+  <% end %>
+</script>
+
+<!-- End BreadcrumbList -->
+<% @chirurgies.each do |chirurgie| %>
+  <% if @detail.chirurgie_id == chirurgie.id %>
+    <% case chirurgie.nom %>
+      <% when 'Cataracte' %>
+        <%= render "cataracte_bilan" %>
+        <%= render "cataracte_preparer" %>
+        <%= render "cataracte_choisisser" %>
+        <%= render "cataracte_post" %>
+      <% when 'IVT' %>
+        <%= render "ivt_bilan" %>
+        <%= render "ivt_preparer" %>
+        <%= render "ivt_post" %>
+      <% when 'Chirurgie réfractive' %>
+        <%= render "laser_bilan" %>
+        <%= render "laser_preparer" %>
+        <%= render "laser_post" %>
+    <% end %>
+  <% end %>
+<% end %>

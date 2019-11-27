@@ -12,6 +12,9 @@ class PagesController < ApplicationController
   def lunettes
   end
 
+  def charte
+  end
+
   def robots
     respond_to :text
   end

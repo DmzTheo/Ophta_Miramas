@@ -48,16 +48,6 @@
     text-decoration: none;
 }
 
-
-.chest_each_patho h2 {
-  text-decoration: none;
-  font-family: 'roboto';
-  color: black;
-  margin: 20px 20px;
-  letter-spacing: 1px;
-  font-weight: normal;
-}
-
 .chest_each_patho .italique {
   text-decoration: none;
   font-family: 'roboto';
@@ -104,6 +94,14 @@
 }
 
 .chest_each_patho h2 {
+  text-decoration: none;
+  font-family: 'roboto';
+  color: black;
+  margin: 2px 48px;
+  letter-spacing: 2px;
+}
+
+.chest_each_patho h3 {
   text-decoration: none;
   font-family: 'roboto';
   color: black;
@@ -221,23 +219,32 @@
 }
 
 .textes_lunettes2 {
-display: flex;
-    // flex-wrap: wrap;
-    flex-direction: column;
-    height: 555px;
-    margin: 0;
-    background-image: url(asset-path('forlunettes2.png'));
-    background-repeat: no-repeat;
-    background-size: 37%;
-    background-position: right;
-
-
+  display: flex;
+  // flex-wrap: wrap;
+  flex-direction: column;
+  height: 555px;
+  margin: 0;
+  background-image: url(asset-path('forlunettes2.png'));
+  background-repeat: no-repeat;
+  background-size: 37%;
+  background-position: right;
 }
+
+.textes_charte {
+  display: flex;
+  // flex-wrap: wrap;
+  flex-direction: column;
+  height: 555px;
+  margin: 0;
+  background-image: url(asset-path('ordre.png'));
+  background-repeat: no-repeat;
+  background-size: 34%;
+  background-position: right;
+}
+
 .conteneur_text_image {
-    display: flex;
-    flex-wrap: wrap;
-
-
+  display: flex;
+  align-items: center;
 }
 
 .conteneur_text_image p {
@@ -281,18 +288,6 @@ padding: 10px 15px 0 15px;
 
 }
 
-// .image_lunette_back {
-//     position: absolute;
-//     right: 0;
-//     width: 19%;
-//     height: 555px;
-//     background-image: url('forlunettes2.png');
-//     background-size: cover;
-//     // background-position: 100% 110%;
-//     background-repeat: no-repeat;
-//     padding: 0 60px;
-
-// }
 // -------CHIRURGIES----------
 
 
@@ -347,6 +342,16 @@ padding: 15px 15px 15px 15px;
 }
 
 .conteneur_text_bilantech h2{
+color: black;
+font-weight: 400;
+background-color: #f4f4f4;
+margin: 0;
+width: 80%;
+padding: 30px 15px 0 15px;
+border-top: 4px solid white;
+}
+
+.conteneur_text_bilantech h3{
 color: black;
 font-weight: 400;
 background-color: #f4f4f4;

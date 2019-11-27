@@ -10,20 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_20_164642) do
+ActiveRecord::Schema.define(version: 2019_11_26_155310) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "bilancliniquepreoperatoires", force: :cascade do |t|
-    t.bigint "chirurgie_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "slug"
-    t.string "name"
-    t.index ["chirurgie_id"], name: "index_bilancliniquepreoperatoires_on_chirurgie_id"
-    t.index ["slug"], name: "index_bilancliniquepreoperatoires_on_slug", unique: true
-  end
 
   create_table "chirurgies", force: :cascade do |t|
     t.string "nom"
@@ -33,24 +23,11 @@ ActiveRecord::Schema.define(version: 2019_11_20_164642) do
     t.index ["slug"], name: "index_chirurgies_on_slug", unique: true
   end
 
-  create_table "choisissezvotreimplants", force: :cascade do |t|
-    t.bigint "chirurgie_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "slug"
-    t.string "name"
-    t.index ["chirurgie_id"], name: "index_choisissezvotreimplants_on_chirurgie_id"
-    t.index ["slug"], name: "index_choisissezvotreimplants_on_slug", unique: true
-  end
-
-  create_table "consignepostoperatoires", force: :cascade do |t|
-    t.bigint "chirurgie_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "slug"
-    t.string "name"
-    t.index ["chirurgie_id"], name: "index_consignepostoperatoires_on_chirurgie_id"
-    t.index ["slug"], name: "index_consignepostoperatoires_on_slug", unique: true
+  create_table "details", force: :cascade do |t|
+    t.bigint "chirurgie_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["chirurgie_id"], name: "index_details_on_chirurgie_id"
   end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
@@ -72,18 +49,5 @@ ActiveRecord::Schema.define(version: 2019_11_20_164642) do
     t.index ["slug"], name: "index_pathologies_on_slug", unique: true
   end
 
-  create_table "preparerlinterventions", force: :cascade do |t|
-    t.bigint "chirurgie_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "slug"
-    t.string "name"
-    t.index ["chirurgie_id"], name: "index_preparerlinterventions_on_chirurgie_id"
-    t.index ["slug"], name: "index_preparerlinterventions_on_slug", unique: true
-  end
-
-  add_foreign_key "bilancliniquepreoperatoires", "chirurgies", column: "chirurgie_id"
-  add_foreign_key "choisissezvotreimplants", "chirurgies", column: "chirurgie_id"
-  add_foreign_key "consignepostoperatoires", "chirurgies", column: "chirurgie_id"
-  add_foreign_key "preparerlinterventions", "chirurgies", column: "chirurgie_id"
+  add_foreign_key "details", "chirurgies", column: "chirurgie_id"
 end

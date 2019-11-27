@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'centre' => 'pages#centre'
   get 'equipe' => 'pages#equipe'
   get 'telechargements' => 'pages#telechargements'
+  get 'charte' => 'pages#charte'
   get 'robots.:format' => 'pages#robots'
 
   get '/sitemap.xml' => 'sitemaps#index', :format => 'xml', :as => :sitemap
@@ -19,10 +20,7 @@ Rails.application.routes.draw do
   resources :pathologies, only: [:show, :index]
 
   resources :chirurgies, only: [:show, :index] do
-    resource :bilancliniquepreoperatoire, only: [:show]
-    resource :preparerlintervention, only: [:show]
-    resource :consignepostoperatoire, only: [:show]
-    resource :choisissezvotreimplant, only: [:show]
+    resource :detail, only: [:show]
   end
 
   dynamic_error_pages
