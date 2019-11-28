@@ -36,8 +36,8 @@
         padding: 13px 10px;
     }
     .cartel_center1 {
-    padding: 0 45px 0 0;
-    height: 610px;
+      padding: 0 45px 0 0;
+      height: 610px;
     }
 
     .cartel_center1 p{
@@ -231,9 +231,9 @@
 }
 
 @media (max-width: 345px) {
-  .bienvenue .bienvenue_3, .bienvenue_2{
-    visibility: collapse;
-  }
+  // .bienvenue .bienvenue_3, .bienvenue_2{
+  //   visibility: collapse;
+  // }
   .articles {
     position: relative;
     top: 180px;
