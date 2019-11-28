@@ -6,7 +6,7 @@
     "itemListElement": [{
       "@type": "ListItem",
       "position": 1,
-      "name": "home",
+      "name": "Accueil",
       "item": "<%= root_url %>"
     }]
   }
@@ -15,7 +15,7 @@
 
 <% content_for :meta_title, "#{DEFAULT_META["meta_title"]}: cabinet d'ophtalmologie à Miramas" %>
 <div class='logo'>
-  <%= link_to root_path do %>
+  <%= link_to((root_path), title: "page d'accueil") do %>
   <%= image_tag('logo_ok.png', alt: "photo centre", id: "img_logo") %>
   <% end %>
 </div>
