@@ -71,31 +71,31 @@
     <h1>
       <p class='bienvenue_1'>BIENVENUE</p>
       <p class='bienvenue_2'>dans notre centre d'ophtalmologie</p>
+      <p class='bienvenue_4'>des docteurs Buzzacchera Nadine et Hervé-Fey Brigitte</p>
+      <h2 class='bienvenue_3'>OPHTA MIRAMAS</h2>
     </h1>
-    <p class='bienvenue_4'>des docteurs Buzzacchera Nadine et Hervé-Fey Brigitte</p>
-    <h2 class='bienvenue_3'>OPHTA MIRAMAS</h2>
   </div>
   <div class='presentation_home'>
-    <%= link_to((equipe_path), target: "_blank", class: 'presentation_home_1') do %>
+    <%= link_to((equipe_path), title: "présentation de l'équipe (secrétariat, pré-consultation, médecins)", target: "_blank", class: 'presentation_home_1') do %>
     <%= image_tag('nurse-bustred.png', alt: "nurse", class: 'img_prez') %>
     <p>Une équipe qualifiée et dynamique à votre écoute</p>
     <% end %>
-    <%= link_to((centre_path), target: "_blank", class: 'presentation_home_2') do %>
+    <%= link_to((centre_path), title: 'présentation du centre', target: "_blank", class: 'presentation_home_2') do %>
     <%= image_tag('hospital-microscopered.png', alt: "hospital", class: 'img_prez') %>
     <p>Du matériel à la pointe de la technologie</p>
     <% end %>
-    <%= link_to((chirurgies_path), target: "_blank", class: 'presentation_home_3') do %>
+    <%= link_to((chirurgies_path), title: 'chirurgies ophtalmologiques', target: "_blank", class: 'presentation_home_3') do %>
     <%= image_tag('growthred.jpg', alt: "growthred", class: 'img_prez') %>
     <p>Une prise en charge personnalisée et un accompagnement continu</p>
     <% end %>
-    <%= link_to(("https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php"), rel: 'noopener nofollow', target: "_blank", class: 'presentation_home_4') do %>
+    <%= link_to(("https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php"), rel: 'noopener nofollow', title: 'site de prise de rendez-vous', target: "_blank", class: 'presentation_home_4') do %>
     <%= image_tag('calendarred.png', alt: "calendar", class: 'img_prez') %>
     <p>Une prise de rendez-vous en ligne</p>
     <% end %>
   </div>
   <p class='bienvenue_5'>Le Cabinet, ouvert du Lundi au vendredi, prend en charge différentes pathologies occulaires,
     <br>cataracte, glaucome, DMLA, diabète, chirurgie de la myopie au laser, chirurgie des paupières et injections intra-vitréennes.</p>
-  <%= link_to "PRENDRE RENDEZ-VOUS", "https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php", class: "btn_rdv width_22", target: '_blank', rel: 'noopener nofollow' %>
+  <%= link_to "PRENDRE RENDEZ-VOUS", "https://www.votrerdv.fr/ophtalmologiste/miramas/ophta-miramas/prendrerdv.php", title: 'site de prise de rendez-vous', class: "btn_rdv width_22", target: '_blank', rel: 'noopener nofollow' %>
   <div class="footer">
     <div class="column_gauche">
       <h2>Nous contacter</h2>
