@@ -2,7 +2,7 @@
 <% content_for :meta_description, "Renseignez vous sur la chirurgie réfractive (laser) : résumé. Qu'est ce que la chirurgie réfractive (laser) ?." %>
 <div class='logo'>
   <%= link_to root_path do %>
-  <%= image_tag('logo_ok.png', alt: "logo OphtaMiramas", id: "img_logo") %>
+  <%= image_tag('logo_ok.png', alt: "logo Ophta Miramas", id: "img_logo") %>
   <% end %>
 </div>
 <div class='nav_back'>
@@ -20,22 +20,22 @@
     </div>
   </div>
 </div>
-<h1 class="titre_pathologies">CHIRURGIE REFRACTIVE (laser)</h1>
+<h1 class="titre_pathologies">CHIRURGIE REFRACTIVE</h1>
 <div class='chest_each_patho'>
   <div class="conteneur_text_image">
     <div class="textes text_width">
-      <p class="full_width">Cette chirurgie permet de corriger tous les défauts visuels (myopie, astigmatisme, hypermétropie et même presbytie).</p>
+      <p class="full_width">Cette chirurgie permet de corriger tous les défauts visuels de réfraction (myopie, astigmatisme, hypermétropie et même presbytie).</p>
       <p class="full_width">Oubliez vos lunettes, et vos lentilles ! Obtenez une vision de loin et une vision de près satisfaisantes !</p>
       <p class="full_width">La chirurgie moderne est maintenant accessible à tous, avec une récupération très rapide.</p>
       <p class="full_width">Vous allez vous faire opérer ? Ci-dessous, vous trouverez les éléments pour vous guider à chaque étape de votre chirurgie.</p>
     </div>
     <%= image_tag('lunettes.jpg', alt: "lunettes ophtalmologie", class: "h_144_w_200") %>
   </div>
-  <%= link_to (chirurgy_detail_path(@chirurgie)), title: "chrirugie réfractive (laser) - détails", class: 'etape' do %>
+  <%= link_to (chirurgy_detail_path(@chirurgie)), title: "laser - détails", class: 'etape' do %>
   <%= image_tag('fleche01.png', alt:"fleche", class: 'width_70') %>
   <p>Voir les détails de la chirurgie réfractive (laser) : bilan clinique, comment préparer l'intervention et les consignes post-opératoires.</p>
   <% end %>
 </div>
 <div class='bottom_bar'>
-  <%= image_tag('logobleu.png', alt: "logo OphtaMiramas", class: 'img_prez') %>
+  <%= image_tag('logobleu.png', alt: "logo Ophta Miramas", class: 'img_prez') %>
 </div>
