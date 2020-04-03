@@ -36,6 +36,7 @@ body {
     border-radius: 0 0px 5px 5px;
     background-color: white;
     left: 0;
+    padding-bottom: 15px;
 
 }
 .nav_back {
@@ -70,9 +71,10 @@ body {
 }
 
 .img_navbar {
+    position: relative;
     opacity: 0.6;
     transition: 0.5s;
-    top: 0px;
+    top: 7px;
     left: 0;
     width: 20px;
     height: 39.6833px;
