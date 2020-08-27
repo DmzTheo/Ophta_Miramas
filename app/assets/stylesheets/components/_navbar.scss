@@ -70,6 +70,22 @@ body {
     padding-bottom: 5px
 }
 
+.navbar .dropdown .dropdown-menu a {
+    background-color: transparent;
+    height: 30px;
+    font-size: 90%;
+}
+
+.navbar .dropdown .dropdown-menu a:hover {
+    background-color: transparent;
+    font-size: 95%;
+    border: none;
+}
+
+.navbar .dropdown-menu{
+    border: none;
+}
+
 .img_navbar {
     position: relative;
     opacity: 0.6;

@@ -19,7 +19,7 @@
 <div class="container">
   <div class="modal hide fade" id="myModal" role="dialog">
     <div class="modal-dialog">
-    
+
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
@@ -27,7 +27,7 @@
           <h4 class="modal-title">Covid 19 :</h4>
         </div>
         <div class="modal-top">
-          <div class="d-flex flex-center mb-2"><%= image_tag('logo_ok.png', alt: "photo centre", id: "img_logo") %></div> 
+          <div class="d-flex flex-center mb-2"><%= image_tag('logo_ok.png', alt: "photo centre", id: "img_logo") %></div>
           <p class="mx-4">A partir du 27 Avril 2020 :</p>
           <p class="mx-4"><strong>Vous pouvez de nouveau prendre rdv en ligne</strong> ou par téléphone au 0490503350 le cabinet vous accueillera dans le respect des mesures de protection et d’hygiène :</p>
         </div>
@@ -42,7 +42,7 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
         </div>
-      </div>    
+      </div>
     </div>
   </div>
 </div>
@@ -63,7 +63,13 @@
       <%= link_to "LUNETTES", lunettes_path, title: 'rdv lunettes' %>
       <%= link_to "PATHOLOGIES", pathologies_path, title: 'présentation des pathologies occulaires' %>
       <%= link_to "CHIRURGIES", chirurgies_path, title: 'présentation des chirurgies' %>
-      <%= link_to "RENDEZ-VOUS", "https://www.doctolib.fr/cabinet-medical/miramas/cabinet-d-ophtalmologie-miramas", title: 'site de prise de rendez-vous', target: '_blank', class: "link_rendez_vous color_link", rel: 'noopener nofollow' %>
+      <div class="dropdown">
+        <%= link_to "RENDEZ-VOUS", "#", title: 'site de prise de rendez-vous', target: '_blank', class: "link_rendez_vous color_link dropdown-toggle", rel: 'noopener nofollow', "role" => "button", id: "dropdownMenuLink", "data-toggle" => "dropdown", "aria-haspopup" => "true", "aria-expanded" => "false" %>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <%= link_to "Dr Nadine Buzzacchera", "https://www.doctolib.fr/ophtalmologue/miramas/silvia-soare-miramas", title: 'prendre rendez-vous avec le dr Nadine Buzzacchera', class: 'dropdown-item mx-2' %>
+          <%= link_to "Dr Silvia Soare", "https://www.doctolib.fr/ophtalmologue/miramas/silvia-soare-miramas", title: 'prendre rendez-vous avec le dr Silvia Soare', class: 'dropdown-item mx-2' %>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -119,14 +125,31 @@
     <%= image_tag('growthred.jpg', alt: "growthred", class: 'img_prez') %>
     <p>Une prise en charge personnalisée et un accompagnement continu</p>
     <% end %>
-    <%= link_to(("https://www.doctolib.fr/cabinet-medical/miramas/cabinet-d-ophtalmologie-miramas"), rel: 'noopener nofollow', title: 'site de prise de rendez-vous', target: "_blank", class: 'presentation_home_4') do %>
-    <%= image_tag('calendarred.png', alt: "calendar", class: 'img_prez') %>
-    <p>Une prise de rendez-vous en ligne</p>
-    <% end %>
+    <div class="dropdown">
+        <%= link_to("#", title: 'site de prise de rendez-vous', target: '_blank', class: "presentation_home_4 dropdown-toggle", rel: 'noopener nofollow', "role" => "button", id: "dropdownMenuLink", "data-toggle" => "dropdown", "aria-haspopup" => "true", "aria-expanded" => "false") do %>
+          <%= image_tag('calendarred.png', alt: "calendar", class: 'img_prez') %>
+        <% end %>
+        <p>Une prise de rendez-vous en ligne</p>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <%= link_to "Dr Nadine Buzzacchera", "https://www.doctolib.fr/ophtalmologue/miramas/silvia-soare-miramas", title: 'prendre rendez-vous avec le dr Nadine Buzzacchera', class: 'dropdown-item mx-2' %>
+          <%= link_to "Dr Silvia Soare", "https://www.doctolib.fr/ophtalmologue/miramas/silvia-soare-miramas", title: 'prendre rendez-vous avec le dr Silvia Soare', class: 'dropdown-item mx-2' %>
+        </div>
+      </div>
+    <%#= link_to(("https://www.doctolib.fr/cabinet-medical/miramas/cabinet-d-ophtalmologie-miramas"), rel: 'noopener nofollow', title: 'site de prise de rendez-vous', target: "_blank", class: 'presentation_home_4') do %>
+    <%#= image_tag('calendarred.png', alt: "calendar", class: 'img_prez') %>
+<!--     <p>Une prise de rendez-vous en ligne</p> -->
+    <%# end %>
   </div>
   <p class='bienvenue_5'>Le Cabinet, ouvert du Lundi au vendredi, prend en charge différentes pathologies occulaires,
-    <br>cataracte, glaucome, DMLA, diabète, chirurgie réfractive (myopie au laser), chirurgie des paupières et injections intra-vitréennes.</p>
-  <%= link_to "PRENDRE RENDEZ-VOUS", "https://www.doctolib.fr/cabinet-medical/miramas/cabinet-d-ophtalmologie-miramas", title: 'site de prise de rendez-vous', class: "btn_rdv width_22 mt_80_mb_80", target: '_blank', rel: 'noopener nofollow' %>
+    <br>cataracte, glaucome, DMLA, diabète, chirurgie réfractive (myopie au laser), chirurgie des paupières et injections intra-vitréennes.
+  </p>
+  <div class="dropdown">
+    <%= link_to "PRENDRE RENDEZ-VOUS", "#", title: 'site de prise de rendez-vous', target: '_blank', class: "btn_rdv width_22 mt_80_mb_80 dropdown-toggle", rel: 'noopener nofollow', "role" => "button", id: "dropdownMenuLink", "data-toggle" => "dropdown", "aria-haspopup" => "true", "aria-expanded" => "false" %>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <%= link_to "Dr Nadine Buzzacchera", "https://www.doctolib.fr/ophtalmologue/miramas/silvia-soare-miramas", title: 'prendre rendez-vous avec le dr Nadine Buzzacchera', class: 'dropdown-item mx-2' %>
+      <%= link_to "Dr Silvia Soare", "https://www.doctolib.fr/ophtalmologue/miramas/silvia-soare-miramas", title: 'prendre rendez-vous avec le dr Silvia Soare', class: 'dropdown-item mx-2' %>
+    </div>
+  </div>
   <div class="footer">
     <div class="column_gauche">
       <h2>Nous contacter</h2>

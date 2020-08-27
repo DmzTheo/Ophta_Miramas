@@ -58,3 +58,13 @@ a:hover{
 .margin_none {
   margin: 5px auto;
 }
+
+.presentation_home .dropdown-toggle::after {
+  display: none;
+}
+
+.chest_each_patho .dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

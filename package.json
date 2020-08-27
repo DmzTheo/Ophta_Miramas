@@ -2,14 +2,14 @@
   "name": "Ophta_Miramas",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "^4.2.2",
-    "bootstrap": "^4.4.1",
-    "jquery": "^3.5.0",
+    "@rails/webpacker": "^4.3.0",
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
     "serialize-javascript": "^3.1.0",
-    "swiper": "^5.3.6"
+    "swiper": "^5.4.5"
   },
   "devDependencies": {
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.11.0"
   }
 }
