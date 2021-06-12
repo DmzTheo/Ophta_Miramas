@@ -44,38 +44,48 @@
 <h1 class="titre_center">L'EQUIPE</h1>
 <div class="chest_each_patho pb-mb">
   <h2 class="medecins">Les médecins</h2>
-  <div class="personnels_cards">
-    <div class="personnel bg-top">
-      <%= image_tag('doc_5.png', alt: "nadine", class: "img_nadine") %>
-      <p><strong>Docteur Buzzacchera Nadine</strong>. Ancien interne des hopitaux de Marseille, chef de clinique à la faculté, chirurgie cataracte, glaucome, paupières et chirurgie réfractive.</p>
+  <div class="medecin_column">
+    <div class="medecin_row">
+      <%= image_tag('Buzzacchera.jpg', alt: "Dr. Buzzacchera", class: "img-buzzacchera") %>
+      <div class="equipe-txt">
+        <p><strong>Docteur Buzzacchera Nadine</strong>. Ancienne interne des Hôpitaux de Marseille, chef de clinique à la faculté, chirurgie cataracte, glaucome, paupières et chirurgie réfractive.</p>
+      </div>
     </div>
-    <div class="personnel bg-top">
-      <%= image_tag('', alt: "Silvia Soare image à venir", class: "img_brigitte") %>
-      <p><strong>Silvia Soare</strong>.</p>
+    <div class="medecin_row">
+      <div class="equipe-txt">
+        <p><strong>Docteur Soare Silvia</strong>. Ancienne interne des Hôpitaux de Marseille, ancienne assistante des Hôpitaux de Marseille, chef de clinique des Universités.<br> DIU de Pathologie chirurgical rétino-vitréenne, DU Imagerie et pathologie rétinienne, DU des infections et inflammations oculaires</p>
+      </div>
+      <%= image_tag('Soare.jpg', alt: "Dr. Soare", class: "img-buzzacchera") %>
     </div>
   </div>
-  <h2 class="accueil mt-4 text-center">Pour vous accueillir:</h2>
+  <h2 class="accueil mt-4 text-center">Pour vous accueillir au secrétariat :</h2>
   <div class="secretariat_orthoptiste">
     <div class="personnel">
-      <h2>Au secrétariat</h2>
       <%= image_tag('inf_1.png', alt: "Fabienne et Christine", class: "img_inf") %>
       <p><strong>Fabienne</strong><br>& <br> <strong>Christine</strong></p>
     </div>
-    <div class="personnels_cards">
-      <div class="personnel">
-        <h2>Pour la pré-consultation</h2>
-        <%= image_tag('doc_6.png', alt: "anne", class: "img_anne") %>
-        <p><strong>Anne Aurore</strong> <br>Notre orthoptiste vous fera les mesures préliminaires à l'examen de l'ophtalmologiste.</p>
+  </div>
+  <h2 class="medecins">Pour la pré-consultation : </h2>
+  <h4 class="medecins">Nos orthoptistes :</h4>
+  <div class="medecin_column">
+    <div class="medecin_row">
+      <%= image_tag('Aurelie.jpg', alt: "Aurelie", class: "img-buzzacchera") %>
+      <p class="txt-orthoptiste"><strong>Aurélie et Anne Aurore</strong></p>
+      <%= image_tag('Anne.jpg', alt: "Anne Aurore", class: "img-buzzacchera") %>
+    </div>
+    <div class="medecin_row">
+      <%= image_tag('doc_2.png', alt: "agnes", class: "img-buzzacchera") %>
+      <div class="equipe-txt">
+        <p><strong>Agnès Fabrigoule</strong>. <br>Orthoptiste libérale réalise les visions binoculaires, la rééducation orthoptique et les champs visuels.</p>
       </div>
-      <div class="personnel">
-        <%= image_tag('doc_4.png', alt: "eliane", class: "img_eliane") %>
+    </div>
+    <div class="medecin_row">
+      <div class="equipe-txt">
         <p><strong>Eliane</strong> <br>Infirmière qui aide notre orthoptiste et aide opératoire.</p>
       </div>
+      <%= image_tag('doc_4.png', alt: "eliane", class: "img-eliane") %>
     </div>
-    <div class="personnel">
-      <%= image_tag('doc_2.png', alt: "agnes", class: "img_agnes") %>
-      <p><strong>Agnès Fabrigoule</strong>. <br>Orthoptiste libérale réalise les visions binoculaires, la rééducation orthoptique et les champs visuels.</p>
-    </div>
+  </div>
   </div>
 </div>
 <div class='bottom_bar d-flex'>

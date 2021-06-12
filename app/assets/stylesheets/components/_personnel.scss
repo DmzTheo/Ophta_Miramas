@@ -40,6 +40,24 @@
   background: #0f4370 ;
 }
 
+.img-buzzacchera {
+  width: 25%;
+  height: auto;
+}
+
+.img-eliane {
+  width: 35%;
+  height: auto;
+}
+
+.equipe-txt {
+  width: 45%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .img_brigitte {
   // height: 180px;
   margin-top: 45px;
@@ -136,7 +154,7 @@
 }
 
 .medecins {
-  margin:50px auto 0 auto !important;
+  margin:50px auto 38px auto !important;
 }
 
 .bg-top {
@@ -146,4 +164,12 @@
 
 .margin-trent {
   margin-top: -30px !important;
+}
+
+.chest_each_patho .equipe-txt p{
+  font-size: 18px;
+}
+
+.chest_each_patho .medecin_row .txt-orthoptiste{
+  width: auto;
 }

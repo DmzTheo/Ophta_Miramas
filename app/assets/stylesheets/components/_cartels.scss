@@ -299,3 +299,17 @@
 .underline {
   text-decoration: underline !important;
 }
+
+.medecin_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.medecin_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
+}
