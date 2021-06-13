@@ -1,3 +1,11 @@
+.wrap {
+  flex-wrap: wrap;
+}
+
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
 @media (max-width: 1169px) {
   .cartel_center2 p {
       font-size: 18px;
@@ -182,6 +190,17 @@
 
   .bienvenue .bienvenue_3{
     font-size: 19px;
+  }
+}
+
+@media (max-width: 515px) {
+  .equipe-txt {
+    width: 90%;
+    margin: 20px 5%;
+  }
+  .chest_each_patho .equipe-txt p {
+    width: 100%;
+    margin: 0;
   }
 }
 

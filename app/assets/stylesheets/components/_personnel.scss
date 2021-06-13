@@ -43,15 +43,18 @@
 .img-buzzacchera {
   width: 25%;
   height: auto;
+  min-width: 250px;
 }
 
 .img-eliane {
   width: 35%;
   height: auto;
+  min-width: 250px;
 }
 
 .equipe-txt {
   width: 45%;
+  min-width: 240px;
   height: auto;
   display: flex;
   justify-content: center;
@@ -168,6 +171,7 @@
 
 .chest_each_patho .equipe-txt p{
   font-size: 18px;
+  min-width: 200px;
 }
 
 .chest_each_patho .medecin_row .txt-orthoptiste{
