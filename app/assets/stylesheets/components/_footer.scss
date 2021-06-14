@@ -14,6 +14,7 @@
   font-family: 'roboto';
   font-weight: 300;
   padding: 0 2%;
+  min-width: 200px;
 }
 .column_gauche h2, .column_droite h2 {
   font-weight: normal;
@@ -30,6 +31,7 @@
   font-weight: 300;
   padding: 0 2%;
   font-size: 90%;
+  min-width: 200px;
 }
 
 .lien_footer {
@@ -48,3 +50,4 @@
   font-size: .9em;
   color: #a2a2a2;
 }
+
