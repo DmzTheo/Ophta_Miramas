@@ -34,6 +34,9 @@
     .chest_centre, .mapimg, .chest_patho, .chest_each_patho {
         width: 85%;
     }
+    .chest_body {
+      width: 95%;
+    }
     .cartel_center2 {
         height: 400px;
     }
@@ -61,6 +64,11 @@
 
     .navbar a {
         font-size: 70%;
+    }
+
+    .dropdown-menu {
+      left: auto !important;
+      right: 0;
     }
 
     .img_navbar {
@@ -165,11 +173,14 @@
     width: 100%;
   }
   .navbar a {
-    font-size: 85%;
+    font-size: 66%;
     margin: 0 5px;
     text-align: center;
     height: auto;
-    font-weight: normal;
+    font-weight: bold;
+  }
+  .navbar a:hover {
+    font-size: 73%;
   }
   .img_navbar {
     display: none;
@@ -235,6 +246,12 @@
   .articles {
     position: relative;
     top: 90px;
+  }
+  .navbar a {
+  font-size: 56%;
+  }
+  .navbar a:hover {
+    font-size: 63%;
   }
 }
 
