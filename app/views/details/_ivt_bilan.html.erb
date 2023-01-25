@@ -1,31 +1,8 @@
 <% content_for :meta_title, "#{DEFAULT_META["meta_title"]}, ivt : bilan clinique pré-opératoire" %>
 <% content_for :meta_description, "injection intra-vitréenne, renseignez vous sur l'intervention : bilan clinique, préparation et consignes post-injection" %>
-<div class='logo'>
-  <%= link_to root_path do %>
-  <%= image_tag('logo_ok.png', alt: "logo Ophta Miramas", id: "img_logo") %>
-  <% end %>
-</div>
-<div class='nav_back'>
-  <div class='navbar_all'>
-    <%= link_to((root_path), title: "page d'accueil", class: 'a_img') do %>
-    <%= image_tag('view.png', alt: "logo oeil", class: "img_navbar") %>
-    <% end %>
-    <div class="navbar">
-      <%= link_to "CENTRE", centre_path, title: 'le cabinet' %>
-      <%= link_to "EQUIPE", equipe_path, title: "présentation de l'équipe" %>
-      <%= link_to "LUNETTES", lunettes_path, title: 'rdv lunettes' %>
-      <%= link_to "PATHOLOGIES", pathologies_path, title: 'présentation des pathologies occulaires' %>
-      <%= link_to "CHIRURGIES", chirurgies_path, title: 'présentation des chirurgies', class: 'chirurgie_bb' %>
-      <div class="dropdown">
-        <%= link_to "RENDEZ-VOUS", "#", title: 'site de prise de rendez-vous', target: '_blank', class: "link_rendez_vous color_link dropdown-toggle", rel: 'noopener nofollow', "role" => "button", id: "dropdownMenuLink", "data-toggle" => "dropdown", "aria-haspopup" => "true", "aria-expanded" => "false" %>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <%= link_to "Dr Nadine Buzzacchera", "https://www.doctolib.fr/ophtalmologue/miramas/nadine-buzzacchera", title: 'prendre rendez-vous avec le dr Nadine Buzzacchera', class: 'dropdown-item mx-2' %>
-          <%= link_to "Dr Silvia Soare", "https://www.doctolib.fr/ophtalmologue/miramas/silvia-soare-miramas", title: 'prendre rendez-vous avec le dr Silvia Soare', class: 'dropdown-item mx-2' %>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
+<%= render "shared/navbar" %>
+
 <h1 class="titre_pathologies">INJECTION INTRA-VITRÉENNE (IVT)</h1>
 <h2 class="titre_pathologies"> - Bilan clinique pré-opératoire</h2>
 <div class='chest_each_patho'>

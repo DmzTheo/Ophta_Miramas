@@ -15,32 +15,9 @@
 
 <% content_for :meta_title, "La charte du conseil de l'ordre - #{DEFAULT_META["meta_title"]}" %>
 <% content_for :meta_description, "Lisez la charte applicable aux sites professionnels de médecins du conseil national de 'ordre des médecins (CNOM)" %>
-<div class='logo'>
-  <%= link_to root_path do %>
-  <%= image_tag('logo_ok.png', alt: "logo Ophta Miramas", id: "img_logo") %>
-  <% end %>
-</div>
-<div class='nav_back'>
-  <div class='navbar_all'>
-    <%= link_to((root_path), title: "page d'accueil", class: 'a_img') do %>
-    <%= image_tag('view.png', alt: "ogo oeil", class: "img_navbar") %>
-    <% end %>
-    <div class="navbar">
-      <%= link_to "CENTRE", centre_path, title: 'le cabinet' %>
-      <%= link_to "EQUIPE", equipe_path, title: "présentation de l'équipe" %>
-      <%= link_to "LUNETTES", lunettes_path, title: 'rdv lunettes' %>
-      <%= link_to "PATHOLOGIES", pathologies_path, title: 'présentation des pathologies occulaires' %>
-      <%= link_to "CHIRURGIES", chirurgies_path, title: 'présentation des chirurgies' %>
-      <div class="dropdown">
-        <%= link_to "RENDEZ-VOUS", "#", title: 'site de prise de rendez-vous', target: '_blank', class: "link_rendez_vous color_link dropdown-toggle", rel: 'noopener nofollow', "role" => "button", id: "dropdownMenuLink", "data-toggle" => "dropdown", "aria-haspopup" => "true", "aria-expanded" => "false" %>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <%= link_to "Dr Nadine Buzzacchera", "https://www.doctolib.fr/ophtalmologue/miramas/nadine-buzzacchera", title: 'prendre rendez-vous avec le dr Nadine Buzzacchera', class: 'dropdown-item mx-2' %>
-          <%= link_to "Dr Silvia Soare", "https://www.doctolib.fr/ophtalmologue/miramas/silvia-soare-miramas", title: 'prendre rendez-vous avec le dr Silvia Soare', class: 'dropdown-item mx-2' %>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
+<%= render "shared/navbar" %>
+
 <h1 class="titre_pathologies">LA CHARTE APPLICABLE AUX SITES PROFESSIONNEL DE MEDECINS</h1>
 <div class='chest_each_patho'>
   <div class="conteneur_text_image">
